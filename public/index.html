@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tiny Village Spirit works with organizations to build tiny home communities to shelter their unhoused neighbors.">
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Tiny Village Spirit, Tiny House Village, Tiny House, Tiny Home, Tiny House Village Construction, Tiny House Village Construction California, Tiny House Village Construction Bay Area, Tiny House Village Construction Oakland, Tiny House Village Construction Richmond, Tiny House Village Construction San Francisco, Tiny House Village Construction Berkeley, Tiny House Village Construction San Jose, Tiny House Village Construction Santa Cruz, Tiny House Village Construction Sacramento, Tiny House Village Construction Los Angeles, Tiny House Village Construction San Diego, Tiny House Village Construction Fresno, Tiny House Village Construction Bakersfield, Tiny House Village Construction Stockton, Tiny House Village Construction Modesto, Tiny House Village Construction Chico, Tiny House Village Construction Redding, Tiny House Village Construction Eureka, Tiny House Village Construction California, Tiny House Village Construction Bay Area, tiny homes, homeless shelter, tiny homes for homeless">
+    <meta name="url" content="https://tinyvillagespirit.org">
+    <meta name="theme-color" content="#04747C">
+    
+    <meta property="og:title" content="Tiny Village Spirit" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tinyvillagespirit.org" />
+    <meta property="og:image" content="https://tinyvillagespirit.org/media/logo-transparent.png" />
+    <meta property="og:description" content="Tiny Village Spirit works with organizations to build tiny home communities to shelter their unhoused neighbors." />
+
+    <link rel="shortcut icon" href="./media/favicon.ico" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styling/topnav.css">
+    <link rel="stylesheet" href="./styling/index.css">
+    <link rel="stylesheet" href="./styling/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tiny Village Spirit</title>
+</head>
+<body>
+    <div class="topnav" id="topnav">
+        <a href="https://tinyvillagespirit.org" class="logo-wrapper">
+            <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="logo" />
+            <div class="logo-text">
+                <span>Tiny Village Spirit</span>
+            </div>
+        </a>
+        <a href="/about" class="topnav-item">About</a>
+        <a href="/projects" class="topnav-item">Projects</a>
+        <a href="/volunteer" class="topnav-item">Volunteer</a>
+        <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" target="_blank" class="topnav-item">Donate</a>
+        <a href="/news" class="topnav-item">News</a>
+        <i class="fa fa-bars" onclick="responsiveNav()" id="menu"></i>
+    </div>
+
+    <div class="splash-slider">
+        <div class="splash-slider-item fade">
+            <img src="./media/splash-image-1.jpeg" alt="Splash Image 1" class="splash-image" />
+            <span class="splash-slider-text">
+                <h1>Community Work Day</h1>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p> -->
+            </span>
+        </div>
+        <div class="splash-slider-item fade">
+            <img src="./media/splash-image-2.jpeg" alt="Splash Image 2" class="splash-image" />
+            <span class="splash-slider-text">
+                <h1>Group Plank Painting</h1>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p> -->
+            </span>
+        </div>
+        <div class="splash-slider-item fade">
+            <img src="./media/splash-image-3.jpeg" alt="Splash Image 3" class="splash-image" />
+            <span class="splash-slider-text">
+                <h1>Plant Bed Building</h1>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p> -->
+        </div>
+
+        <button class="slider-button slider-button-left" onclick="nextSlider(-1)">&#10094;</button>
+        <button class="slider-button slider-button-right" onclick="nextSlider(1)">&#10095;</button>
+        
+        <div class="slider-dots">
+            <span class="slider-dot" onclick="showSlider(1)"></span>
+            <span class="slider-dot" onclick="showSlider(2)"></span>
+            <span class="slider-dot" onclick="showSlider(3)"></span>
+        </div>
+    </div>
+
+
+    <div class="about">
+        <div class="about-text">
+            <h1 class="about-headline">Organizing communities to end homelessness</h1>
+            <p>Tiny Village Spirit is a new SF Bay Area based project which has developed as a response to the emergency shelter crisis and the giant need for housing justice in California, the US, and globally. 
+            <br><br>We are both promoting construction of tiny house villages as an innovative model for addressing the housing crisis and are also engaged in community organizing of village residents and allies to create systemic change, toward garnering the resources needed to end homelessness. </p>
+        </div>
+    </div>
+
+    <div class="callouts">
+        <div class="callout">
+            <h2 class="callout-header">The Problem</h2>
+            <p class="callout-text">Homelessness has been on the rise since 2017, experiencing an overall increase of 6 percent. In January 2022, 582,462 people were experiencing homelessness across America. This amounts to roughly 18 out of every 10,000 people.</p>
+            <a href="/about" class="callout-button">About</a>
+        </div>
+        <div class="callout">
+            <h2 class="callout-header">Our Solution</h2>
+            <p class="callout-text">Tiny Village Spirit engages communities in the constituent-led development of emergency housing villages. Communities are given the tools to work towards systemic change eeded to end the crisis of homelessness.</p>
+            <a href="/projects" class="callout-button">Projects</a>
+        </div>
+        <div class="callout">
+            <h2 class="callout-header">Get Involved</h2>
+            <p class="callout-text">Join us as we work with our unhoused neighbors to build dignified and beautiful emergency housing.</p>
+            <a href="/volunteer" class="callout-button">Volunteer</a>
+        </div>
+    </div>
+
+    <h1 class="projects-header">Current Projects</h1>
+    <div class="projects">
+        <div class="project">
+            <img src="../media/project-image-1.jpeg" alt="Project Image 1" class="project-image" />
+            <div class="project-text">
+                <h2 class="project-header">Oakland Tiny House Empowerment Village</h2>
+                <p class="project-description">Oakland's first legal tiny house village.</p>
+                <a href="/projects/" class="project-button">Learn More</a>
+            </div>
+         </div>
+
+         <div class="project">
+            <img src="../media/project-image-2.jpeg" alt="Project Image 2" class="project-image" />
+            <div class="project-text">
+                <h2 class="project-header">Richmond Tiny House Village Garden and Farm</h2>
+                <p class="project-description">Development now organizing for unsheltered youth in Richmond.</p>
+                <a href="/projects/" class="project-button">Learn More</a>
+            </div>
+         </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-logo-container">
+                <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="footer-logo" />
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-header">Important Links</h3>
+                <p class="footer-text">
+                    <a class="footer-link" href="https://tinyvillagespirit.org/about">About Us</a>
+                    <a class="footer-link" href="https://tinyvillagespirit.org/projects">Current Projects</a>
+                    <a class="footer-link" href="https://tinyvillagespirit.org/volunteer">Volunteer Opportunities</a>
+                    <a class="footer-link" href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden">Donate</a>
+                    <a class="footer-link" href="https://tinyvillagespirit.org/news">News</a>
+                </p>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-header">Socials</h3>
+                <p class="footer-text">
+                    <a class="footer-socials" href="mailto:tinyvillagespirit@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a class="footer-socials" href="https://www.facebook.com/tinyvillagespirit"><i class="fa fa-facebook"></i></a>
+                    <a class="footer-socials" href="https://tinyvillagespirit.org"><i class="fa fa-link"></i></a>
+                </p>
+            </div>
+        </div>
+        <p class="made-by">Copyright ©2023 Tiny Village Spirit · All Rights Reserved · Made with love by <a href="https://bob-brown.com" target="_blank" style="color: white;">Bob Brown</a></p>
+    </div>
+
+    <script src="./scripting/slider.js"></script>
+    <script src="./scripting/topnav.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VYD6FRZSK4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VYD6FRZSK4');
+    </script>
+    
+</body>
+</html>
