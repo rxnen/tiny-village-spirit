@@ -20,6 +20,8 @@ body {
 .splash-image {
     width: 100%;
     height: auto;
+    min-height: 300px;
+    object-fit: cover;
 }
 
 .splash-text {
@@ -39,13 +41,13 @@ body {
     justify-content: space-evenly;
     align-items: first baseline;
     text-align: center;
-    padding: 0 18px;
+    padding: 0 18px 0 18px;
     margin-top: 50px;
 }
 
 .project {
     width: 100%;
-    padding: 18px 24px;
+    padding: 18px 24px 18px 24px;
 
     display: flex;
     flex-direction: column;
@@ -106,16 +108,32 @@ body {
 }
 
 @media screen and (max-width: 815px) {
-    .projects {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .projects > .project {
+        flex: 100%; 
+        margin: 0;
+        padding: 10px;
+    }
+    
+    .project-image {
+        max-width: 300px;
+        max-height: 300px;
     }
 
-    .project {
-        margin: 18px;
-        max-width: 80%;
-    };
+    .project-text {
+        font-size: 14px;
+    }
+
+    .project-description {
+        font-size: 14px;
+    }
+
+    .project-button {
+        font-size: 14px;
+    }
+
+    .projects-header {
+        margin: 30px 20px 0 20px;
+    }
 
 }
 

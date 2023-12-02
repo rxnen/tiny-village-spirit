@@ -24,14 +24,20 @@ body {
 .splash-slider-item img {
     width: 100%;
     height: auto;
+    min-height: 300px;
+    object-fit: cover;
 }
 
 .splash-slider-text {
     position: absolute;
     bottom: 18%;
-    left: 6%;
-    background-color: rgb(255, 99, 99, 0.7);
-    padding: 24px;
+    left: 8%;
+    background-color: rgb(4, 116, 124, 0.9);
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 2%;
+    max-width: 400px;
+    color: white;
 }
 
 .splash-slider-text h1 {
@@ -142,10 +148,11 @@ body {
 @media screen and (max-width: 740px) {
     .about {
         flex-direction: column-reverse;
+        padding: 10px;
     }
     .about-text {
         text-align: center;
-        max-width: 80%;
+        margin: 20px 30px 40px 30px;
     }
     .about-image {
         max-height: 300px;
@@ -196,7 +203,7 @@ body {
 }
 
 .callout-button {
-    background-color: #333;
+    background-color: #04747c;
     color: #f2f2f2;
     border: none;
     border-radius: 5px;
@@ -209,7 +216,7 @@ body {
 }
 
 .callout-button:hover {
-    background-color: #ddd;
+    background-color: #07b1bd;
     color: black;
 }
 
@@ -284,7 +291,7 @@ body {
 }
 
 .project-button {
-    background-color: #333;
+    background-color: #04747c;
     color: #f2f2f2;
     border: none;
     border-radius: 5px;
@@ -297,7 +304,7 @@ body {
 }
 
 .project-button:hover {
-    background-color: #ddd;
+    background-color: #07b1bd;
     color: black;
 }
 

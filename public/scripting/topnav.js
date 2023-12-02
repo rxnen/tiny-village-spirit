@@ -4,11 +4,15 @@ function responsiveNav() {
     if (topnav.classList.contains("responsive")) {
         topnav.classList.add("topnav");
         topnav.classList.remove("responsive");
+        document.body.style.overflow = "visible";
+        document.body.style.height = "auto";
         for (let i = 0; i < topNavItems.length; i++) {
             topNavItems[i].style.display = "none";
         }
     } else {
         topnav.className += " responsive";
+        document.body.style.overflow = "hidden";
+        document.body.style.height = "100%";
         topnav.classList.remove("topnav");
         for (let i = 0; i < topNavItems.length; i++) {
             topNavItems[i].style.display = "block";
