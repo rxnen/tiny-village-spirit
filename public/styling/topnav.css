@@ -1,5 +1,6 @@
 /* Top Navigation Bar */
 
+
 .topnav {
     display: flex;
     justify-content: flex-end;
@@ -38,6 +39,22 @@
     display: inline-block;
 }
 
+.responsive .logo-text {
+    font-size: 28px;
+    margin-left: 0;
+}
+
+.responsive .logo {
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+
+}
+
+
 .topnav-item {
     color: #f2f2f2;
     text-align: center;
@@ -61,8 +78,11 @@
 
 .responsive {
     flex-direction: column;
-    position: relative;
+    height: 100vh;   
     background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
 }
 
 .responsive a {
@@ -70,7 +90,6 @@
     padding: 10px;
     text-align: center;
     width: 100%; 
-    border-bottom: 1px solid #ddd; 
 }
 
 .responsive #menu  {
@@ -78,6 +97,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    padding: 30px;
 }
 
 .responsive .topnav-item {
