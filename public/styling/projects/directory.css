@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+/* Splash */
+
+.splash {
+    position: relative;
+    margin: auto;
+}
+
+.splash-image {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.splash-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .splash-text {
+        font-size: 4vw;
+    }
+}
+
+/* Directory */
+
+.directory {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: top;
+    text-align: center;
+    padding: 0 18px 0 18px;
+    margin-top: 20px;
+}
+
+.map {
+    width: 45%;
+    height: 400px;
+}
+
+.about-directory {
+    max-width: 55%;
+    padding: 18px 24px 18px 24px;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.directory-header {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.directory-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .directory {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: first baseline;
+        justify-content: center;
+    }
+
+    .about-directory {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .directory-description ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .map {
+        width: 100%;
+    }
+}
+
+/* .directory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: first baseline;
+    text-align: center;
+    padding: 0 18px 0 18px;
+    margin-top: 20px;
+}
+
+.about-directory {
+    width: 100%;
+    padding: 18px 24px 18px 24px;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.directory-header {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.directory-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+} */
+
