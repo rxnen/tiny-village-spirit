@@ -11,6 +11,8 @@ function responsiveNav() {
         }
     } else {
         topnav.className += " responsive";
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
         document.body.style.overflow = "hidden";
         document.body.style.height = "100%";
         topnav.classList.remove("topnav");

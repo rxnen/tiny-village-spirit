@@ -31,6 +31,13 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 4vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .splash-text {
+        font-size: 5vw;
+    }
 }
 
 /* Main About Section */
