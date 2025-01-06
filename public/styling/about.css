@@ -36,7 +36,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .splash-text {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 }
 
@@ -103,6 +103,7 @@ body {
 
 /* Team */
 
+/* Team */
 .team-header {
     text-align: center;
     padding: 40px 0px 0px 0px;
@@ -111,82 +112,84 @@ body {
 
 .team {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: first baseline;
     text-align: center;
-    padding: 0 18px;;
+    padding: 0 18px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .team-member {
-    width: 50%;
+    width: calc(25% - 20px); /* Account for gap */
     padding: 18px 24px;
-
     display: flex;
     flex-direction: column;
-    position: relative;
+    min-height: 400px; /* Set a minimum height */
+    position: relative; /* For absolute positioning of button */
+}
+
+.team-member-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .team-member-text h2 {
     text-align: center;
+    margin: 15px 0 10px;
 }
 
 .team-member-text h3 {
     text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0 0 15px;
 }
 
 .team-member-text p {
     font-size: 14px;
-    margin: 20px 60px 40px 60px;
-    padding: 0;
+    margin: 0;
+    padding: 0 10px;
     text-align: center;
     display: none;
 }
 
 .team-member-image {
     max-width: 200px;
-    width: auto;
+    width: 100%;
     height: auto;
     padding: 0;
-    margin: auto;
+    align-self: center;
 }
 
 .team-member-button {
-    margin: auto;
-    padding: 10px 20px;
-    border-radius: 4px;
+    margin: auto auto 0 auto;
+    width: fit-content;
+    background-color: #04747c;
+    color: #f2f2f2;
     border: none;
-    background-color: transparent;
-    color: blue;
-    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .team-member {
+        width: calc(50% - 20px);
+    }
 }
 
 @media screen and (max-width: 800px) {
     .team {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 0px 0px 0px;
+        padding: 40px 20px;
     }
 
     .team-member {
         width: 100%;
-        padding: 18px 24px;
+        min-height: 350px;
     }
-
-    .team-member-text {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .team-image {
-        max-width: 200px;
-        max-height: 200px;
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
-    }
-    
 }

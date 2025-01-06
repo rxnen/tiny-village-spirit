@@ -17,6 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiny House Village Directory | Tiny Village Spirit</title>
 
+    <link rel="preload" href="../media/splash-image-3.jpeg" as="image">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href= "../styling/projects/directory.css" />
     <link rel="stylesheet" href="../styling/topnav.css" />
@@ -25,42 +27,72 @@
 
 </head>
 <body>
-    <div class="topnav" id="topnav">
+    <nav id="topnav" class="topnav">
         <a href="https://tinyvillagespirit.org" class="logo-wrapper">
-            <img src="../media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="logo" />
+            <img src="../media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="logo">
             <div class="logo-text">
-                <span>Tiny Village Spirit</span>
+                Tiny Village Spirit
             </div>
         </a>
-        <a href="/about" class="topnav-item">About</a>
-        <a href="/projects" class="topnav-item">Projects</a>
+        <div class="dropdown">
+            <a href="/about" class="topnav-item">About</a>
+            <div class="dropdown-content">
+                <a href="/about">About Us</a>
+                <a href="/about/partners">Partners</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="/projects" class="topnav-item">Projects</a>
+            <div class="dropdown-content">
+                <a href="/projects/richmond">Richmond Village</a>
+                <a href="/projects/directory">Directory</a>
+                <a href="/projects/blueprint">Village Blueprint</a>
+            </div>
+        </div>
         <a href="/volunteer" class="topnav-item">Volunteer</a>
-        <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" target="_blank" class="topnav-item">Donate</a>
         <a href="/news" class="topnav-item">News</a>
-        <i class="fa fa-bars" onclick="responsiveNav()" id="menu"></i>
-    </div>
+        <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" 
+           class="topnav-item donate-btn" 
+           target="_blank">Donate</a>
+        <a href="javascript:void(0);" id="menu" onclick="responsiveNav()">☰</a>
+    </nav>
+    <main>
 
-    <div class="splash">
-        <img src="../media/splash-image-3.jpeg" alt="About Image" class="splash-image" />
-        <div class="splash-text">
-            <h1>Tiny House Village Directory</h1>
+        <div class="splash">
+            <img src="../media/directory-splash.jpg" alt="About Image" class="splash-image" />
+            <div class="splash-text">
+                <h1>Tiny House Village Directory</h1>
+            </div>
         </div>
-    </div>
 
-    <div class="directory">
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1eP08FGd9XY0JPib8UT2vZ41rRAF9xSY&ehbc=2E312F" class="map"></iframe>
-        <div class="about-directory">
-            <h1 class="directory-header">National Directory of Tiny House Villages for the Unhoused</h1>
-            <p class="directory-description">
-                We have organized a national directory of tiny house villages with the goal of creating a network where:
-                    <ul>
-                        <li>Village administrators can work together to better tackle organizational and operational issues.</li>
-                        <li>Established villages will help organizers who are trying to get new projects completed. </li>
-                        <li>Village constituents and volunteers can be mobilized for political action around housing policy.</li>
-                    </ul>
-            </p>
+        <div class="directory">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1eP08FGd9XY0JPib8UT2vZ41rRAF9xSY&ehbc=2E312F" class="map"></iframe>
+            <div class="about-directory">
+                <h1 class="directory-header">National Directory of Tiny House Villages for the Unhoused</h1>
+                <p class="directory-description">
+                    We have organized a national directory of tiny house villages with the goal of creating a network where:
+                        <ul>
+                            <li>Village administrators can work together to better tackle organizational and operational issues.</li>
+                            <li>Established villages will help organizers who are trying to get new projects completed. </li>
+                            <li>Village constituents and volunteers can be mobilized for political action around housing policy.</li>
+                        </ul>
+                </p>
+            </div>
         </div>
-    </div>
+
+    </main>
+
+    <script src="../scripting/topnav.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VYD6FRZSK4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VYD6FRZSK4');
+    </script>
     
 </body>
 </html>

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+/* Splash */
+
+.splash {
+    position: relative;
+    margin: auto;
+}
+
+.splash-image {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.splash-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .splash-text {
+        font-size: 5vw;
+    }
+}
+
+
+/* Main */
+
+.partners-text {
+    text-align: center;
+    margin: 50px 20px;
+    font-size: 24px;
+    padding: 0 10%;
+}
+
+.category-header {
+    text-align: center;
+    font-size: 36px;
+    margin: 50px 0;
+}
+
+.partners-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 24px;
+}
+
+.partners-list li {
+    list-style-type: none;
+    margin: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .partners-text {
+        font-size: 20px;
+        padding: 0 5%;
+    }
+    .category-header {
+        font-size: 24px;
+    }
+    .partners-list {
+        margin: 0 10px;
+    }
+    .partners-list li {
+        font-size: 16px;
+    }
+}
