@@ -14,65 +14,115 @@
     <meta property="og:image" content="https://tinyvillagespirit.org/media/logo-transparent.png" />
     <meta property="og:description" content="Discover opportunities to volunteer with Tiny Village Spirit." />
 
+    <link rel="preload" href="./media/about-splash-image.jpeg" as="image">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./media/favicon.ico" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styling/topnav.css">
     <link rel="stylesheet" href="./styling/about.css">
+    <link rel="stylesheet" href="./styling/volunteer.css">
     <link rel="stylesheet" href="./styling/footer.css">
     <title>Volunteer | Tiny Village Spirt</title>
 </head>
 <body>
-    <div class="topnav" id="topnav">
+    <nav id="topnav" class="topnav">
         <a href="https://tinyvillagespirit.org" class="logo-wrapper">
-            <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="logo" />
+            <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="logo">
             <div class="logo-text">
-                <span>Tiny Village Spirit</span>
+                Tiny Village Spirit
             </div>
         </a>
-        <a href="/about" class="topnav-item">About</a>
-        <a href="/projects" class="topnav-item">Projects</a>
+        <div class="dropdown">
+            <a href="/about" class="topnav-item">About</a>
+            <div class="dropdown-content">
+                <a href="/about">About Us</a>
+                <a href="/about/partners">Partners</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="/projects" class="topnav-item">Projects</a>
+            <div class="dropdown-content">
+                <a href="/projects/richmond">Richmond Village</a>
+                <a href="/projects/directory">Directory</a>
+                <a href="/projects/blueprint">Village Blueprint</a>
+            </div>
+        </div>
         <a href="/volunteer" class="topnav-item">Volunteer</a>
-        <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" target="_blank" class="topnav-item">Donate</a>
         <a href="/news" class="topnav-item">News</a>
-        <i class="fa fa-bars" onclick="responsiveNav()" id="menu"></i>
-    </div>
+        <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" 
+           class="topnav-item donate-btn" 
+           target="_blank">Donate</a>
+        <a href="javascript:void(0);" id="menu" onclick="responsiveNav()">☰</a>
+    </nav>
 
-    <div class="splash">
-        <img src="./media/about-splash-image.jpeg" alt="About Image" class="splash-image" />
-        <div class="splash-text">
-            <h1>Volunteer</h1>
-        </div>
-    </div>
+    <main>
 
-    <p style="text-align: center; font-size: 24px; margin: 40px 0 20px 0;">For information about volunteering, please email <a href="mailto:tinyvillagespirit@gmail.com">tinyvillagespirit@gmail.com</a></p>
-
-    <div class="footer-container">
-        <div class="footer">
-            <div class="footer-logo-container">
-                <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="footer-logo" />
-            </div>
-            <div class="footer-item">
-                <h3 class="footer-header">Important Links</h3>
-                <p class="footer-text">
-                    <a class="footer-link" href="https://tinyvillagespirit.org/about">About Us</a>
-                    <a class="footer-link" href="https://tinyvillagespirit.org/projects">Current Projects</a>
-                    <a class="footer-link" href="https://tinyvillagespirit.org/volunteer">Volunteer Opportunities</a>
-                    <a class="footer-link" href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden">Donate</a>
-                    <a class="footer-link" href="https://tinyvillagespirit.org/news">News</a>
-                </p>
-            </div>
-            <div class="footer-item">
-                <h3 class="footer-header">Socials</h3>
-                <p class="footer-text">
-                    <a class="footer-socials" href="mailto:tinyvillagespirit@gmail.com"><i class="fa fa-envelope"></i></a>
-                    <a class="footer-socials" href="https://www.facebook.com/tinyvillagespirit"><i class="fa fa-facebook"></i></a>
-                    <a class="footer-socials" href="https://tinyvillagespirit.org"><i class="fa fa-link"></i></a>
-                </p>
+        <div class="splash">
+            <img src="./media/about-splash-image.jpeg" alt="About Image" class="splash-image" />
+            <div class="splash-text">
+                <h1>Volunteer</h1>
             </div>
         </div>
-        <p class="made-by">Copyright ©2023 Tiny Village Spirit · All Rights Reserved · Made with ❤️ by <a href="https://bob-brown.com" target="_blank" style="color: white;">Bob Brown</a></p>
-    </div>
+
+        <h1 class="header">Upcoming Volunteer Opportunities</h1>
+        <div class="opportunities">
+            <div class="opportunity">
+                <img src="./media/capitol-action-center.jpeg" alt="Volunteer Opportunity" class="opportunity-image" />
+                <h2 class="opportunity-header">Join Us at the State Capitol</h2>
+                <p class="opportunity-text">Rally in Sacramento to demand real funding for new and existing permanent and emergency housing.</p>
+                <a href="./media/rally-flyer.jpeg" target="_blank" class="opportunity-link">Learn More</a>
+            </div>
+            <div class="opportunity">
+                <img src="./media/volunteer-planks.jpeg" alt="Volunteer Opportunity" class="opportunity-image" />
+                <h2 class="opportunity-header">Plank Painting for the Richmond Tiny House Village</h2>
+                <p class="opportunity-text">Join us in painting and touching up planks for the Richmond Tiny House Village that will house homeless youth.</p>
+                <a href="./media/painting-flyer.png" target="_blank" class="opportunity-link">Learn More</a>
+            </div>
+        </div>
+        <p class="more-info">For more information about volunteering, please email <a href="mailto:tinyvillagespirit@gmail.com">tinyvillagespirit@gmail.com</a></p>
+
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-item">
+                    <h3 class="footer-header">About Us</h3>
+                    <p class="footer-text">
+                        <a class="footer-link" href="https://tinyvillagespirit.org/about">About</a>
+                        <a class="footer-link" href="https://tinyvillagespirit.org/projects">Projects</a>
+                        <a class="footer-link" href="https://tinyvillagespirit.org/news">In The News</a>
+                        <a class="footer-link" href="https://tinyvillagespirit.org/projects/directory">Tiny Village Directory</a>
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-header">Get Involved</h3>
+                    <p class="footer-text">
+                        <a class="footer-link" href="https://tinyvillagespirit.org/volunteer">Volunteer</a>
+                        <a class="footer-link" href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden">Donate</a>
+                        <a class="footer-link" href="mailto:tinyvillagespirit@gmail.com">Contact</a>
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-header">Socials</h3>
+                    <p class="footer-text">
+                        <a class="footer-socials" href="https://www.instagram.com/tinyvillagespirit/"><i class="fa fa-instagram"></i></a>
+                        <a class="footer-socials" href="mailto:tinyvillagespirit@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a class="footer-socials" href="https://www.facebook.com/tinyvillagespirit"><i class="fa fa-facebook"></i></a>
+                        <a class="footer-socials" href="https://tinyvillagespirit.org"><i class="fa fa-link"></i></a>
+                    </p>
+                </div>
+
+                <div class="footer-logo-container">
+                    <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="footer-logo" />
+                    <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" class="footer-donate-button">
+                        Donate
+                    </a>
+                </div>
+            </div>
+            <p class="made-by">175 23rd Street, Richmond, CA 94804 | Tiny Village Spirit is registered as a 501(c)(3) non-profit organization. Tax ID/EIN: 99-2684195.</p>
+            <p class="made-by">Copyright ©2023-2024 Tiny Village Spirit · All Rights Reserved · Made with ❤️ by <a href="https://ronenjain.com" target="_blank" style="color: white;">Ronen Jain</a></p>
+        </div>
+    </main>
 
     <script src="./scripting/topnav.js"></script>
     <!-- Google tag (gtag.js) -->

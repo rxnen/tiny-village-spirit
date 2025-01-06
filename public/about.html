@@ -14,6 +14,8 @@
     <meta property="og:image" content="https://tinyvillagespirit.org/media/logo-transparent.png" />
     <meta property="og:description" content="Learn more about Tiny Village Spirit and how it works with organizations to build tiny home communities." />
 
+    <link rel="preload" href="./media/about-splash-image.jpeg" as="image">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./media/favicon.ico" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,157 +25,178 @@
     <title>About | Tiny Village Spirt</title>
 </head>
 <body>
-    <div class="topnav" id="topnav">
+    <nav id="topnav" class="topnav">
         <a href="https://tinyvillagespirit.org" class="logo-wrapper">
-            <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="logo" />
+            <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="logo">
             <div class="logo-text">
-                <span>Tiny Village Spirit</span>
+                Tiny Village Spirit
             </div>
         </a>
-        <a href="/about" class="topnav-item">About</a>
-        <a href="/projects" class="topnav-item">Projects</a>
+        <div class="dropdown">
+            <a href="/about" class="topnav-item">About</a>
+            <div class="dropdown-content">
+                <a href="/about">About Us</a>
+                <a href="/about/partners">Partners</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="/projects" class="topnav-item">Projects</a>
+            <div class="dropdown-content">
+                <a href="/projects/richmond">Richmond Village</a>
+                <a href="/projects/directory">Directory</a>
+                <a href="/projects/blueprint">Village Blueprint</a>
+            </div>
+        </div>
         <a href="/volunteer" class="topnav-item">Volunteer</a>
-        <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" target="_blank" class="topnav-item">Donate</a>
         <a href="/news" class="topnav-item">News</a>
-        <i class="fa fa-bars" onclick="responsiveNav()" id="menu"></i>
-    </div>
+        <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" 
+           class="topnav-item donate-btn" 
+           target="_blank">Donate</a>
+        <a href="javascript:void(0);" id="menu" onclick="responsiveNav()">☰</a>
+    </nav>
 
-    <div class="splash">
-        <img src="./media/about-splash-image.jpeg" alt="About Image" class="splash-image" />
-        <div class="splash-text">
-            <h1>About Us</h1>
-        </div>
-    </div>
+    <main>
 
-    <div class="about">
-        <div class="about-text">
-            <h1>Who We Are</h1>
-            <p>
-                Tiny Village Spirit is a San Francisco Bay Area based project which has developed as a response to the emergency shelter crisis and the giant need for housing justice in California, the US, and globally. <br><br>
-                We are both promoting construction of tiny house villages as an innovative model for addressing the housing crisis and are also engaged in community organizing of village residents and allies to create systemic change, toward garnering the resources needed to end homelessness. <br><br>
-                Tiny Village Spirit is incubating short-term as a project of Rebuilding Together East Bay Network as it incorporates as a 501 (c) (3) non-profit organization.
-            </p>
+        <div class="splash">
+            <img src="./media/about-us-splash.jpg" alt="About Image" class="splash-image" />
+            <div class="splash-text">
+                <h1>About Us</h1>
+            </div>
         </div>
-        <div class="about-image">
-            <img src="./media/about-image.jpeg" alt="About Image" class="about-image" />
-        </div>
-    </div>
 
-    <div class="about">
-        <div class="about-image">
-            <img src="./media/mission.jpeg" alt="About Image" class="about-image" />
+        <div class="about">
+            <div class="about-text">
+                <h1>Who We Are</h1>
+                <p>
+                    Tiny Village Spirit is a San Francisco Bay Area based project which has developed as a response to the emergency shelter crisis and the giant need for housing justice in California, the US, and globally. <br><br>
+                    We are both promoting construction of tiny house villages as an innovative model for addressing the housing crisis and are also engaged in community organizing of village residents and allies to create systemic change, toward garnering the resources needed to end homelessness. <br><br>
+                    Tiny Village Spirit is registered as a 501(c)(3) non-profit organization. Our EIN is <strong>99-2684195</strong>. <br><br>
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="./media/about-image.jpeg" alt="About Image" class="about-image" />
+            </div>
         </div>
-        <div class="about-text">
-            <h1>Our Mission</h1>
-            <p>
-                The mission of Tiny Village Spirit is to work to end the crisis of homelessness through engaging communities in constituent-led development of decent, dignified emergency housing villages and in community organizing for systemic change toward creating housing justice.
-            </p>
-        </div>
-    </div>
 
-    <h1 class="team-header">Our Team</h1>
-    <div class="team">
-        <div class="team-member">
-            <img src="./media/team-members/team-1.jpg" alt="Team Member 1" class="team-member-image" />
-            <div class="team-member-text">
-                <h2>Bianca Butler</h2>
-                <h3>Village Social Enterprise/Jobs Training Consultant</h3>
-                <button class="team-member-button" onclick="showBio(1)" id="bio-button-1">View Bio</button>
-                <p id="bio-1">     
-                    Bianca Butler has been involved in human services work in No. California focused on justice and compassion empowering underserved and unsheltered populations since 2018. 
-                    Passionate about jobs training and workforce development, Bianca has previously worked with GRID Alternatives and Hope Cooperative. 
-                    She received her BA in Ethnic Studies from Mills College and is currently completing her MA in Social Transformation at Pacific School of Religion. 
-                    Bianca is working with Tiny Village Spirit and our partners building out social enterprise and jobs training elements of Richmond Tiny House Village Farm and Garden.
+        <div class="about">
+            <div class="about-image">
+                <img src="./media/mission.jpeg" alt="About Image" class="about-image" />
+            </div>
+            <div class="about-text">
+                <h1>Our Mission</h1>
+                <p>
+                    The mission of Tiny Village Spirit is to work to end the crisis of homelessness through engaging communities in constituent-led development of decent, dignified emergency housing villages and in community organizing for systemic change toward creating housing justice.
                 </p>
             </div>
         </div>
-        <div class="team-member">
-            <img src="./media/team-members/team-2.jpg" alt="Team Member 2" class="team-member-image" />
-            <div class="team-member-text">
-                <h2>Inti Gonzalez</h2>
-                <h3>Youth Organizer/Creative Lead</h3>
-                <button class="team-member-button" onclick="showBio(2)" id="bio-button-2">View Bio</button>
-                <p id="bio-2">
-                    Inti Gonzalez has been engaged in empowerment-focused organizing and creative work supporting unsheltered and underserved people for the last seven years. 
-                    Inti was a Leader in organizing efforts building Youth Spirit Artwork’s Oakland Tiny House Empowerment Village, involved in Working Groups, public speaking at events and at congregations, painting murals, and designing materials for publicity. 
-                    She was previously a Leader for YSA’s Street Spirit homeless newspaper, facilitating the expressive voices of unhoused people being heard through designing newspaper covers, publishing drawings and graphic arts images. 
-                    At Tiny Village Spirit Inti is a key organizer engaged in training our 12-member Youth Organizing Team in hard and soft skills, assisting with organizing volunteer “build” days, and in other ways carrying out project management. 
-                    <br>You can view Inti's art on her <a href="https://intigonzalez.com" target="_blank">website</a>.
-                </p>
-            </div>
-        </div>
-        <div class="team-member">
-            <img src="./media/team-members/team-3.jpg" alt="Team Member 3" class="team-member-image" />
-            <div class="team-member-text">
-                <h2>Sally Hindman</h2>
-                <h3>Coordinator</h3>
-                <button class="team-member-button" onclick="showBio(3)" id="bio-button-3">View Bio</button>
-                <p id="bio-3">
-                    Sally Hindman has been involved in interfaith work to create justice with/for unsheltered people for the last thirty-four years. In 2007 Sally founded Youth Spirit Artworks, a youth-led SF Bay Area jobs training organization, where she served as Executive Director for fifteen years. 
-                    In 2016 Youth Spirit leaders initiated efforts to create its Tiny House Empowerment Village, the nation’s first youth tiny house village, responding to the dire affordable housing crisis faced by young people locally. Sally project managed creation of the Oakland Tiny House Empowerment Village from 2016 to 2021, when it opened, and was responsible for running that Village its first eighteen months. 
-                    She is the co-founder of Street Spirit, the 28-year-old San Francisco/East Bay homeless newspaper. 
-                    Sally received her M. Div. and M.A. in Theology and Art from Pacific School of Religion. She holds an undergraduate degree in Natural Resources from Cornell University. Sally has served as an adjunct faculty member at the Graduate Theological Union Center for Art, Religion, and Education and Starr King School for the Ministry teaching “Liberation Art.” 
-                    In 1998 she received KPFA radio’s Alice Hamburg Community Service Award for her outstanding leadership in serving homeless people in the East Bay. 
-                    In 2021 she received the Jefferson Award for Public Service and Urban University’s “Shero” Award. Sally has been a member of the Religious Society of Friends (Quakers) since 1984 and is a member of Strawberry Creek Friends Meeting. Sally’s role in Tiny Village Spirit is to help establish partnerships, raise funds, and manage projects, as well as supporting staff.
-                </p>
-            </div>
-        </div>
-        <div class="team-member">
-            <img src="./media/team-members/team-4.jpg" alt="Team Member 4" class="team-member-image" />
-            <div class="team-member-text">
-                <h2>Maheesh Jain</h2>
-                <h3>Consultant</h3>
-                <button class="team-member-button" onclick="showBio(4)" id="bio-button-4">View Bio</button>
-                <p id="bio-4">
-                    Maheesh Jain has been engaged in promoting start-up of new and visionary needed programs and enterprises in the Bay Area and more widely since 1995. 
-                    Among these, Maheesh founded Project High Five supporting parents, coaches, and kids in 2017. He founded CafePress in 1999 and was involved as CMO and in other key management roles there through 2011. 
-                    Maheesh has spent the last 15+ years advocating for underserved youth and the unhoused. In 2007 Maheesh became founding President of Youth Spirit Artworks and served on YSA’s Board throughout its start-up. 
-                    Maheesh received his BA in Economics from Northwestern University. Maheesh is a founder at Tiny Village Spirit working to help move tiny house villages forward as a solution to the emergency shelter crisis. 
-                </p>
-            </div>
-        </div>
-        <div class="team-member">
-            <img src="./media/team-members/team-5.jpg" alt="Team Member 5" class="team-member-image" />
-            <div class="team-member-text">
-                <h2>Gabe Monett</h2>
-                <h3>Village Planning, Support, and Organizing Consultant</h3>
-                <button class="team-member-button" onclick="showBio(5)" id="bio-button-5">View Bio</button>
-                <p id="bio-5">
-                    Gabe Monett has been engaged in relationship-focused community work to create equity and understanding between diverse groups of people since 2017. 
-                    An astute listener with deep roots in his Jewish faith, Gabe has gained experience in group facilitation and consensus building through work with Change It Up, Creating Connected Communities, and Repair the World. 
-                    Gabe is passionate about tiny house villages as an emergency solution to the shelter crisis and has recently authored the paper “Tiny Homes and Homelessness.” He is currently completing a joint Master’s degree in Urban and Regional Planning and Social Work at University of Michigan, graduating in May 2024. 
-                    At Tiny Village Spirit Gabe is responsible for our work surveying and cataloguing tiny house villages around the country and responding to their needs, establishing our community organizing network engaging residents and faith-based allies in work for housing justice, and developing other programming responding to Village staff and resident feedback.
-                </p>
-            </div>
-        </div>
-    </div>
 
-    <div class="footer-container">
-        <div class="footer">
-            <div class="footer-logo-container">
-                <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="footer-logo" />
+        <h1 class="team-header">Our Team</h1>
+        <div class="team">
+            <div class="team-member">
+                <img src="./media/team-members/team-2.jpg" alt="Team Member 2" class="team-member-image" />
+                <div class="team-member-text">
+                    <h2>Inti Gonzalez</h2>
+                    <h3>Youth Organizer/Creative Lead</h3>
+                    <p id="bio-2">
+                        Inti Gonzalez has been engaged in empowerment-focused organizing and creative work supporting unsheltered and underserved people for the last seven years. 
+                        Inti was a Leader in organizing efforts building Youth Spirit Artwork’s Oakland Tiny House Empowerment Village, involved in Working Groups, public speaking at events and at congregations, painting murals, and designing materials for publicity. 
+                        She was previously a Leader for YSA’s Street Spirit homeless newspaper, facilitating the expressive voices of unhoused people being heard through designing newspaper covers, publishing drawings and graphic arts images. 
+                        At Tiny Village Spirit Inti is a key organizer engaged in training our 12-member Youth Organizing Team in hard and soft skills, assisting with organizing volunteer “build” days, and in other ways carrying out project management. 
+                        <br>You can view Inti's art on her <a href="https://intigonzalez.com" target="_blank">website</a>.
+                    </p>
+                    <button class="team-member-button" onclick="showBio(2)" id="bio-button-2">View Bio</button>
+                </div>
             </div>
-            <div class="footer-item">
-                <h3 class="footer-header">Important Links</h3>
-                <p class="footer-text">
-                    <a class="footer-link" href="https://tinyvillagespirit.org/about">About Us</a>
-                    <a class="footer-link" href="https://tinyvillagespirit.org/projects">Current Projects</a>
-                    <a class="footer-link" href="https://tinyvillagespirit.org/volunteer">Volunteer Opportunities</a>
-                    <a class="footer-link" href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden">Donate</a>
-                    <a class="footer-link" href="https://tinyvillagespirit.org/news">News</a>
-                </p>
+            
+            <div class="team-member">
+                <img src="./media/team-members/team-3.jpg" alt="Team Member 3" class="team-member-image" />
+                <div class="team-member-text">
+                    <h2>Sally Hindman</h2>
+                    <h3>Coordinator</h3>
+                    <p id="bio-3">
+                        Sally Hindman has been involved in interfaith work to create justice with/for unsheltered people for the last thirty-four years. In 2007 Sally founded Youth Spirit Artworks, a youth-led SF Bay Area jobs training organization, where she served as Executive Director for fifteen years. 
+                        In 2016 Youth Spirit leaders initiated efforts to create its Tiny House Empowerment Village, the nation’s first youth tiny house village, responding to the dire affordable housing crisis faced by young people locally. Sally project managed creation of the Oakland Tiny House Empowerment Village from 2016 to 2021, when it opened, and was responsible for running that Village its first eighteen months. 
+                        She is the co-founder of Street Spirit, the 28-year-old San Francisco/East Bay homeless newspaper. 
+                        Sally received her M. Div. and M.A. in Theology and Art from Pacific School of Religion. She holds an undergraduate degree in Natural Resources from Cornell University. Sally has served as an adjunct faculty member at the Graduate Theological Union Center for Art, Religion, and Education and Starr King School for the Ministry teaching “Liberation Art.” 
+                        In 1998 she received KPFA radio’s Alice Hamburg Community Service Award for her outstanding leadership in serving homeless people in the East Bay. 
+                        In 2021 she received the Jefferson Award for Public Service and Urban University’s “Shero” Award. Sally has been a member of the Religious Society of Friends (Quakers) since 1984 and is a member of Strawberry Creek Friends Meeting. Sally’s role in Tiny Village Spirit is to help establish partnerships, raise funds, and manage projects, as well as supporting staff.
+                    </p>
+                    <button class="team-member-button" onclick="showBio(3)" id="bio-button-3">View Bio</button>
+                </div>
             </div>
-            <div class="footer-item">
-                <h3 class="footer-header">Socials</h3>
-                <p class="footer-text">
-                    <a class="footer-socials" href="mailto:tinyvillagespirit@gmail.com"><i class="fa fa-envelope"></i></a>
-                    <a class="footer-socials" href="https://www.facebook.com/tinyvillagespirit"><i class="fa fa-facebook"></i></a>
-                    <a class="footer-socials" href="https://tinyvillagespirit.org"><i class="fa fa-link"></i></a>
-                </p>
+
+            <div class="team-member">
+                <img src="./media/team-members/team-4.jpg" alt="Team Member 4" class="team-member-image" />
+                <div class="team-member-text">
+                    <h2>Maheesh Jain</h2>
+                    <h3>Consultant</h3>
+                    <p id="bio-4">
+                        Maheesh Jain has been engaged in promoting start-up of new and visionary needed programs and enterprises in the Bay Area and more widely since 1995. 
+                        Among these, Maheesh founded Project High Five supporting parents, coaches, and kids in 2017. He founded CafePress in 1999 and was involved as CMO and in other key management roles there through 2011. 
+                        Maheesh has spent the last 15+ years advocating for underserved youth and the unhoused. In 2007 Maheesh became founding President of Youth Spirit Artworks and served on YSA’s Board throughout its start-up. 
+                        Maheesh received his BA in Economics from Northwestern University. Maheesh is a founder at Tiny Village Spirit working to help move tiny house villages forward as a solution to the emergency shelter crisis. 
+                    </p>
+                    <button class="team-member-button" onclick="showBio(4)" id="bio-button-4">View Bio</button>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="./media/team-members/team-5.jpg" alt="Team Member 5" class="team-member-image" />
+                <div class="team-member-text">
+                    <h2>Gabe Monett</h2>
+                    <h3>Village Planning, Support, and Organizing Consultant</h3>
+                    <p id="bio-5">
+                        Gabe Monett has been engaged in relationship-focused community work to create equity and understanding between diverse groups of people since 2017. 
+                        An astute listener with deep roots in his Jewish faith, Gabe has gained experience in group facilitation and consensus building through work with Change It Up, Creating Connected Communities, and Repair the World. 
+                        Gabe is passionate about tiny house villages as an emergency solution to the shelter crisis and has recently authored the paper “Tiny Homes and Homelessness.” He is currently completing a joint Master’s degree in Urban and Regional Planning and Social Work at University of Michigan, graduating in May 2024. 
+                        At Tiny Village Spirit Gabe is responsible for our work surveying and cataloguing tiny house villages around the country and responding to their needs, establishing our community organizing network engaging residents and faith-based allies in work for housing justice, and developing other programming responding to Village staff and resident feedback.
+                    </p>
+                    <button class="team-member-button" onclick="showBio(5)" id="bio-button-5">View Bio</button>
+                </div>
             </div>
         </div>
-        <p class="made-by">Copyright ©2023 Tiny Village Spirit · All Rights Reserved · Made with ❤️ by <a href="https://bob-brown.com" target="_blank" style="color: white;">Bob Brown</a></p>
-    </div>
+
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-item">
+                    <h3 class="footer-header">About Us</h3>
+                    <p class="footer-text">
+                        <a class="footer-link" href="https://tinyvillagespirit.org/about">About</a>
+                        <a class="footer-link" href="https://tinyvillagespirit.org/projects">Projects</a>
+                        <a class="footer-link" href="https://tinyvillagespirit.org/news">In The News</a>
+                        <a class="footer-link" href="https://tinyvillagespirit.org/projects/directory">Tiny Village Directory</a>
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-header">Get Involved</h3>
+                    <p class="footer-text">
+                        <a class="footer-link" href="https://tinyvillagespirit.org/volunteer">Volunteer</a>
+                        <a class="footer-link" href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden">Donate</a>
+                        <a class="footer-link" href="mailto:tinyvillagespirit@gmail.com">Contact</a>
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-header">Socials</h3>
+                    <p class="footer-text">
+                        <a class="footer-socials" href="https://www.instagram.com/tinyvillagespirit/"><i class="fa fa-instagram"></i></a>
+                        <a class="footer-socials" href="mailto:tinyvillagespirit@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a class="footer-socials" href="https://www.facebook.com/tinyvillagespirit"><i class="fa fa-facebook"></i></a>
+                        <a class="footer-socials" href="https://tinyvillagespirit.org"><i class="fa fa-link"></i></a>
+                    </p>
+                </div>
+
+                <div class="footer-logo-container">
+                    <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="footer-logo" />
+                    <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" class="footer-donate-button">
+                        Donate
+                    </a>
+                </div>
+            </div>
+            <p class="made-by">175 23rd Street, Richmond, CA 94804 | Tiny Village Spirit is registered as a 501(c)(3) non-profit organization. Tax ID/EIN: 99-2684195.</p>
+            <p class="made-by">Copyright ©2023-2024 Tiny Village Spirit · All Rights Reserved · Made with ❤️ by <a href="https://ronenjain.com" target="_blank" style="color: white;">Ronen Jain</a></p>
+        </div>
+
+    </main>
 
     <script src="./scripting/topnav.js"></script>
     <!-- Google tag (gtag.js) -->

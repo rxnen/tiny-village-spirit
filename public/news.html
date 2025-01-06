@@ -13,6 +13,8 @@
     <meta property="og:url" content="https://tinyvillagespirit.org/projects" />
     <meta property="og:image" content="https://tinyvillagespirit.org/media/logo-transparent.png" />
     <meta property="og:description" content="Learn more about Tiny Village Spirit's tiny house village construction and community organizing projects." />
+    
+    <link rel="preload" href="./media/projects-splash-image.jpeg" as="image">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,97 +27,138 @@
 </head>
 
 <body>
-    <div class="topnav" id="topnav">
+    <nav id="topnav" class="topnav">
         <a href="https://tinyvillagespirit.org" class="logo-wrapper">
-            <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="logo" />
+            <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="logo">
             <div class="logo-text">
-                <span>Tiny Village Spirit</span>
+                Tiny Village Spirit
             </div>
         </a>
-        <a href="/about" class="topnav-item">About</a>
-        <a href="/projects" class="topnav-item">Projects</a>
+        <div class="dropdown">
+            <a href="/about" class="topnav-item">About</a>
+            <div class="dropdown-content">
+                <a href="/about">About Us</a>
+                <a href="/about/partners">Partners</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="/projects" class="topnav-item">Projects</a>
+            <div class="dropdown-content">
+                <a href="/projects/richmond">Richmond Village</a>
+                <a href="/projects/directory">Directory</a>
+                <a href="/projects/blueprint">Village Blueprint</a>
+            </div>
+        </div>
         <a href="/volunteer" class="topnav-item">Volunteer</a>
-        <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" target="_blank" class="topnav-item">Donate</a>
         <a href="/news" class="topnav-item">News</a>
-        <i class="fa fa-bars" onclick="responsiveNav()" id="menu"></i>
-    </div>
+        <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" 
+           class="topnav-item donate-btn" 
+           target="_blank">Donate</a>
+        <a href="javascript:void(0);" id="menu" onclick="responsiveNav()">☰</a>
+    </nav>
 
-    <div class="splash">
-        <img src="./media/projects-splash-image.jpeg" alt="About Image" class="splash-image" />
-        <div class="splash-text">
-            <h1>In the News</h1>
-        </div>
-    </div>
+    <main>
 
-    <div class="news-row">
-
-        <div class="news">
-            <img class="news-image" src="./media/news-logos/kcbs.jpeg" alt="KCBS Logo">
-            <p class="news-headline">"An empty lot transforms into tiny village for homeless youth in Richmond"</p>
-            <a href="https://omny.fm/shows/kcbsam-on-demand/an-empty-lot-transforms-into-tiny-village-for-home" target="_blank" class="news-link">Listen to the KCBS Report</a>
-        </div>
-
-        <div class="news">
-            <iframe src="https://www.youtube.com/embed/cQT8_cIKtLw" class="news-iframe"></iframe>
-            <p class="news-headline">"Fences: The First Step To A Tiny Homes Village In Richmond, CA"</p>
-            <a href="https://www.youtube.com/watch?v=cQT8_cIKtLw" target="_blank" class="news-link">Watch the Full Video</a>
-        </div>
-
-        <div class="news">
-            <img class="news-image" src="./media/news-logos/richcon.webp" alt="RichCon Logo">
-            <p class="news-headline">"Tiny houses to shelter 12 Richmond youth, but much more is needed to address increasing demand"</p>
-            <a href="https://richmondconfidential.org/2023/09/29/richmond-tiny-houses-for-youth-homelessness/" target="_blank" class="news-link">Read More</a>
-        </div>
-
-    </div>
-    
-    <div class="news-row">
-        <div class="news">
-            <img class="news-image" src="./media/news-logos/sf-foghorn.jpeg" alt="SF Foghorn Logo">
-            <p class="news-headline">"Architecture Capstone Project Creates Homes for Unhoused Youth"</p>
-            <a href="http://sffoghorn.com/architecture-capstone-project-creates-homes-for-unhoused-youth/" target="_blank" class="news-link">Read More</a>
-        </div>
-
-        <div class="news">
-            <img class="news-image" src="./media/news-logos/the-us-sun.svg" alt="The Sun Logo">
-            <p class="news-headline">"I am creating a new tiny home village and you can live there for free - but residents have to meet certain requirements"</p>
-            <a href="https://www.the-sun.com/news/9230533/creating-tiny-home-village-and-you-can-live-free/" target="_blank" class="news-link">Read More</a>
-        </div>
-
-        <div class="news">
-            <img class="news-image" src="./media/news-logos/sf-chron.png" alt="SF Chronicle Logo">
-            <p class="news-headline">"Her dad is accused of attacking Paul Pelosi. Her mom is a nudist. She’s a Bay Area activist"</p>
-            <a href="https://www.sfchronicle.com/bayarea/article/inti-gonzalez-david-depape-18317882.php" target="_blank" class="news-link">Read More</a>
-        </div>
-    </div>
-
-    
-    <div class="footer-container">
-        <div class="footer">
-            <div class="footer-logo-container">
-                <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="footer-logo" />
-            </div>
-            <div class="footer-item">
-                <h3 class="footer-header">Important Links</h3>
-                <p class="footer-text">
-                    <a class="footer-link" href="https://tinyvillagespirit.org/about">About Us</a>
-                    <a class="footer-link" href="https://tinyvillagespirit.org/projects">Current Projects</a>
-                    <a class="footer-link" href="https://tinyvillagespirit.org/volunteer">Volunteer Opportunities</a>
-                    <a class="footer-link" href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden">Donate</a>
-                    <a class="footer-link" href="https://tinyvillagespirit.org/news">News</a>
-                </p>
-            </div>
-            <div class="footer-item">
-                <h3 class="footer-header">Socials</h3>
-                <p class="footer-text">
-                    <a class="footer-socials" href="mailto:tinyvillagespirit@gmail.com"><i class="fa fa-envelope"></i></a>
-                    <a class="footer-socials" href="https://www.facebook.com/tinyvillagespirit"><i class="fa fa-facebook"></i></a>
-                    <a class="footer-socials" href="https://tinyvillagespirit.org"><i class="fa fa-link"></i></a>
-                </p>
+        <div class="splash">
+            <img src="./media/projects-splash-image.jpeg" alt="About Image" class="splash-image" />
+            <div class="splash-text">
+                <h1>In the News</h1>
             </div>
         </div>
-        <p class="made-by">Copyright ©2023 Tiny Village Spirit · All Rights Reserved · Made with ❤️ by <a href="https://bob-brown.com" target="_blank" style="color: white;">Bob Brown</a></p>
-    </div>
+
+        <div class="news-row">
+
+            <div class="news">
+                <img class="news-image" src="./media/news-logos/kcbs.jpeg" alt="KCBS Logo">
+                <p class="news-headline">"An empty lot transforms into tiny village for homeless youth in Richmond"</p>
+                <a href="https://omny.fm/shows/kcbsam-on-demand/an-empty-lot-transforms-into-tiny-village-for-home" target="_blank" class="news-link">Listen to the KCBS Report</a>
+            </div>
+
+            <div class="news">
+                <iframe src="https://www.youtube.com/embed/cQT8_cIKtLw" class="news-iframe"></iframe>
+                <p class="news-headline">"Fences: The First Step To A Tiny Homes Village In Richmond, CA"</p>
+                <a href="https://www.youtube.com/watch?v=cQT8_cIKtLw" target="_blank" class="news-link">Watch the Full Video</a>
+            </div>
+
+            <div class="news">
+                <img class="news-image" src="./media/news-logos/richcon.webp" alt="RichCon Logo">
+                <p class="news-headline">"Tiny houses to shelter 12 Richmond youth, but much more is needed to address increasing demand"</p>
+                <a href="https://richmondconfidential.org/2023/09/29/richmond-tiny-houses-for-youth-homelessness/" target="_blank" class="news-link">Read More</a>
+            </div>
+
+        </div>
+        
+        <div class="news-row">
+            <div class="news">
+                <img class="news-image" src="./media/news-logos/sf-foghorn.jpeg" alt="SF Foghorn Logo">
+                <p class="news-headline">"Architecture Capstone Project Creates Homes for Unhoused Youth"</p>
+                <a href="http://sffoghorn.com/architecture-capstone-project-creates-homes-for-unhoused-youth/" target="_blank" class="news-link">Read More</a>
+            </div>
+
+            <div class="news">
+                <img class="news-image" src="./media/news-logos/the-us-sun.svg" alt="The Sun Logo">
+                <p class="news-headline">"I am creating a new tiny home village and you can live there for free - but residents have to meet certain requirements"</p>
+                <a href="https://www.the-sun.com/news/9230533/creating-tiny-home-village-and-you-can-live-free/" target="_blank" class="news-link">Read More</a>
+            </div>
+
+            <div class="news">
+                <img class="news-image" src="./media/news-logos/sf-chron.png" alt="SF Chronicle Logo">
+                <p class="news-headline">"Her dad is accused of attacking Paul Pelosi. Her mom is a nudist. She’s a Bay Area activist"</p>
+                <a href="https://www.sfchronicle.com/bayarea/article/inti-gonzalez-david-depape-18317882.php" target="_blank" class="news-link">Read More</a>
+            </div>
+        </div>
+
+        <div class="news-row">
+            <div class="news">
+                <iframe src="https://www.youtube.com/embed/hHd9mXD5K8k" class="news-iframe"></iframe>
+                <p class="news-headline">Bay Area Activists Bring Homelessness Issue to the State Capitol</p>
+                <a href="https://www.youtube.com/watch?v=hHd9mXD5K8k" target="_blank" class="news-link">Watch the Full Video</a>
+            </div>
+        </div>
+
+        
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-item">
+                    <h3 class="footer-header">About Us</h3>
+                    <p class="footer-text">
+                        <a class="footer-link" href="https://tinyvillagespirit.org/about">About</a>
+                        <a class="footer-link" href="https://tinyvillagespirit.org/projects">Projects</a>
+                        <a class="footer-link" href="https://tinyvillagespirit.org/news">In The News</a>
+                        <a class="footer-link" href="https://tinyvillagespirit.org/projects/directory">Tiny Village Directory</a>
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-header">Get Involved</h3>
+                    <p class="footer-text">
+                        <a class="footer-link" href="https://tinyvillagespirit.org/volunteer">Volunteer</a>
+                        <a class="footer-link" href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden">Donate</a>
+                        <a class="footer-link" href="mailto:tinyvillagespirit@gmail.com">Contact</a>
+                    </p>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-header">Socials</h3>
+                    <p class="footer-text">
+                        <a class="footer-socials" href="https://www.instagram.com/tinyvillagespirit/"><i class="fa fa-instagram"></i></a>
+                        <a class="footer-socials" href="mailto:tinyvillagespirit@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a class="footer-socials" href="https://www.facebook.com/tinyvillagespirit"><i class="fa fa-facebook"></i></a>
+                        <a class="footer-socials" href="https://tinyvillagespirit.org"><i class="fa fa-link"></i></a>
+                    </p>
+                </div>
+
+                <div class="footer-logo-container">
+                    <img src="./media/logo-transparent.png" alt="Tiny Village Spirit Logo" class="footer-logo" />
+                    <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" class="footer-donate-button">
+                        Donate
+                    </a>
+                </div>
+            </div>
+            <p class="made-by">175 23rd Street, Richmond, CA 94804 | Tiny Village Spirit is registered as a 501(c)(3) non-profit organization. Tax ID/EIN: 99-2684195.</p>
+            <p class="made-by">Copyright ©2023-2024 Tiny Village Spirit · All Rights Reserved · Made with ❤️ by <a href="https://ronenjain.com" target="_blank" style="color: white;">Ronen Jain</a></p>
+        </div>
+
+    </main>
 
     <script src="./scripting/topnav.js"></script>
 

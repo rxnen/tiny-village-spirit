@@ -1,12 +1,16 @@
 /* Top Navigation Bar */
 
-
 .topnav {
     display: flex;
     justify-content: flex-end;
-    background-color: #333;
+    background-color: #fff;
     align-items: center;
-    overflow: hidden;
+    transition: top 0.3s ease; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
 }
 
 .logo-wrapper {
@@ -15,11 +19,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo {
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 66px;
+    max-height: 66px;
     width: auto;
     height: auto;
     padding: 0;
@@ -27,8 +32,8 @@
 }
 
 .logo-text {
-    color: #f2f2f2;
-    font-size: 24px;
+    color: #333;
+    font-size: 26px;
     margin: 0;
     padding: 0;
     margin-left: 20px;
@@ -40,37 +45,60 @@
 }
 
 .responsive .logo-text {
-    font-size: 28px;
+    font-size: 30px;
     margin-left: 0;
 }
 
 .responsive .logo {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 84px;
+    max-height: 84px;
     width: auto;
     height: auto;
     padding: 0;
     margin: 0;
-
 }
 
 
 .topnav-item {
-    color: #f2f2f2;
+    color: #333;
     text-align: center;
     padding: 14px 24px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 26px;
+    position: relative; /* Added for dropdown positioning */
+    cursor: pointer;
 }
 
 .topnav-item:hover {
-    color: #ddd;
+    color: #04747c;
+}
+
+.donate-btn {
+    background-color: #07b1bd;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 85%;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-self: center;
+}
+
+.donate-btn:hover {
+    color: #fff;
 }
 
 #menu {
     display: none;
-    color: #f2f2f2;
-    font-size: 24px;
+    color: #333;
+    font-size: 26px;
     padding: 14px 24px;
     text-decoration: none;
     cursor: pointer;
@@ -79,10 +107,11 @@
 .responsive {
     flex-direction: column;
     height: 100vh;   
-    background-color: #333;
+    background-color: #fff;
     display: flex;
     justify-content: space-evenly;
     overflow: hidden;
+    padding-bottom: 100px;
 }
 
 .responsive a {
@@ -92,25 +121,100 @@
     width: 100%; 
 }
 
-.responsive #menu  {
-    display: block; 
-    position: absolute;
+.responsive #menu {
+    display: block;
+    position: fixed; /* Change from absolute to fixed */
     top: 0;
     right: 0;
-    padding: 30px;
+    padding: 14px 24px;
+    margin: 0;
+
+    text-align: right;
+
 }
 
 .responsive .topnav-item {
     display: none;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 11;
+    top: 100%;
+    left: 0;
+    border-radius: 4px;
+    /* Add padding to create space between nav and dropdown */
+    margin-top: 5px;
+}
+
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f9f9f9;
+    color: #04747c;
+}
+
+/* Show dropdown on hover for desktop */
+@media screen and (min-width: 996px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/* Mobile styles */
+.responsive .dropdown-content {
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    background-color: #f9f9f9;
+    margin-top: 0;
+    display: none;
+}
+
+.responsive .dropdown-content.show {
+    display: block;
+}
+
+.responsive .dropdown {
+    width: 100%;
+}
+
+/* Arrow indicator */
+.dropdown > .topnav-item::after {
+    content: '▾';
+    margin-left: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.dropdown.active > .topnav-item::after {
+    transform: rotate(180deg);
+}
+
 @media screen and (max-width: 390px) {
     .logo-text {
-        font-size: 18px;
+        font-size: 20px;
     }
     .logo {
-        max-width: 40px;
-        max-height: 40px;
+        max-width: 42px;
+        max-height: 42px;
     }
     .logo-wrapper {
         padding: 14px 10px;
@@ -124,5 +228,9 @@
 
     #menu {
         display: inline-block;
+    }
+
+    .responsive {
+        overflow: hidden;
     }
 }
