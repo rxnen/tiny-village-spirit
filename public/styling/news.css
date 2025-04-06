@@ -114,3 +114,10 @@ body {
     }
 
 }
+
+#richmond-art-img {
+    width: 200px;
+    height: auto;
+    padding: 0;
+    margin: auto;
+}

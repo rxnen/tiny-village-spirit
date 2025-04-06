@@ -58,6 +58,13 @@
 
     <main>
 
+        <!-- <div id="modal-popup">
+            <div class="modal-popup-content">
+                <button id="modal-popup-button">X</button>
+                <img src="./media/richmond-art.jpg" height="400" alt="Muralist Ad" className="modal-popup-image" />
+            </div>
+        </div> -->
+
         <div class="splash-slider">
             <div class="splash-headline">
                 <span class="splash-headline-text">
@@ -79,16 +86,19 @@
 
         <div class="callouts">
             <div class="callout">
+                <i class="fa fa-question-circle callout-icon" style="font-size: 50px;"></i>
                 <h2 class="callout-header">The Problem</h2>
                 <p class="callout-text">Homelessness has been on the rise since 2017, experiencing an overall increase of 6 percent. In January 2022, 582,462 people were experiencing homelessness across America. This amounts to roughly 18 out of every 10,000 people.</p>
                 <a href="/about" class="callout-button">About</a>
             </div>
             <div class="callout">
+                <i class="fa fa-home callout-icon" style="font-size: 50px;"></i>
                 <h2 class="callout-header">Our Solution</h2>
                 <p class="callout-text">Tiny Village Spirit engages communities in the constituent-led development of emergency housing villages. Communities are given the tools to work towards systemic change needed to end the crisis of homelessness.</p>
                 <a href="/projects" class="callout-button">Projects</a>
             </div>
             <div class="callout">
+                <i class="fa fa-users callout-icon" style="font-size: 50px;"></i>
                 <h2 class="callout-header">Get Involved</h2>
                 <p class="callout-text">Join us as we work with our unhoused neighbors to build dignified and beautiful emergency housing.</p>
                 <a href="/volunteer" class="callout-button">Volunteer</a>
@@ -121,13 +131,11 @@
         <div class="projects">
             <div class="project">
                 <h1 class="projects-header">Action Center</h1>
-                <img src="../media/capitol-action-center.jpeg" alt="Capitol Action Center" class="project-image" />
+                <img src="../media/project-splash-2.jpg" alt="Action Center" class="project-image" />
                 <div class="project-text">
-                    <h2 class="project-header">Join Us at the State Capitol</h2>
-                    <p class="project-description">Rally in Sacramento to demand real funding for new and existing permanent and emergency housing.</p>
-                    <a class="project-link" href="/volunteer" target="_blank">More Volunteer Information</a>
-                    <br><br>
-                    <a href="../media/rally-flyer.jpeg" class="project-button">Learn More</a>
+                    <h2 class="project-header">Volunteer with Us!</h2>
+                    <p class="project-description">Join us in our ongoing construction of the Richmond Tiny House Village Farm & Garden.</p>
+                    <a href="/volunteer" class="project-button">Learn More</a>
                 </div>
             </div>
 
@@ -140,7 +148,17 @@
                     <a href="../media/rally-flyer.jpeg" class="project-button">View Map</a>
                 </div>
             </div>
+
         </div>
+<!-- 
+        <div className="projects">
+            <div class="project">
+                <h1 class="projects-header">Upcoming Opportunities</h1>
+                <img src="../media/richmond-art.jpg" alt="Richmond Flyer" class="project-image" />
+                <br/>
+                <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:50416347-181e-473e-af02-71c0a3d5f965?viewer%21megaVerb=group-discover" class="project-button" style="margin-left: auto; margin-right: auto;">Learn More</a>
+            </div>
+        </div> -->
 
         <div class="footer-container">
             <div class="footer">
@@ -193,6 +211,19 @@
     gtag('js', new Date());
 
     gtag('config', 'G-VYD6FRZSK4');
+    </script>
+
+    <script>
+      /*  window.onload = function () {
+            if (!sessionStorage.getItem('modalShown')) {
+                document.getElementById('modal-popup').style.display = "block";
+                sessionStorage.setItem('modalShown', 'true');
+            }
+
+            document.getElementById('modal-popup-button').onclick = function () {
+                document.getElementById('modal-popup').style.display = "none";
+            };
+        }; */
     </script>
     
 </body>
