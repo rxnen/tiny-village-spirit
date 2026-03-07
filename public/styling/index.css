@@ -57,7 +57,7 @@ body {
     position: relative;
     margin: auto;
 
-    display: flex;   
+    display: flex;
     flex-direction: column;
 }
 
@@ -93,7 +93,7 @@ body {
 
 .down-arrow:hover {
     cursor: pointer;
-  
+
 }
 
 .splash-color {
@@ -121,7 +121,7 @@ body {
     .down-arrow {
         display: none;
     }
-    
+
 }
 
 
@@ -269,7 +269,7 @@ body {
 }
 
 .projects > .project {
-    flex: 35%; 
+    flex: 35%;
     margin: 18px;
   }
 
@@ -312,7 +312,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 .project-button:hover {
