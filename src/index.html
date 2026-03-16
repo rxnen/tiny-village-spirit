@@ -29,12 +29,12 @@
 
     <main>
 
-        <!-- <div id="modal-popup">
+        <div id="modal-popup">
             <div class="modal-popup-content">
                 <button id="modal-popup-button">X</button>
-                <img src="./media/richmond-art.jpg" height="400" alt="Muralist Ad" className="modal-popup-image" />
+                <img src="./media/may3-flyer.jpg" height="400" alt="Muralist Ad" className="modal-popup-image" />
             </div>
-        </div> -->
+        </div>
 
         <div class="splash-slider">
             <div class="splash-headline">
@@ -147,7 +147,7 @@
     </script>
 
     <script>
-      /*  window.onload = function () {
+        window.onload = function () {
             if (!sessionStorage.getItem('modalShown')) {
                 document.getElementById('modal-popup').style.display = "block";
                 sessionStorage.setItem('modalShown', 'true');
@@ -156,7 +156,15 @@
             document.getElementById('modal-popup-button').onclick = function () {
                 document.getElementById('modal-popup').style.display = "none";
             };
-        }; */
+
+            // Optional: Close the modal when clicking outside of it
+            window.onclick = function (event) {
+                var modal = document.getElementById('modal-popup');
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            };
+        };
     </script>
 
 </body>
