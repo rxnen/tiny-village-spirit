@@ -1,0 +1,325 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const featuredCoverage = [
+  {
+    type: 'Audio report',
+    source: 'KCBS',
+    title: 'An empty lot transforms into tiny village for homeless youth in Richmond',
+    description: 'A radio look at how the Richmond site is being transformed into dignified emergency housing for young people.',
+    href: 'https://omny.fm/shows/kcbsam-on-demand/an-empty-lot-transforms-into-tiny-village-for-home',
+    cta: 'Listen to the report',
+    media: {
+      kind: 'image',
+      src: '/media/news-logos/kcbs.jpeg',
+      alt: 'KCBS logo',
+    },
+  },
+  {
+    type: 'Video feature',
+    source: 'YouTube',
+    title: 'Fences: The First Step To A Tiny Homes Village In Richmond, CA',
+    description: 'A video update from the Richmond build site showing how the project began taking shape on the ground.',
+    href: 'https://www.youtube.com/watch?v=cQT8_cIKtLw',
+    cta: 'Watch the full video',
+    media: {
+      kind: 'youtube',
+      src: 'https://www.youtube.com/embed/cQT8_cIKtLw',
+      alt: 'YouTube video about the Richmond Tiny Village project',
+    },
+  },
+];
+
+const pressItems = [
+  {
+    source: 'Richmond Confidential',
+    type: 'Article',
+    title: 'Tiny houses to shelter 12 Richmond youth, but much more is needed to address increasing demand',
+    href: 'https://richmondconfidential.org/2023/09/29/richmond-tiny-houses-for-youth-homelessness/',
+    cta: 'Read the story',
+    media: {
+      kind: 'image',
+      src: '/media/news-logos/richcon.webp',
+      alt: 'Richmond Confidential logo',
+      logo: true,
+    },
+  },
+  {
+    source: 'San Francisco Foghorn',
+    type: 'Article',
+    title: 'Architecture Capstone Project Creates Homes for Unhoused Youth',
+    href: 'http://sffoghorn.com/architecture-capstone-project-creates-homes-for-unhoused-youth/',
+    cta: 'Read the story',
+    media: {
+      kind: 'image',
+      src: '/media/news-logos/sf-foghorn.jpeg',
+      alt: 'San Francisco Foghorn logo',
+      logo: true,
+    },
+  },
+  {
+    source: 'The U.S. Sun',
+    type: 'Article',
+    title: 'I am creating a new tiny home village and you can live there for free - but residents have to meet certain requirements',
+    href: 'https://www.the-sun.com/news/9230533/creating-tiny-home-village-and-you-can-live-free/',
+    cta: 'Read the story',
+    media: {
+      kind: 'image',
+      src: '/media/news-logos/the-us-sun.svg',
+      alt: 'The U.S. Sun logo',
+      logo: true,
+    },
+  },
+  {
+    source: 'San Francisco Chronicle',
+    type: 'Profile',
+    title: "Her dad is accused of attacking Paul Pelosi. Her mom is a nudist. She's a Bay Area activist",
+    href: 'https://www.sfchronicle.com/bayarea/article/inti-gonzalez-david-depape-18317882.php',
+    cta: 'Read the profile',
+    media: {
+      kind: 'image',
+      src: '/media/news-logos/sf-chron.png',
+      alt: 'San Francisco Chronicle logo',
+      logo: true,
+    },
+  },
+  {
+    source: 'YouTube',
+    type: 'Video report',
+    title: 'Bay Area Activists Bring Homelessness Issue to the State Capitol',
+    href: 'https://www.youtube.com/watch?v=hHd9mXD5K8k',
+    cta: 'Watch the full video',
+    media: {
+      kind: 'youtube',
+      src: 'https://www.youtube.com/embed/hHd9mXD5K8k',
+      alt: 'YouTube report about Tiny Village Spirit at the California state capitol',
+    },
+  },
+  {
+    source: 'East Bay Times',
+    type: 'Article',
+    title: 'Tiny homes key to big vision in Richmond - New housing site for unsheltered young people nearing the finish line',
+    href: 'https://www.eastbaytimes.com/2025/02/03/richmond-tiny-homes-village-garden-farm/?share=awenomgrsm0blagi0iyg',
+    cta: 'Read the story',
+    media: {
+      kind: 'image',
+      src: '/media/news-logos/ebt.webp',
+      alt: 'East Bay Times logo',
+      logo: true,
+    },
+  },
+  {
+    source: 'Community call',
+    type: 'Arts organizing',
+    title: 'Muralists needed for the Richmond Tiny House Village',
+    href: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:50416347-181e-473e-af02-71c0a3d5f965?viewer%21megaVerb=group-discover',
+    cta: 'Learn more',
+    media: {
+      kind: 'image',
+      src: '/media/richmond-art-news.jpg',
+      alt: 'Artwork for muralists needed at the Richmond Tiny House Village',
+      poster: true,
+    },
+  },
+];
+---
+<BaseLayout
+  title="In the News | Tiny Village Spirit"
+  description="Coverage of Tiny Village Spirit's tiny-home village construction, arts organizing, and housing justice work across the Bay Area."
+  ogTitle="In the News | Tiny Village Spirit"
+  ogUrl="https://tinyvillagespirit.org/news"
+  ogDescription="Coverage of Tiny Village Spirit's tiny-home village construction, arts organizing, and housing justice work across the Bay Area."
+  css={['/styling/news.css']}
+  preloadImage="/media/projects-splash-image.jpeg"
+>
+<main>
+
+    <section class="news-hero">
+        <div class="news-hero-marquee" aria-hidden="true">
+            <div class="news-marquee-track">
+                <span>In the news</span>
+                <span>Audio reports</span>
+                <span>Community storytelling</span>
+                <span>Richmond build updates</span>
+                <span>Housing justice</span>
+                <span>In the news</span>
+                <span>Audio reports</span>
+                <span>Community storytelling</span>
+                <span>Richmond build updates</span>
+                <span>Housing justice</span>
+            </div>
+        </div>
+        <div class="news-hero-grid">
+            <div class="news-hero-copy reveal">
+                <div class="news-eyebrow">Press &amp; updates</div>
+                <h1 class="news-hero-title">
+                    The story is spreading
+                    <span class="news-accent">beyond the <span class="news-accent-underline">build site.
+                        <svg class="news-swoop" viewBox="0 0 220 14" fill="none" aria-hidden="true">
+                            <path d="M4 10 Q110 0 216 10" stroke="#ffcc02" stroke-width="4" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </span></span>
+                </h1>
+                <p class="news-hero-sub">
+                    From neighborhood reporting to regional media, this coverage tracks how tiny-home villages, community art, and grassroots organizing are reshaping what housing justice can look like in the Bay Area.
+                </p>
+
+                <div class="news-hero-actions">
+                    <a href="#featured-coverage" class="news-btn-primary">
+                        See featured coverage <i class="fa fa-arrow-right"></i>
+                    </a>
+                    <a href="/volunteer" class="news-btn-secondary">
+                        Volunteer with us
+                    </a>
+                </div>
+
+                <div class="news-hero-stats">
+                    <div class="news-stat">
+                        <div class="news-stat-num">8</div>
+                        <div class="news-stat-label">Stories and video features</div>
+                    </div>
+                    <div class="news-stat">
+                        <div class="news-stat-num">3</div>
+                        <div class="news-stat-label">Formats: print, audio, and film</div>
+                    </div>
+                    <div class="news-stat">
+                        <div class="news-stat-num">1</div>
+                        <div class="news-stat-label">Growing movement for housing justice</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-hero-media reveal">
+                <div class="news-hero-frame">
+                    <div class="news-frame-top">
+                        <span class="news-frame-label">Tiny Village Spirit Bulletin</span>
+                        <span class="news-frame-issue">Press File</span>
+                    </div>
+                    <div class="news-hero-photo-main">
+                        <img src="/media/fence-image.jpg" alt="Tiny Village Spirit supporters rallying for housing justice">
+                    </div>
+                    <div class="news-frame-caption">
+                        Coverage documenting the build, the art, and the organizing behind each village.
+                    </div>
+                </div>
+                <div class="news-hero-photo-stack">
+                    <img src="/media/painted-house-2.jpg" alt="Community art at the Richmond Tiny House Village project">
+                </div>
+                <div class="news-badge">
+                    <span class="news-badge-top">In the press</span>
+                    <span class="news-badge-bot">★ Bay Area ★</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-intro">
+        <div class="news-intro-card reveal">
+            <div>
+                <div class="news-eyebrow">Why this matters</div>
+                <h2>Coverage helps neighbors picture a different housing response.</h2>
+            </div>
+            <p>
+                Each story helps more people see that tiny-home villages can be dignified, beautiful, resident-centered, and built through real community partnership.
+            </p>
+        </div>
+    </section>
+
+    <section class="news-featured" id="featured-coverage">
+        <div class="news-section-head">
+            <div class="news-eyebrow center">Featured coverage</div>
+            <h2 class="news-section-title center">A closer look at the Richmond build<br>and the movement around it.</h2>
+        </div>
+
+        <div class="news-feature-grid">
+            {featuredCoverage.map((item) => (
+                <article class="feature-card reveal">
+                    <div class="feature-media">
+                        {item.media.kind === 'youtube' ? (
+                            <iframe
+                              src={item.media.src}
+                              title={item.title}
+                              loading="lazy"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen
+                            ></iframe>
+                        ) : (
+                            <img src={item.media.src} alt={item.media.alt} class="feature-logo" />
+                        )}
+                    </div>
+                    <div class="feature-body">
+                        <div class="feature-kicker">{item.type} · {item.source}</div>
+                        <h3>{item.title}</h3>
+                        <p>{item.description}</p>
+                        <a href={item.href} target="_blank" rel="noopener" class="feature-link">{item.cta} <span>→</span></a>
+                    </div>
+                </article>
+            ))}
+        </div>
+    </section>
+
+    <section class="news-grid-section">
+        <div class="news-section-head">
+            <div class="news-eyebrow center">More coverage</div>
+            <h2 class="news-section-title center">Stories, profiles, and community updates<br>from across the project.</h2>
+        </div>
+
+        <div class="press-grid">
+            {pressItems.map((item) => (
+                <article class={`press-card reveal ${item.media.poster ? 'press-card-poster' : ''}`}>
+                    <div class={`press-media ${item.media.logo ? 'is-logo' : ''} ${item.media.poster ? 'is-poster' : ''}`}>
+                        {item.media.kind === 'youtube' ? (
+                            <iframe
+                              src={item.media.src}
+                              title={item.title}
+                              loading="lazy"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen
+                            ></iframe>
+                        ) : (
+                            <img src={item.media.src} alt={item.media.alt} />
+                        )}
+                    </div>
+                    <div class="press-body">
+                        <div class="press-meta">
+                            <span>{item.type}</span>
+                            <span class="press-dot"></span>
+                            <span>{item.source}</span>
+                        </div>
+                        <h3>{item.title}</h3>
+                        <a href={item.href} target="_blank" rel="noopener" class="press-link">{item.cta} <span>→</span></a>
+                    </div>
+                </article>
+            ))}
+        </div>
+    </section>
+
+    <section class="news-cta">
+        <div class="news-cta-inner reveal">
+            <div>
+                <div class="news-eyebrow on-dark">Be part of the next story</div>
+                <h2>Help build what people are talking about.</h2>
+                <p>Join a volunteer day, support the Richmond village, or help carry this work into more neighborhoods.</p>
+            </div>
+            <div class="news-cta-actions">
+                <a href="/volunteer" class="news-btn-light">Volunteer with us <i class="fa fa-arrow-right"></i></a>
+                <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" target="_blank" rel="noopener" class="news-btn-outline">Donate to Richmond</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+</BaseLayout>
+
+<script is:inline>
+const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            io.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+</script>

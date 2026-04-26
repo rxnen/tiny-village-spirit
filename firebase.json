@@ -1,16 +1,11 @@
 {
   "hosting": {
-    "cleanUrls": true,
-    "public": "public",
+    "public": "dist",
+    "site": "tiny-village-spirit-ee381",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-
-    "rewrites": [ {
-      "source": "/projects",
-      "destination": "/projects/index.html"
-    } ]
+    ]
   }
 }
