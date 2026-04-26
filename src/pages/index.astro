@@ -1,0 +1,367 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Tiny Village Spirit"
+  ogUrl="https://tinyvillagespirit.org"
+  css={['/styling/index.css']}
+  preloadImage="/media/painted-house-1.jpg"
+>
+<main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <div class="hero-media">
+            <img src="/media/painted-house-1.jpg" alt="Painted tiny home" class="hero-image" />
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-inner">
+            <h1 class="hero-headline">
+                Organizing
+                <span class="headline-accent-plain">communities </span> to
+                <span class="headline-accent">
+                    end homelessness<svg class="underline-swoop" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 70 -2, 160 -2, 298 7" fill="none" stroke="#ffcc02" stroke-width="4" stroke-linecap="round"/></svg>
+                </span>.
+            </h1>
+
+            <p class="hero-sub">
+                We partner with communities to build dignified, beautiful tiny‑home villages for our unhoused neighbors and organize for the systemic change it takes to end homelessness.
+            </p>
+
+            <div class="hero-ctas">
+                <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" target="_blank" class="btn btn-primary">
+                    <i class="fa fa-heart"></i> Donate
+                </a>
+                <a href="/volunteer" class="btn btn-ghost">
+                    Volunteer with us <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="hero-footer">
+                <a href="#mission" class="scroll-cue">
+                    <span class="scroll-cue-label">Our story</span>
+                    <span class="scroll-cue-arrow">↓</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Rooftop silhouette divider -->
+        <svg class="rooftop" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 90 L0 60 L80 60 L120 30 L160 60 L260 60 L300 30 L340 60 L460 60 L500 25 L540 60 L640 60 L680 35 L720 60 L820 60 L860 25 L900 60 L1020 60 L1060 30 L1100 60 L1200 60 L1240 30 L1280 60 L1360 60 L1400 35 L1440 60 L1440 90 Z" fill="#faf7f2"/>
+        </svg>
+    </section>
+
+    <!-- ============ IMPACT STATS ============ -->
+    <section class="impact">
+        <div class="impact-inner">
+            <div class="impact-stat">
+                <div class="impact-number">13<span class="plus">+</span></div>
+                <div class="impact-label">Tiny homes built<br>with community hands</div>
+            </div>
+            <div class="impact-divider" aria-hidden="true"></div>
+            <div class="impact-stat">
+                <div class="impact-number">3,000<span class="plus">+</span></div>
+                <div class="impact-label">Volunteers who have<br>picked up a hammer</div>
+            </div>
+            <div class="impact-divider" aria-hidden="true"></div>
+            <div class="impact-stat">
+                <div class="impact-number">50<span class="plus">+</span></div>
+                <div class="impact-label">Community partner organizations</div>
+            </div>
+            <div class="impact-divider" aria-hidden="true"></div>
+            <div class="impact-stat">
+                <div class="impact-number">100<span class="percent">%</span></div>
+                <div class="impact-label">Led by and for the community</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MISSION ============ -->
+    <section class="mission" id="mission">
+        <div class="mission-grid">
+            <div class="mission-media">
+                <img src="/media/project-image-2.jpeg" alt="Volunteer painting mural" class="mission-photo">
+                <div class="mission-photo-stack">
+                    <img src="/media/mission.jpeg" alt="Volunteer painting">
+                </div>
+                <div class="mission-sticker">
+                    <div class="sticker-top">Est. 2022</div>
+                    <div class="sticker-middle">Built by<br>Neighbors</div>
+                    <div class="sticker-bottom">★ ★ ★</div>
+                </div>
+            </div>
+
+            <div class="mission-text">
+                <div class="section-eyebrow">Our Mission</div>
+                <h2 class="section-headline">
+                    Transforming lives through
+                    <em>community‑driven</em> housing.
+                </h2>
+                <p style="color: rgb(0, 0, 0); font-size: 18px">
+                    Tiny Village Spirit organizes communities to build emergency housing for people experiencing homelessness in the San Francisco Bay Area. Our work is constituent-led and community-driven—powered by over 3,000 volunteers and 50 partner organizations. We promote tiny house villages as an innovative housing model while organizing residents and allies to create systemic change.
+                </p>
+                <a href="/about" class="inline-link">
+                    Read our full story <span class="link-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ THREE PILLARS / CALLOUTS ============ -->
+    <section class="pillars">
+        <div class="section-head">
+            <div class="section-eyebrow center">What we do</div>
+            <h2 class="section-headline center">Three ways we move<br>the needle on housing.</h2>
+        </div>
+
+        <div class="pillar-grid">
+            <a href="/about" class="pillar-card">
+                <div class="pillar-num">01</div>
+                <div class="pillar-icon-wrap">
+                    <i class="fa fa-exclamation-circle pillar-icon"></i>
+                </div>
+                <h3 class="pillar-title">Name the problem</h3>
+                <p class="pillar-body">
+                    Homelessness has risen every year since 2017. On any given night, more than 580,000 people in America have nowhere to sleep. Behind every number is a neighbor.
+                </p>
+                <span class="pillar-link">Learn more <span class="link-arrow">→</span></span>
+            </a>
+
+            <a href="/projects" class="pillar-card pillar-card--featured">
+                <div class="pillar-num">02</div>
+                <div class="pillar-icon-wrap">
+                    <i class="fa fa-home pillar-icon"></i>
+                </div>
+                <h3 class="pillar-title">Build the solution</h3>
+                <p class="pillar-body">
+                    We work with communities to build beautiful, resident‑led tiny‑home villages — dignified emergency housing designed by and for the people who live there.
+                </p>
+                <span class="pillar-link">See our projects <span class="link-arrow">→</span></span>
+            </a>
+
+            <a href="/volunteer" class="pillar-card">
+                <div class="pillar-num">03</div>
+                <div class="pillar-icon-wrap">
+                    <i class="fa fa-users pillar-icon"></i>
+                </div>
+                <h3 class="pillar-title">Grow the movement</h3>
+                <p class="pillar-body">
+                    Volunteers, donors, partners, neighbors. Everyone who picks up a hammer, a paintbrush, or a phone is part of the fight for housing justice.
+                </p>
+                <span class="pillar-link">Get involved <span class="link-arrow">→</span></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ FEATURED CAMPAIGN ============ -->
+    <section class="feature">
+        <div class="feature-inner">
+            <div class="feature-text">
+                <div class="section-eyebrow on-dark">Current Campaign</div>
+                <h2 class="feature-headline">
+                    Richmond Tiny House<br>
+                    <span class="feature-accent">Village, Farm &amp; Garden</span>
+                </h2>
+                <p class="feature-lede">
+                    Our newest village is organizing now — a home, a farm, and a garden for unsheltered youth in Richmond, California. Every board, bolt, and brushstroke is volunteer‑placed.
+                </p>
+
+                <ul class="feature-list">
+                    <li><span class="check">✓</span> Legal, resident‑run tiny‑home community</li>
+                    <li><span class="check">✓</span> Working urban farm and garden on site</li>
+                    <li><span class="check">✓</span> Built entirely by volunteer hands</li>
+                </ul>
+
+                <div class="feature-ctas">
+                    <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" target="_blank" class="btn btn-yellow">
+                        <i class="fa fa-heart"></i> Fund a panel — $75
+                    </a>
+                    <a href="/volunteer" class="btn btn-outline-light">
+                        Volunteer a Saturday <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="feature-mosaic">
+                <div class="mosaic-a">
+                    <img src="/media/painted-house-2.jpg" alt="Richmond village painted houses">
+                </div>
+                <div class="mosaic-b">
+                    <img src="/media/volunteer-planks.jpeg" alt="Painted planks">
+                </div>
+                <div class="mosaic-c">
+                    <img src="/media/project-splash-2.jpg" alt="Paint cans on workbench">
+                </div>
+                <div class="mosaic-badge">
+                    <div class="badge-count">83%</div>
+                    <div class="badge-label">funded this quarter</div>
+                    <div class="badge-bar"><div class="badge-fill"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ HOW WE BUILD ============ -->
+    <section class="how">
+        <div class="section-head">
+            <div class="section-eyebrow center">How we build</div>
+            <h2 class="section-headline center">Every village starts the same way.</h2>
+        </div>
+
+        <div class="how-steps">
+            <div class="how-step">
+                <div class="how-num">01</div>
+                <div class="how-label">Listen</div>
+                <p>We sit down with unhoused neighbors and local organizers. Residents tell us what a village should be — we don't show up with a blueprint.</p>
+            </div>
+            <div class="how-arrow" aria-hidden="true">→</div>
+            <div class="how-step">
+                <div class="how-num">02</div>
+                <div class="how-label">Design together</div>
+                <p>Residents, architects, and community members co‑design the village — every house, garden bed, and gathering space.</p>
+            </div>
+            <div class="how-arrow" aria-hidden="true">→</div>
+            <div class="how-step">
+                <div class="how-num">03</div>
+                <div class="how-label">Raise it by hand</div>
+                <p>Volunteers show up on Saturdays. Hammers swing, murals get painted, kitchens get stocked. The village becomes home.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ QUOTE ============ -->
+    <section class="quote-band">
+        <div class="quote-inner">
+            <div class="quote-mark" aria-hidden="true">"</div>
+            <blockquote>
+                These aren't just houses. They're proof that a community
+                <span class="quote-highlight">can choose to take care of itself</span>
+                — and that people deserve a door, a key, and a roof that's theirs.
+            </blockquote>
+            <div class="quote-attr">
+                <div class="quote-avatar" aria-hidden="true">A.M.</div>
+                <div>
+                    <div class="quote-name">A village organizer</div>
+                    <div class="quote-role">Oakland Tiny House Empowerment Village</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ GET INVOLVED ============ -->
+    <section class="involve">
+        <div class="section-head">
+            <div class="section-eyebrow center">Get involved</div>
+            <h2 class="section-headline center">Pick up something. Anything.</h2>
+            <p class="section-sub center">A hammer, a paintbrush, a checkbook, a phone. Every village needs every kind of hand.</p>
+        </div>
+
+        <div class="involve-grid">
+            <a href="/volunteer" class="involve-card">
+                <div class="involve-emoji"><i class="fa fa-wrench"></i></div>
+                <h3>Volunteer a Saturday</h3>
+                <p>Build, paint, garden, cook. Richmond builds most Saturdays — no experience needed.</p>
+                <span class="involve-go">Sign up <span class="link-arrow">→</span></span>
+            </a>
+            <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" target="_blank" class="involve-card involve-card--accent">
+                <div class="involve-emoji"><i class="fa fa-heart"></i></div>
+                <h3>Donate</h3>
+                <p>$75 funds a wall panel. $500 funds a door. 100% goes into the village.</p>
+                <span class="involve-go">Give now <span class="link-arrow">→</span></span>
+            </a>
+            <a href="/contact" class="involve-card">
+                <div class="involve-emoji"><i class="fa fa-handshake-o"></i></div>
+                <h3>Partner with us</h3>
+                <p>Bring your org, faith community, or class to build together. We'll plan the day.</p>
+                <span class="involve-go">Start a conversation <span class="link-arrow">→</span></span>
+            </a>
+            <a href="https://www.instagram.com/tinyvillagespirit/" target="_blank" class="involve-card">
+                <div class="involve-emoji"><i class="fa fa-bullhorn"></i></div>
+                <h3>Spread the word</h3>
+                <p>Follow along, share the work, and help push for systemic housing justice.</p>
+                <span class="involve-go">Follow us <span class="link-arrow">→</span></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects-strip">
+        <div class="section-head">
+            <div class="section-eyebrow center">Villages</div>
+            <h2 class="section-headline center">Where we've been.<br>Where we're going.</h2>
+        </div>
+
+        <div class="projects-grid">
+            <a href="/projects/oakland" class="project-card">
+                <div class="project-photo">
+                    <img src="/media/project-image-1.jpeg" alt="Oakland tiny house">
+                    <div class="project-tag">Completed · 2022</div>
+                </div>
+                <div class="project-body">
+                    <div class="project-kicker">Past experience</div>
+                    <h3>Oakland Tiny House<br>Empowerment Village</h3>
+                    <p>Oakland's first legal tiny house village — built, organized, and run by its residents.</p>
+                    <span class="project-go">Learn more <span class="link-arrow">→</span></span>
+                </div>
+            </a>
+            <a href="/projects/richmond" class="project-card">
+                <div class="project-photo">
+                    <img src="/media/painted-house-1.jpg" alt="Richmond village painted house">
+                    <div class="project-tag tag-live">Building now</div>
+                </div>
+                <div class="project-body">
+                    <div class="project-kicker">Current project</div>
+                    <h3>Richmond Tiny House<br>Village, Farm &amp; Garden</h3>
+                    <p>Emergency housing and an urban farm for unsheltered youth — raising walls every weekend.</p>
+                    <span class="project-go">Learn more <span class="link-arrow">→</span></span>
+                </div>
+            </a>
+            <a href="/projects/directory" class="project-card">
+                <div class="project-photo">
+                    <img src="/media/directory-image.png" alt="Village directory map">
+                    <div class="project-tag">Resource</div>
+                </div>
+                <div class="project-body">
+                    <div class="project-kicker">For everyone</div>
+                    <h3>National Tiny House<br>Village Directory</h3>
+                    <p>A living map of tiny‑village projects across the country, built to help organizers find each other.</p>
+                    <span class="project-go">Open the map <span class="link-arrow">→</span></span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ NEWSLETTER CTA ============ -->
+    <section class="newsletter">
+        <div class="newsletter-inner">
+            <div class="newsletter-text">
+                <h2>Stay close to the build.</h2>
+                <p>Build days, village updates, and the occasional mural. No spam. Unsubscribe whenever.</p>
+            </div>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('.success').style.display='inline-flex';">
+                <input type="email" placeholder="your@email.com" required>
+                <button type="submit">Subscribe <i class="fa fa-arrow-right"></i></button>
+                <span class="success"><i class="fa fa-check"></i> You're in.</span>
+            </form>
+        </div>
+    </section>
+
+</main>
+</BaseLayout>
+
+<script is:inline>
+// Scroll-reveal on intersection
+const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('in-view');
+            io.unobserve(e.target);
+        }
+    });
+}, { threshold: 0.12 });
+document.querySelectorAll('.impact-stat, .pillar-card, .involve-card, .project-card, .how-step, .mission-text, .mission-media, .feature-text, .feature-mosaic').forEach(el => {
+    el.classList.add('reveal');
+    io.observe(el);
+});
+</script>

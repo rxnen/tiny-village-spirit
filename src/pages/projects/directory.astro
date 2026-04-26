@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const directoryGoals = [
+  {
+    number: '01',
+    title: 'Connect village administrators',
+    body: 'So organizers and operators can share lessons, troubleshoot challenges, and strengthen day-to-day village operations together.',
+  },
+  {
+    number: '02',
+    title: 'Support new organizers',
+    body: 'Established villages can help emerging projects move from idea to reality with practical guidance, examples, and encouragement.',
+  },
+  {
+    number: '03',
+    title: 'Mobilize for policy change',
+    body: 'Residents, volunteers, and organizers can find each other more easily and build collective power around housing justice.',
+  },
+];
+---
+<BaseLayout
+  title="Tiny House Village Directory | Tiny Village Spirit"
+  description="Explore Tiny Village Spirit's national directory of tiny house villages for unhoused people across the United States."
+  ogTitle="Tiny House Village Directory | Tiny Village Spirit"
+  ogUrl="https://tinyvillagespirit.org/projects/directory"
+  ogDescription="Explore Tiny Village Spirit's national directory of tiny house villages for unhoused people across the United States."
+  keywords="Tiny Village Spirit, Tiny House Village Directory, tiny house directory, tiny house village directory, national directory"
+  css={['/styling/projects/directory.css']}
+  preloadImage="/media/directory-splash.jpg"
+  showFooter={true}
+>
+<main>
+
+    <section class="dir-hero">
+        <div class="dir-hero-grid">
+            <div class="dir-hero-copy reveal">
+                <h1 class="dir-hero-title">
+                    A living directory of
+                    <span class="dir-accent">tiny-home villages</span>
+                    across the country.
+                </h1>
+                <p class="dir-hero-sub">
+                    We are mapping villages for unhoused people across the United States so organizers, residents, volunteers, and advocates can learn from one another and build stronger local movements.
+                </p>
+
+                <div class="dir-hero-actions">
+                    <a href="#directory-map" class="dir-btn-primary">Open the map <i class="fa fa-arrow-right"></i></a>
+                    <a href="/projects" class="dir-btn-secondary">See our projects</a>
+                </div>
+
+                <div class="dir-hero-stats">
+                    <div class="dir-stat">
+                        <div class="dir-stat-num">50</div>
+                        <div class="dir-stat-label">States worth organizing across</div>
+                    </div>
+                    <div class="dir-stat">
+                        <div class="dir-stat-num">1</div>
+                        <div class="dir-stat-label">Shared map for villages and organizers</div>
+                    </div>
+                    <div class="dir-stat">
+                        <div class="dir-stat-num">3</div>
+                        <div class="dir-stat-label">Core goals driving the network</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dir-hero-media reveal">
+                <div class="dir-photo-main">
+                    <img src="/media/directory-splash.jpg" alt="Tiny house village with painted structures and community space">
+                </div>
+                <div class="dir-photo-stack">
+                    <img src="/media/painted-house-2.jpg" alt="Colorful tiny homes being built by volunteers">
+                </div>
+                <div class="dir-badge">
+                    <span class="dir-badge-mid">Map<br>Connect</span>
+                    <span class="dir-badge-bot">★ Organize ★</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dir-map-section" id="directory-map">
+        <div class="dir-map-grid">
+            <div class="dir-map-card reveal">
+                <div class="dir-map-head">
+                    <div class="dir-eyebrow">Interactive map</div>
+                    <h2>National Directory of Tiny House Villages for the Unhoused</h2>
+                    <p>Browse the growing network and explore how villages are taking shape in different communities.</p>
+                </div>
+                <div class="dir-map-shell">
+                    <iframe
+                      src="https://www.google.com/maps/d/u/0/embed?mid=1eP08FGd9XY0JPib8UT2vZ41rRAF9xSY&ehbc=2E312F"
+                      class="dir-map"
+                      title="National tiny house village directory map"
+                      loading="lazy"
+                    ></iframe>
+                </div>
+            </div>
+
+            <aside class="dir-side reveal">
+                <div class="dir-side-card">
+                    <div class="dir-eyebrow">Directory goals</div>
+                    <h3>What this network is for.</h3>
+                    <div class="dir-goals">
+                        {directoryGoals.map((goal) => (
+                            <div class="dir-goal">
+                                <div class="dir-goal-num">{goal.number}</div>
+                                <div class="dir-goal-copy">
+                                    <h4>{goal.title}</h4>
+                                    <p>{goal.body}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div class="dir-side-card dir-side-card-accent">
+                    <div class="dir-eyebrow on-dark">Use the network</div>
+                    <h3>Building a village in your own community?</h3>
+                    <p>Start with the directory, learn from existing sites, and then explore our project pages for examples from Richmond and beyond.</p>
+                    <a href="/projects/blueprint" class="dir-btn-light">See the blueprint <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+</main>
+</BaseLayout>
+
+<script is:inline>
+const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            io.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+</script>

@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Projects | Tiny Village Spirit"
+  description="Learn more about Tiny Village Spirit's tiny house village construction and community organizing projects."
+  ogTitle="Projects | Tiny Village Spirit"
+  ogUrl="https://tinyvillagespirit.org/projects"
+  ogDescription="Learn more about Tiny Village Spirit's tiny house village construction and community organizing projects."
+  css={['/styling/projects/index.css']}
+  preloadImage="/media/painted-house-2.jpg"
+>
+<main>
+
+    <!-- ============ HERO ============ -->
+    <section class="proj-hero">
+        <div class="proj-hero-inner">
+            <div class="proj-eyebrow">Our work</div>
+            <h1 class="proj-hero-title">
+                Building villages.<br>
+                <em>Organizing communities.</em>
+            </h1>
+            <p class="proj-hero-sub">
+                From construction sites in Richmond to a national network of village organizers, everything we do is powered by neighbors showing up for neighbors.
+            </p>
+        </div>
+        <div class="proj-hero-photo">
+            <img src="/media/painted-house-2.jpg" alt="Colorful tiny homes being built by volunteers" loading="eager">
+        </div>
+    </section>
+
+    <!-- ============ CONSTRUCTION ============ -->
+    <section class="proj-section">
+        <div class="proj-section-inner">
+            <div class="proj-section-head">
+                <div class="proj-eyebrow">Village construction</div>
+                <h2>Tiny homes we've built.</h2>
+            </div>
+
+            <div class="proj-cards proj-cards-2">
+
+                <article class="proj-card reveal">
+                    <div class="proj-card-img">
+                        <img src="/media/uli-image-4.jpeg" alt="Volunteers gathered at the Richmond build site">
+                        <div class="proj-card-badge proj-badge-active">Active</div>
+                    </div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-eyebrow">Richmond, CA</div>
+                        <h3>Richmond Tiny House Village, Farm &amp; Garden</h3>
+                        <p>A seven-agency collaboration building emergency housing for young people ages 18–24 in Richmond — with community art, a working farm, and over 3,000 volunteers.</p>
+                        <a href="/projects/richmond" class="proj-btn">Learn more <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="proj-card reveal">
+                    <div class="proj-card-img">
+                        <img src="/media/project-image-1.jpeg" alt="Oakland Tiny House Empowerment Village">
+                        <div class="proj-card-badge proj-badge-past">Completed</div>
+                    </div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-eyebrow">Oakland, CA</div>
+                        <h3>Oakland Tiny House Empowerment Village</h3>
+                        <p>A 22-unit village developed with Youth Spirit Artworks, engaging over 4,000 volunteers, fourteen schools, and twenty-eight local businesses.</p>
+                        <a href="/projects/oakland" class="proj-btn">Learn more <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ORGANIZING ============ -->
+    <section class="proj-section proj-section-alt">
+        <div class="proj-section-inner">
+            <div class="proj-section-head">
+                <div class="proj-eyebrow">Community organizing</div>
+                <h2>Building the movement.</h2>
+            </div>
+
+            <div class="proj-cards proj-cards-3">
+
+                <article class="proj-card reveal">
+                    <div class="proj-card-img">
+                        <img src="/media/directory-splash.jpg" alt="Tiny house villages across the country">
+                    </div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-eyebrow">National network</div>
+                        <h3>Tiny House Village Directory</h3>
+                        <p>A living map connecting village administrators, emerging organizers, and advocates across the United States.</p>
+                        <a href="/projects/directory" class="proj-btn">Explore the directory <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="proj-card reveal">
+                    <div class="proj-card-img">
+                        <img src="/media/splash-image-1.jpeg" alt="Youth volunteers painting planks at a community event">
+                    </div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-eyebrow">Youth leadership</div>
+                        <h3>Youth &amp; Constituent Organizing Teams</h3>
+                        <p>Twelve paid youth trainees ages 16–24 lead decision-making for the Richmond village, gaining skills in public speaking, media outreach, and community organizing.</p>
+                    </div>
+                </article>
+
+                <article class="proj-card reveal">
+                    <div class="proj-card-img">
+                        <img src="/media/volunteer-planks.jpeg" alt="Colorfully painted planks ready for a village fence">
+                    </div>
+                    <div class="proj-card-body">
+                        <div class="proj-card-eyebrow">Open-source toolkit</div>
+                        <h3>Blueprint for Your Own Tiny House Village</h3>
+                        <p>A guide developed with Latitude High School to help schools, NGOs, and grassroots groups build tiny house villages in their own communities.</p>
+                        <a href="/projects/blueprint" class="proj-btn">See the blueprint <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+</BaseLayout>
+
+<script is:inline>
+const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
