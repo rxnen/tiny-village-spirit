@@ -1,97 +1,233 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const businesses = [
+  'Arup',
+  'Blue Shield',
+  'Burchell Nursery',
+  'CAW Architects',
+  'City of Richmond–Richmond Builds',
+  'City of Richmond–YouthWorks',
+  'Community Of Resource & Resolution (CORR)',
+  'Jones Electrical Service Co.',
+  'Moxion Power',
+  'Pyatok and Associates Architects',
+  'Red Oak Realty',
+  'San Quentin Prison Shop Program',
+  'TEF Design',
+];
+
+const congregations = [
+  'Berkeley Friends Meeting',
+  'Berkeley High School Jewish Student Union',
+  "B'nai B'rith Youth Organization (BBYO)",
+  'Chochmat HaLev',
+  'Church of Jesus Christ Latter Day Saints',
+  'Church of Santa Maria–Orinda',
+  'College Park HS Jewish Student Union',
+  'Congregation Beth El',
+  'Congregation Beth Hillel',
+  'Contra Costa Midrasha',
+  'Episcopal Impact Fund',
+  'First Congregational Church of Berkeley',
+  'Greater Richmond Interfaith Program',
+  'Holy Trinity Episcopal Church',
+  'Impact Builder',
+  'JCC of the East Bay',
+  'Jewish Teen Foundation',
+  'Mount Diablo Unitarian Universalist Church',
+  'Olamim',
+  'Pacifica Institute',
+  'Repair the World',
+  "St. Lucy's Episcopal Church",
+  "St. Paul's Episcopal Church–Burlingame",
+  'Shepherd of the Hills Lutheran Church',
+  'SE Portland Youth Collective',
+  'Strawberry Creek Friends Meeting',
+  'Unitarian Universalist Church of Berkeley',
+  'United Synagogue Youth–East Bay',
+  'Univ. of California, Berkeley–Hillel',
+];
+
+const organizations = [
+  'Ambassador Troop 33564 Walnut Creek',
+  'Alameda County Bar Association',
+  'Artists Building Community',
+  'BHS Helping Hands Club',
+  'Build It Green',
+  'California Climate Action Corp',
+  'California Golden Bears Athletics',
+  'California Lawyers Assoc.–Litigation Section',
+  'Cal Habitat',
+  'Charles Houston Bar Association',
+  'Child Mind Institute',
+  'Construction Trades Workforce Initiative',
+  'Coro No. Ca.–Exploring Leadership',
+  'Girls Garage',
+  'Hope Solutions',
+  'Piedmont Community Service Crew',
+  'Place for Sustainable Living',
+  'Rainbow Community Center',
+  'Rebuilding Together East Bay Network',
+  'Reimagine Richmond',
+  'Richmond Arts Corridor',
+  'Richmond Chamber of Commerce',
+  'Richmond Fire Youth Academy Cadets',
+  'Richmond Police Activities League',
+  'Richmond Rescue Mission',
+  'Rosie The Riveter Trust',
+  'SE Portland Youth Collective',
+  'Sigma Epsilon Omega Fraternity UCB',
+  'SOS Richmond',
+];
+
+const schools = [
+  'Berkeley High School–Arts & Humanities Academy',
+  'Kennedy High School',
+  'Latitude High School',
+  'Lick Wilmerding High School',
+  'Maybeck High School',
+  'McClymonds High School',
+  'Salesians High School',
+  'Univ. of SF Architecture Program',
+  'Urban School of San Francisco',
+  'West Contra Costa Unified School District',
+];
+
+const total = businesses.length + congregations.length + organizations.length + schools.length;
 ---
 <BaseLayout
   title="Community Partners | Tiny Village Spirit"
-  description="Learn more about Tiny Village Spirit's community partners and sponsors."
+  description="Meet the 80+ businesses, congregations, organizations, and schools partnering with Tiny Village Spirit to build tiny home communities in the SF Bay Area."
   ogTitle="Community Partners | Tiny Village Spirit"
   ogUrl="https://tinyvillagespirit.org/about/partners"
-  ogDescription="Learn more about Tiny Village Spirit's community partners and sponsors."
-  keywords="Tiny Village Spirit, Tiny House Village, Tiny House Community, Tiny House Village Partners, Tiny House Village Sponsors, Tiny House Village Donors, Tiny House Village Volunteers, Tiny House Village Community Organizing"
+  ogDescription="Meet the 80+ businesses, congregations, organizations, and schools partnering with Tiny Village Spirit."
+  keywords="Tiny Village Spirit, community partners, sponsors, volunteers, organizations, schools, congregations"
   css={['/styling/about/partners.css']}
-  preloadImage="/media/partners-splash-1.jpg"
+  preloadImage="/media/splash-image-2.jpeg"
 >
-    <main>
+<main>
 
-        <div class="splash">
-            <img src="/media/partners-splash-1.jpg" alt="About Image" class="splash-image" />
-            <div class="splash-text">
-                <h1>Community Partners</h1>
-            </div>
+    <!-- ============ HERO ============ -->
+    <section class="pt-hero">
+        <div class="pt-hero-inner">
+            <div class="pt-eyebrow">Our network</div>
+            <h1 class="pt-hero-title">
+                Built by community.<br>
+                <em>Powered by partnership.</em>
+            </h1>
+            <p class="pt-hero-sub">
+                Every plank painted, every wall framed, every home finished — made possible by the businesses, congregations, organizations, and schools who show up.
+            </p>
         </div>
 
-        <p class="partners-text">
-            Tiny Village Spirit is grateful for the support of our community partners and sponsors.
-            We are proud to work with these organizations to build a better future for our community.
-        </p>
+        <div class="pt-stats">
+            <div class="pt-stat">
+                <div class="pt-stat-num">{total}+</div>
+                <div class="pt-stat-label">Partner organizations</div>
+            </div>
+            <div class="pt-stat-div"></div>
+            <div class="pt-stat">
+                <div class="pt-stat-num">4</div>
+                <div class="pt-stat-label">Categories of engagement</div>
+            </div>
+            <div class="pt-stat-div"></div>
+            <div class="pt-stat">
+                <div class="pt-stat-num">3,000+</div>
+                <div class="pt-stat-label">Volunteer hours contributed</div>
+            </div>
+        </div>
+    </section>
 
-        <h1 class="category-header">Businesses</h1>
-        <ul class="partners-list">
-            <li>Arup</li>
-            <li>Blue Shield</li>
-            <li>Burchell Nursery</li>
-            <li>City of Richmond–Richmond Builds</li>
-            <li>City of Richmond–YouthWorks</li>
-            <li>Community Of Resource &amp; Resolution (CORR)</li>
-            <li>Jones Electrical Service Co.</li>
-            <li>Moxion Power</li>
-            <li>Pyatok and Associates Architects</li>
-            <li>Red Oak Realty</li>
-            <li>San Quentin Prison Shop Program</li>
-            <li>TEF Design</li>
-        </ul>
+    <!-- ============ BUSINESSES ============ -->
+    <section class="pt-category reveal">
+        <div class="pt-category-inner">
+            <div class="pt-category-head">
+                <div class="pt-cat-icon"><i class="fa fa-briefcase"></i></div>
+                <div>
+                    <div class="pt-eyebrow">Category 1</div>
+                    <h2>Businesses &amp; Gov't Programs</h2>
+                </div>
+            </div>
+            <div class="pt-chips">
+                {businesses.map(name => (
+                    <span class="pt-chip">{name}</span>
+                ))}
+            </div>
+        </div>
+    </section>
 
-        <h2 class="category-header">Congregations &amp; Faith-Based Groups</h2>
-        <ul class="partners-list">
-            <li>Berkeley High School Jewish Student Union</li>
-            <li>B'nai B'rith Youth Organization (BBYO)</li>
-            <li>Church of Jesus Christ Latter Day Saints</li>
-            <li>Church of Santa Maria–Orinda</li>
-            <li>College Park HS Jewish Student Union</li>
-            <li>Congregation Beth El</li>
-            <li>Contra Costa Midrasha</li>
-            <li>First Congregational Church of Berkeley</li>
-            <li>Impact Builder</li>
-            <li>Greater Richmond Interfaith Program</li>
-            <li>Jewish Teen Foundation</li>
-            <li>Mount Diablo Unitarian Universalist Church</li>
-            <li>Pacifica Institute</li>
-            <li>Repair the World</li>
-            <li>Shepherd of the Hills Lutheran Church</li>
-            <li>SE Portland Youth Collective</li>
-            <li>Strawberry Creek Friends Meeting</li>
-            <li>Unitarian Universalist Church of Berkeley</li>
-            <li>United Synagogue Youth–East Bay</li>
-            <li>Univ. of California, Berkeley–Hillel</li>
-        </ul>
+    <!-- ============ CONGREGATIONS ============ -->
+    <section class="pt-category pt-category-alt reveal">
+        <div class="pt-category-inner">
+            <div class="pt-category-head">
+                <div class="pt-cat-icon"><i class="fa fa-heart"></i></div>
+                <div>
+                    <div class="pt-eyebrow">Category 2</div>
+                    <h2>Congregations &amp; Faith-Based Groups</h2>
+                </div>
+            </div>
+            <div class="pt-chips">
+                {congregations.map(name => (
+                    <span class="pt-chip">{name}</span>
+                ))}
+            </div>
+        </div>
+    </section>
 
-        <h2 class="category-header">Organizations</h2>
-        <ul class="partners-list">
-            <li>Build It Green</li>
-            <li>California Climate Action Corp</li>
-            <li>Cal Habitat</li>
-            <li>Girls Garage</li>
-            <li>Hope Solutions</li>
-            <li>Piedmont Community Service Crew</li>
-            <li>Rainbow Community Center</li>
-            <li>Rebuilding Together East Bay Network</li>
-            <li>Richmond Chamber of Commerce</li>
-            <li>Richmond Police Activities League</li>
-            <li>Richmond Rescue Mission</li>
-            <li>SE Portland Youth Collective</li>
-            <li>SOS Richmond</li>
-        </ul>
+    <!-- ============ ORGANIZATIONS ============ -->
+    <section class="pt-category reveal">
+        <div class="pt-category-inner">
+            <div class="pt-category-head">
+                <div class="pt-cat-icon"><i class="fa fa-users"></i></div>
+                <div>
+                    <div class="pt-eyebrow">Category 3</div>
+                    <h2>Organizations</h2>
+                </div>
+            </div>
+            <div class="pt-chips">
+                {organizations.map(name => (
+                    <span class="pt-chip">{name}</span>
+                ))}
+            </div>
+        </div>
+    </section>
 
-        <h2 class="category-header">Schools</h2>
-        <ul class="partners-list">
-            <li>Kennedy High School</li>
-            <li>Latitude High School</li>
-            <li>Lick Wilmerding High School</li>
-            <li>McClymonds High School</li>
-            <li>Salesians High School</li>
-            <li>Univ. of SF Architecture Program</li>
-            <li>Urban School of San Francisco</li>
-        </ul>
+    <!-- ============ SCHOOLS ============ -->
+    <section class="pt-category pt-category-alt reveal">
+        <div class="pt-category-inner">
+            <div class="pt-category-head">
+                <div class="pt-cat-icon"><i class="fa fa-graduation-cap"></i></div>
+                <div>
+                    <div class="pt-eyebrow">Category 4</div>
+                    <h2>Schools</h2>
+                </div>
+            </div>
+            <div class="pt-chips">
+                {schools.map(name => (
+                    <span class="pt-chip">{name}</span>
+                ))}
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- ============ CTA ============ -->
+    <section class="pt-cta">
+        <div class="pt-cta-inner">
+            <h2>Want to bring your organization?</h2>
+            <p>Whether you're a business, school, faith group, or community org — we'd love to work with you. Reach out and let's make it happen.</p>
+            <a href="/contact" class="pt-cta-btn">Get in touch <i class="fa fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+</main>
 </BaseLayout>
+
+<script is:inline>
+const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+}, { threshold: 0.06 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
