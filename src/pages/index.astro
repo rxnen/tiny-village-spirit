@@ -12,23 +12,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- ============ HERO ============ -->
     <section class="hero">
         <div class="hero-media">
-            <video src="/media/drone-splash.mov" alt="Painted tiny home" class="hero-image" autoplay loop/>
+            <video src="/media/drone-splash-3.MP4" class="hero-image" autoplay loop muted playsinline></video>
             <div class="hero-overlay"></div> 
 
         </div>
 
         <div class="hero-inner">
             <h1 class="hero-headline">
-                Organizing
-                <span class="headline-accent-plain">communities </span> to
+                Organizing<br>
                 <span class="headline-accent">
-                    end homelessness<svg class="underline-swoop" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 70 -2, 160 -2, 298 7" fill="none" stroke="#ffcc02" stroke-width="4" stroke-linecap="round"/></svg>
-                </span>.
+                    communities<svg class="underline-swoop" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 70 -2, 160 -2, 298 7" fill="none" stroke="#ffcc02" stroke-width="4" stroke-linecap="round"/></svg>
+                </span>
+                <span class="headline-accent-plain"> to end</span><br>
+                homelessness.
             </h1>
-
-            <p class="hero-sub">
-                We partner with communities to build dignified, beautiful tiny‑home villages for our unhoused neighbors and organize for the systemic change it takes to end homelessness.
-            </p>
 
             <div class="hero-ctas">
                 <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" target="_blank" class="btn btn-primary">
@@ -38,20 +35,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                     Volunteer with us <i class="fa fa-arrow-right"></i>
                 </a>
             </div>
-
-            <div class="hero-footer">
-                <a href="#mission" class="scroll-cue">
-                    <span class="scroll-cue-label">Our story</span>
-                    <span class="scroll-cue-arrow">↓</span>
-                </a>
-            </div>
         </div>
+
+        <a href="#mission" class="scroll-cue">
+            <span class="scroll-cue-label">Our story</span>
+            <span class="scroll-cue-arrow">↓</span>
+        </a>
 
         <!-- Rooftop silhouette divider -->
         <svg class="rooftop" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
             <path d="M0 90 L0 60 L80 60 L120 30 L160 60 L260 60 L300 30 L340 60 L460 60 L500 25 L540 60 L640 60 L680 35 L720 60 L820 60 L860 25 L900 60 L1020 60 L1060 30 L1100 60 L1200 60 L1240 30 L1280 60 L1360 60 L1400 35 L1440 60 L1440 90 Z" fill="#faf7f2"/>
         </svg>
     </section>
+
+    <!-- ============ HERO SUB ============ -->
+    <div class="hero-sub-band">
+        <p class="hero-sub">
+            We partner with communities to build dignified, beautiful tiny‑home villages for our unhoused neighbors and organize for the systemic change it takes to end homelessness.
+        </p>
+    </div>
 
     <!-- ============ IMPACT STATS ============ -->
     <section class="impact">
