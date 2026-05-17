@@ -64,3 +64,8 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# Large drone video files
+public/media/*.mov
+public/media/*.mp4
+public/media/*.MP4
