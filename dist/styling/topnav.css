@@ -1,0 +1,298 @@
+/* =====================================================================
+   Top Navigation
+   ===================================================================== */
+
+:root {
+    --nav-teal: #04747c;
+    --nav-teal-dark: #035c62;
+    --nav-ink: #1b2426;
+    --nav-muted: #667375;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    left: 0;
+    padding: 10px max(18px, calc((100vw - 1320px) / 2 + 18px));
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    border-radius: 0;
+    background: rgba(250,247,242,0.97);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    transition: top 0.3s ease;
+}
+
+/* Logo */
+.logo-wrapper {
+    margin-right: auto;
+    min-width: 0;
+    padding: 6px 14px 6px 4px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    flex: 0 0 auto;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    min-width: 0;
+    padding-top: 8px;
+}
+
+.logo-name {
+    color: var(--nav-teal-dark);
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 34px;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Nav links */
+.topnav-item {
+    color: var(--nav-ink);
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    border-radius: 999px;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.topnav-item:hover {
+    color: var(--nav-teal);
+    background: rgba(4, 116, 124, 0.06);
+}
+
+/* Donate button */
+.donate-btn {
+    margin-left: 10px;
+    padding: 14px 26px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--nav-teal);
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 10px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.donate-btn:hover {
+    background: var(--nav-teal-dark);
+    color: #fff;
+}
+
+.donate-btn .fa {
+    font-size: 13px;
+}
+
+.donate-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255,255,255,0.35) 50%,
+        transparent 100%
+    );
+    animation: donate-shine 3s ease-in-out infinite;
+}
+
+@keyframes donate-shine {
+    0%   { left: -75%; }
+    40%  { left: 125%; }
+    100% { left: 125%; }
+}
+
+/* Hamburger */
+#menu {
+    display: none;
+    color: var(--nav-ink);
+    font-size: 28px;
+    line-height: 1;
+    padding: 10px 12px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 14px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+#menu:hover {
+    background: rgba(4, 116, 124, 0.06);
+    color: var(--nav-teal);
+}
+
+/* Dropdowns */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    min-width: 220px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    z-index: 21;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 14px;
+    color: var(--nav-ink);
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+    background: rgba(4, 116, 124, 0.06);
+    color: var(--nav-teal);
+}
+
+.dropdown > .topnav-item::after {
+    content: '▾';
+    margin-left: 7px;
+    font-size: 11px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.dropdown.active > .topnav-item::after {
+    transform: rotate(180deg);
+}
+
+@media screen and (min-width: 996px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/* Mobile / responsive */
+.responsive {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
+    height: min(760px, calc(100vh - 28px));
+    padding: 18px 16px 28px;
+    overflow: auto;
+    background: rgba(250,247,242,0.99);
+}
+
+.responsive .logo-wrapper {
+    padding: 4px 54px 18px 4px;
+    margin-bottom: 8px;
+}
+
+.responsive .logo {
+    width: 64px;
+    height: 64px;
+}
+
+.responsive a {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.responsive #menu {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 16px;
+}
+
+.responsive .topnav-item {
+    display: block;
+    padding: 16px 14px;
+    margin-bottom: 4px;
+    font-size: 22px;
+    border-radius: 16px;
+}
+
+.responsive .dropdown {
+    width: 100%;
+}
+
+.responsive .dropdown-content {
+    position: static;
+    min-width: 0;
+    margin: 4px 0 10px;
+    padding: 8px;
+    border-radius: 14px;
+    background: rgba(4, 116, 124, 0.05);
+    box-shadow: none;
+    border: none;
+    display: none;
+}
+
+.responsive .dropdown-content.show {
+    display: block;
+}
+
+.responsive .dropdown-content a {
+    font-size: 14px;
+}
+
+.responsive .donate-btn {
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+@media screen and (max-width: 995px) {
+    .topnav {
+        width: 100%;
+        padding: 10px 12px 10px 14px;
+        border-radius: 0 0 20px 20px;
+    }
+    .topnav-item { display: none; }
+    #menu { display: inline-block; }
+}
+
+@media screen and (max-width: 540px) {
+    .logo { width: 50px; height: 50px; }
+    .logo-name { font-size: 27px; }
+}
+
+@media screen and (max-width: 390px) {
+    .topnav { padding-left: 10px; padding-right: 10px; }
+    .logo-name { font-size: 24px; }
+}
