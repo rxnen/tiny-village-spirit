@@ -12,7 +12,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- ============ HERO ============ -->
     <section class="hero">
         <div class="hero-media">
-            <video src="/media/drone-splash-3.MP4" class="hero-image" autoplay loop muted playsinline></video>
+            <video class="hero-image" autoplay loop muted playsinline poster="/media/painted-house-1.jpg">
+                <source src="/media/drone-splash-3.mp4" type="video/mp4">
+                <source src="/media/drone-splash-3.MP4" type="video/mp4">
+            </video>
             <div class="hero-overlay"></div> 
 
         </div>
