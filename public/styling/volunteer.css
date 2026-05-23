@@ -1,616 +1,106 @@
-/* =====================================================================
-   Tiny Village Spirit — Volunteer page
-   Palette & type matches home / about / richmond redesign
-   ===================================================================== */
-
-:root {
-    --teal:        #04747c;
-    --teal-dark:   #035c62;
-    --teal-accent: #07b1bd;
-    --yellow:      #ffcc02;
-    --cream:       #faf7f2;
-    --cream-warm:  #f4ede0;
-    --ink:         #1b2426;
-    --muted:       #5b6769;
-    --hairline:    rgba(4, 116, 124, 0.14);
-}
-
-* { box-sizing: border-box; }
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    color: var(--ink);
-    background: var(--cream);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-}
-
-img { max-width: 100%; display: block; }
-main { padding-top: 94px; }
-
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1); }
-.reveal.in-view { opacity: 1; transform: none; }
-
-/* ===========================================================
-   HERO
-   =========================================================== */
-
-.vol-hero {
-    padding: 80px 6vw 100px;
-    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%);
-    position: relative;
-    overflow: hidden;
-}
-.vol-hero::before {
-    content: '';
-    position: absolute;
-    top: -180px; right: -220px;
-    width: 560px; height: 560px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(4,116,124,0.05), transparent 70%);
-    pointer-events: none;
-}
-
-.vol-hero-grid {
-    max-width: 1280px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 80px;
-    align-items: start;
-    position: relative;
-}
-
-.vol-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--teal);
-    margin-bottom: 20px;
-}
-.vol-eyebrow::before {
-    content: '';
-    width: 28px; height: 2px;
-    background: var(--teal);
-    display: inline-block;
-}
-
-.vol-hero-headline {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: clamp(42px, 5.2vw, 76px);
-    line-height: 1.02;
-    letter-spacing: -0.02em;
-    margin: 0 0 24px;
-    color: var(--ink);
-    text-wrap: balance;
-}
-.vol-hero-headline .vol-accent {
-    position: relative;
-    display: inline-block;
-    color: var(--teal);
-    font-style: italic;
-    font-weight: 400;
-}
-.vol-swoop {
-    position: absolute;
-    left: 0; right: 0;
-    bottom: -8px;
-    width: 100%;
-    height: 14px;
-    display: block;
-}
-
-.vol-hero-sub {
-    font-size: 18px;
-    color: var(--muted);
-    font-weight: 400;
-    max-width: 520px;
-    margin: 0 0 32px;
-    line-height: 1.65;
-}
-
-.vol-hero-actions {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-    margin-top: 8px;
-}
-
-.vol-btn-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    padding: 14px 28px;
-    border-radius: 999px;
-    background: var(--teal);
-    color: #fff;
-    font-weight: 700;
-    font-size: 15px;
-    text-decoration: none;
-    box-shadow: 0 8px 22px rgba(4,116,124,0.3);
-    transition: background .2s, transform .2s, box-shadow .2s;
-}
-.vol-btn-primary:hover {
-    background: var(--teal-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 14px 28px rgba(4,116,124,0.4);
-}
-
-.vol-btn-secondary {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    padding: 14px 28px;
-    border-radius: 999px;
-    background: transparent;
-    color: var(--teal);
-    font-weight: 700;
-    font-size: 15px;
-    text-decoration: none;
-    border: 2px solid var(--hairline);
-    transition: border-color .2s, background .2s, transform .2s;
-}
-.vol-btn-secondary:hover {
-    border-color: var(--teal);
-    background: rgba(4,116,124,0.05);
-    transform: translateY(-2px);
-}
-
-/* Hero photo collage */
-.vol-hero-media {
-    position: relative;
-    aspect-ratio: 5 / 4;
-    max-width: 560px;
-    margin-left: auto;
-}
-.vol-photo-main {
-    width: 85%;
-    aspect-ratio: 4/3;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 30px 60px rgba(4,116,124,0.22);
-    margin-left: auto;
-}
-.vol-photo-main img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-}
-.vol-photo-stack {
-    position: absolute;
-    bottom: -8%;
-    left: 0;
-    width: 52%;
-    aspect-ratio: 4/3;
-    border: 8px solid var(--cream);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 16px 32px rgba(0,0,0,0.18);
-}
-.vol-photo-stack img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-}
-.vol-stamp {
-    position: absolute;
-    top: -28px;
-    left: -10px;
-    width: 124px; height: 124px;
-    background: var(--yellow);
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.header {
     text-align: center;
-    font-weight: 700;
-    color: #1b1b1b;
-    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
-    transform: rotate(-12deg);
-    animation: vol-wobble 8s ease-in-out infinite;
-    z-index: 2;
-}
-@keyframes vol-wobble {
-    0%,100% { transform: rotate(-12deg); }
-    50%     { transform: rotate(-5deg); }
-}
-.vol-stamp-top { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; }
-.vol-stamp-mid { font-family: 'Fraunces', serif; font-size: 15px; line-height: 1.15; margin: 5px 0; font-style: italic; }
-.vol-stamp-bot { color: var(--teal); font-size: 11px; letter-spacing: 0.2em; }
-
-/* ===========================================================
-   WHY VOLUNTEER STRIP
-   =========================================================== */
-
-.vol-why {
-    padding: 80px 6vw 60px;
-    background: var(--cream);
-}
-
-.vol-why-grid {
-    max-width: 1240px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.vol-why-card {
-    background: #fff;
-    border: 1px solid var(--hairline);
-    border-radius: 14px;
-    padding: 32px 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    transition: transform .3s, box-shadow .3s;
-}
-.vol-why-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 24px 40px rgba(4,116,124,0.1);
-}
-
-.vol-why-icon {
-    width: 52px; height: 52px;
-    border-radius: 13px;
-    background: rgba(4,116,124,0.08);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 22px;
-    color: var(--teal);
-}
-.vol-why-card h3 {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: 22px;
-    margin: 0;
-    letter-spacing: -0.01em;
-    color: var(--ink);
-}
-.vol-why-card p {
-    font-size: 15px;
-    color: var(--muted);
-    margin: 0;
-    line-height: 1.6;
-}
-
-/* ===========================================================
-   FORM SECTION
-   =========================================================== */
-
-.vol-form-section {
-    padding: 20px 6vw 120px;
-    background: var(--cream);
-}
-
-.vol-form-inner {
-    max-width: 1240px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1.6fr;
-    gap: 60px;
-    align-items: start;
-}
-
-/* Left sidebar info */
-.vol-form-info {
-    position: sticky;
-    top: 110px;
-}
-.vol-info-eyebrow {
-    font-size: 11px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: var(--teal);
-    margin-bottom: 14px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.vol-info-eyebrow::before {
-    content: '';
-    width: 22px; height: 2px;
-    background: var(--teal);
-    display: inline-block;
-}
-.vol-form-info h2 {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: clamp(28px, 2.8vw, 38px);
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin: 0 0 18px;
-    color: var(--ink);
-}
-.vol-form-info > p {
-    font-size: 16px;
-    color: var(--muted);
-    margin: 0 0 32px;
-    line-height: 1.65;
-}
-
-.vol-detail-list {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    border-top: 1px solid var(--hairline);
-    padding-top: 28px;
-}
-.vol-detail-item {
-    display: grid;
-    grid-template-columns: 36px 1fr;
-    gap: 14px;
-    align-items: start;
-}
-.vol-detail-icon {
-    width: 36px; height: 36px;
-    border-radius: 9px;
-    background: rgba(4,116,124,0.08);
-    display: flex; align-items: center; justify-content: center;
-    color: var(--teal);
-    font-size: 15px;
-    flex-shrink: 0;
-}
-.vol-detail-label {
-    font-size: 11px;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--teal);
-    font-weight: 700;
-    margin-bottom: 3px;
-}
-.vol-detail-value {
-    font-size: 15px;
-    color: var(--ink);
-    font-weight: 500;
-    line-height: 1.45;
-}
-.vol-detail-value a {
-    color: var(--teal);
-    text-decoration: none;
-    font-weight: 600;
-}
-.vol-detail-value a:hover { text-decoration: underline; }
-
-/* Form card */
-.vol-form-card {
-    background: #fff;
-    border: 1px solid var(--hairline);
-    border-radius: 20px;
-    padding: 48px 44px;
-    box-shadow: 0 20px 50px rgba(4,116,124,0.08);
-}
-
-.vol-form-card h3 {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: 28px;
-    margin: 0 0 8px;
-    letter-spacing: -0.01em;
-    color: var(--ink);
-}
-.vol-form-card > p {
-    font-size: 15px;
-    color: var(--muted);
-    margin: 0 0 32px;
-    padding-bottom: 28px;
-    border-bottom: 1px solid var(--hairline);
-}
-
-/* Form fields */
-.vol-field-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-.vol-field {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    margin-bottom: 20px;
-}
-.vol-field:last-child { margin-bottom: 0; }
-
-.vol-label {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--ink);
-    letter-spacing: 0.02em;
-}
-.vol-label .req {
-    color: var(--teal-accent);
-    margin-left: 3px;
-}
-
-.vol-input,
-.vol-textarea {
-    width: 100%;
-    padding: 13px 16px;
-    border: 1.5px solid var(--hairline);
-    border-radius: 10px;
-    font-family: inherit;
-    font-size: 15px;
-    color: var(--ink);
-    background: var(--cream);
-    transition: border-color .2s, box-shadow .2s, background .2s;
-    outline: none;
-}
-.vol-input:focus,
-.vol-textarea:focus {
-    border-color: var(--teal);
-    background: #fff;
-    box-shadow: 0 0 0 3px rgba(4,116,124,0.1);
-}
-.vol-input::placeholder,
-.vol-textarea::placeholder { color: rgba(91,103,105,0.55); }
-.vol-textarea { resize: vertical; min-height: 110px; }
-
-/* Checkbox groups */
-.vol-check-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 2px;
-}
-.vol-check-label {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    cursor: pointer;
-    font-size: 14px;
-    color: var(--ink);
-    line-height: 1.45;
-    padding: 10px 14px;
-    border-radius: 8px;
-    border: 1.5px solid var(--hairline);
-    background: var(--cream);
-    transition: border-color .2s, background .2s;
-    user-select: none;
-}
-.vol-check-label:hover {
-    border-color: var(--teal-accent);
-    background: #fff;
-}
-.vol-check-label input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 18px; height: 18px;
-    border: 2px solid var(--hairline);
-    border-radius: 5px;
-    background: #fff;
-    flex-shrink: 0;
-    margin-top: 1px;
-    cursor: pointer;
-    transition: background .15s, border-color .15s;
-    position: relative;
-}
-.vol-check-label input[type="checkbox"]:checked {
-    background: var(--teal);
-    border-color: var(--teal);
-}
-.vol-check-label input[type="checkbox"]:checked::after {
-    content: '';
-    position: absolute;
-    left: 4px; top: 1px;
-    width: 5px; height: 9px;
-    border: 2px solid #fff;
-    border-top: none;
-    border-left: none;
-    transform: rotate(45deg);
-}
-.vol-check-label:has(input:checked) {
-    border-color: var(--teal);
-    background: rgba(4,116,124,0.04);
-}
-
-.vol-dates-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-top: 2px;
-}
-
-/* Divider */
-.vol-form-divider {
-    height: 1px;
-    background: var(--hairline);
-    margin: 28px 0;
-}
-
-/* Section label within form */
-.vol-form-section-label {
-    font-size: 12px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: var(--teal);
-    margin-bottom: 14px;
-}
-
-/* Submit button */
-.vol-submit {
-    width: 100%;
-    padding: 17px 28px;
-    border-radius: 999px;
-    border: none;
-    background: var(--teal);
-    color: #fff;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 28px;
-    transition: background .2s, transform .2s, box-shadow .2s;
-    box-shadow: 0 8px 22px rgba(4,116,124,0.3);
-}
-.vol-submit:hover {
-    background: var(--teal-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 14px 28px rgba(4,116,124,0.4);
-}
-
-/* Success state */
-.vol-success {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 60px 20px;
-    gap: 16px;
-}
-.vol-success-icon {
-    width: 72px; height: 72px;
-    border-radius: 50%;
-    background: rgba(4,116,124,0.1);
-    display: flex; align-items: center; justify-content: center;
     font-size: 32px;
-    color: var(--teal);
+    margin: 40px 0 20px 0;
 }
-.vol-success h3 {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: 28px;
-    margin: 0;
-    letter-spacing: -0.01em;
-    color: var(--ink);
+
+.volunteer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
 }
-.vol-success p {
+
+.volunteer-text {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.opportunities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.opportunity {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 40px 0px 40px;
+}
+
+.opportunities > .opportunity {
+    flex: 35%;
+    margin: 18px;
+}
+
+.opportunity-image {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 20px 20px;
+}
+
+.opportunity-link {
+    background-color: #04747c;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
     font-size: 16px;
-    color: var(--muted);
-    margin: 0;
-    max-width: 380px;
+    cursor: pointer;
+    margin-top: auto;
 }
 
-/* ===========================================================
-   RESPONSIVE
-   =========================================================== */
-
-@media (max-width: 980px) {
-    .vol-hero-grid { grid-template-columns: 1fr; gap: 56px; }
-    .vol-hero-media { max-width: 440px; margin: 0 auto; }
-    .vol-form-inner { grid-template-columns: 1fr; gap: 40px; }
-    .vol-form-info { position: static; }
-    .vol-why-grid { grid-template-columns: 1fr; }
+.opportunity-text {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+    padding: 0;
 }
 
-@media (max-width: 620px) {
-    .vol-hero { padding: 60px 5vw 80px; }
-    .vol-hero-grid { gap: 40px; }
-    .vol-hero-headline { font-size: clamp(36px, 10vw, 52px); }
-    .vol-hero-media { max-width: 320px; }
-    .vol-why, .vol-form-section { padding-left: 5vw; padding-right: 5vw; }
-    .vol-form-card { padding: 30px 22px; }
-    .vol-field-group { grid-template-columns: 1fr; }
-    .vol-dates-grid { grid-template-columns: 1fr; }
+.opportunity-header {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .opportunities {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 30px;
+    }
+
+    .opportunity-text {
+        font-size: 20px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .opportunity-image {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header {
+        font-size: 28px;
+    }
+    .opportunity-text {
+        max-width: 90%;
+    }
+}
+
+.more-info {
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 0 20px 0;
 }

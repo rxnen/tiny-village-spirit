@@ -63,7 +63,7 @@ body {
     position: relative;
 }
 
-  .projects-header {
+.projects-header {
     margin-top: 60px;
     text-align: center;
 }
@@ -106,7 +106,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 .project-button:hover {
