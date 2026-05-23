@@ -206,6 +206,8 @@
 .responsive .logo-wrapper {
     padding: 4px 54px 18px 4px;
     margin-bottom: 8px;
+    margin-right: 0;
+    justify-content: center;
 }
 
 .responsive .logo {
@@ -225,9 +227,9 @@
 
 .responsive #menu {
     display: block;
-    position: absolute;
-    top: 18px;
-    right: 16px;
+    position: fixed;
+    top: 14px;
+    right: 14px;
 }
 
 .responsive .topnav-item {
@@ -267,9 +269,11 @@
 }
 
 .responsive .donate-btn {
+    display: flex;
     justify-content: center;
     text-align: center;
     margin: 10px 0 0;
+    gap: 10px;
 }
 
 @media screen and (max-width: 995px) {
