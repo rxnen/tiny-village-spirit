@@ -1028,6 +1028,7 @@ blockquote {
     .feature-inner { grid-template-columns: 1fr; gap: 60px; }
     .feature-mosaic { max-width: 500px; margin: 0 auto; }
     .mosaic-badge { left: 0; bottom: -20px; }
+    .mission-photo-stack { right: -10px; bottom: -20px; }
 
     .how-steps { grid-template-columns: 1fr; gap: 16px; }
     .how-arrow { transform: rotate(90deg); margin: 0 auto; }
@@ -1042,6 +1043,7 @@ blockquote {
     .hero { padding: 100px 5vw 80px; min-height: 100svh; }
     .hero-stamps { font-size: 11px; }
     .mission, .pillars, .feature, .how, .quote-band, .involve, .projects-strip { padding: 80px 5vw; }
+    .mission-photo-stack { right: 0; bottom: -16px; }
     .involve-grid { grid-template-columns: 1fr; }
     .impact { padding: 50px 5vw 10px; }
     .impact-inner { grid-template-columns: 1fr 1fr; }
