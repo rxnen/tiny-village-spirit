@@ -5,8 +5,8 @@ function responsiveNav() {
     if (topnav.classList.contains("responsive")) {
         topnav.classList.remove("responsive");
         menu.innerHTML = "☰";
-        document.body.style.overflow = "visible";
-        document.body.style.height = "auto";
+        document.body.style.overflow = "";
+        document.body.style.height = "";
         for (let i = 0; i < topNavItems.length; i++) {
             topNavItems[i].style.display = "none";
         }
@@ -65,8 +65,8 @@ window.addEventListener('resize', function(event) {
     if (this.window.innerWidth > 995) {
         topnav.classList.remove("responsive");
         menu.innerHTML = "☰";
-        document.body.style.overflow = "visible";
-        document.body.style.height = "auto";
+        document.body.style.overflow = "";
+        document.body.style.height = "";
         for (let i = 0; i < topNavItems.length; i++) {
             topNavItems[i].style.display = "block";
         }

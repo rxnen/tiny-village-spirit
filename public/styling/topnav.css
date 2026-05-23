@@ -193,47 +193,50 @@
 }
 
 .responsive {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: flex-start;
-    align-items: stretch;
     gap: 0;
     height: min(760px, calc(100vh - 28px));
-    padding: 18px 16px 28px;
+    padding: 10px 14px 28px;
     overflow: auto;
     background: rgba(250, 247, 242, 0.98);
 }
 
+/* First row: logo (left/center) + X button (right) */
 .responsive .logo-wrapper {
-    padding: 4px 54px 18px 4px;
-    margin-bottom: 8px;
+    flex: 1;
     margin-right: 0;
     justify-content: center;
+    padding: 4px 0 18px;
+    margin-bottom: 8px;
+    display: flex;
 }
 
 .responsive .logo {
-    width: 64px;
-    height: 64px;
+    width: 56px;
+    height: 56px;
 }
 
-.responsive .logo-kicker {
-    font-size: 32px;
+/* X button stays at end of first row */
+.responsive #menu {
+    flex: 0 0 auto;
+    display: inline-block;
+    position: static;
+    align-self: flex-start;
+    padding-bottom: 18px;
 }
 
-.responsive a {
-    display: block;
+/* Each nav item / dropdown takes its own full row */
+.responsive .dropdown,
+.responsive .topnav-item {
     width: 100%;
+    display: block;
     text-align: left;
 }
 
-.responsive #menu {
-    display: block;
-    position: fixed;
-    top: 14px;
-    right: 14px;
-}
-
 .responsive .topnav-item {
-    display: block;
     padding: 16px 14px;
     margin-bottom: 4px;
     font-size: 24px;
@@ -243,10 +246,6 @@
 
 .responsive .topnav-item:hover {
     transform: none;
-}
-
-.responsive .dropdown {
-    width: 100%;
 }
 
 .responsive .dropdown-content {
@@ -273,7 +272,8 @@
     justify-content: center;
     text-align: center;
     margin: 10px 0 0;
-    gap: 10px;
+    gap: 12px;
+    width: 100%;
 }
 
 @media screen and (max-width: 995px) {
