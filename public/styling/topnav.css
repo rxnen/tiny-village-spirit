@@ -159,6 +159,16 @@
     z-index: 21;
 }
 
+/* Invisible bridge covering the gap between trigger and dropdown */
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+
 .dropdown-content a {
     display: block;
     padding: 12px 14px;
