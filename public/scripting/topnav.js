@@ -68,7 +68,7 @@ window.addEventListener('resize', function(event) {
         document.body.style.overflow = "";
         document.body.style.height = "";
         for (let i = 0; i < topNavItems.length; i++) {
-            topNavItems[i].style.display = "block";
+            topNavItems[i].style.display = "";
         }
     } else {
         for (let i = 0; i < topNavItems.length; i++) {
