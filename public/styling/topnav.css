@@ -123,6 +123,28 @@
     font-size: 14px;
 }
 
+.donate-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.36) 50%,
+        transparent 100%
+    );
+    animation: donate-shine 3s ease-in-out infinite;
+}
+
+@keyframes donate-shine {
+    0%   { left: -75%; }
+    40%  { left: 125%; }
+    100% { left: 125%; }
+}
+
 #menu {
     display: none;
     color: var(--nav-ink);
