@@ -367,6 +367,7 @@ main { padding-top: 94px; }  /* clear fixed nav */
 .mission {
     padding: 120px 6vw;
     background: var(--cream);
+    overflow: hidden;
 }
 .mission-grid {
     max-width: 1200px;

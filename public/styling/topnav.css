@@ -1,3 +1,5 @@
+html { overflow-x: hidden; }
+
 :root {
     --nav-teal: #04747c;
     --nav-teal-dark: #035c62;
