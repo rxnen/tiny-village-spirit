@@ -38,7 +38,7 @@ main { padding-top: 94px; }
 
 .proj-hero {
     padding: 72px 6vw 0;
-    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%);
+    background: #fff;
     overflow: hidden;
 }
 
@@ -77,10 +77,10 @@ main { padding-top: 94px; }
     margin: 0 0 24px;
     color: var(--ink);
 }
-.proj-hero-title em {
+.proj-hero-title strong {
     color: var(--teal);
-    font-style: italic;
-    font-weight: 400;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .proj-hero-sub {

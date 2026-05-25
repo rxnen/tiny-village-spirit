@@ -84,6 +84,11 @@ main { padding-top: 94px; }
     font-style: italic;
     color: var(--teal);
 }
+.ab-section-title strong {
+    font-style: normal;
+    font-weight: 700;
+    color: var(--teal);
+}
 .ab-section-title.center { text-align: center; }
 .ab-section-sub {
     margin: 16px auto 0;
@@ -99,7 +104,7 @@ main { padding-top: 94px; }
 
 .ab-hero {
     padding: 80px 6vw 120px;
-    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%);
+    background: #fff;
     position: relative;
     overflow: hidden;
 }
@@ -117,9 +122,9 @@ main { padding-top: 94px; }
     max-width: 1280px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.1fr 1fr;
+    grid-template-columns: 1fr 1.1fr;
     gap: 80px;
-    align-items: center;
+    align-items: start;
     position: relative;
 }
 
@@ -133,20 +138,10 @@ main { padding-top: 94px; }
     color: var(--ink);
     text-wrap: balance;
 }
-.ab-accent {
-    position: relative;
-    display: inline-block;
+.ab-headline em {
+    font-style: normal;
     color: var(--teal);
-    font-style: italic;
-    font-weight: 400;
-}
-.swoop {
-    position: absolute;
-    left: 0; right: 0;
-    bottom: -8px;
-    width: 100%;
-    height: 14px;
-    display: block;
+    font-weight: 700;
 }
 
 .ab-sub {
@@ -181,20 +176,17 @@ main { padding-top: 94px; }
 }
 .meta-val { color: var(--ink); font-weight: 500; }
 
-/* Hero media - photo collage with stamp */
+/* Hero media - landscape main photo + portrait accent */
 .ab-hero-media {
     position: relative;
-    aspect-ratio: 4 / 5;
-    max-width: 560px;
-    margin-left: auto;
+    padding-bottom: 80px;
 }
 .ab-photo-main {
-    width: 80%;
-    aspect-ratio: 4/5;
-    border-radius: 8px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(4,116,124,0.22);
-    margin-left: auto;
+    box-shadow: 0 24px 56px rgba(4,116,124,0.18);
 }
 .ab-photo-main img {
     width: 100%; height: 100%;
@@ -202,45 +194,19 @@ main { padding-top: 94px; }
 }
 .ab-photo-stack {
     position: absolute;
-    bottom: -5%;
-    left: 0;
-    width: 50%;
-    aspect-ratio: 4/5;
-    border: 8px solid var(--cream);
+    bottom: 0;
+    right: -20px;
+    width: 42%;
+    aspect-ratio: 1 / 1;
+    border: 7px solid #fff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 16px 32px rgba(0,0,0,0.18);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.16);
 }
 .ab-photo-stack img {
     width: 100%; height: 100%;
     object-fit: cover;
 }
-.ab-stamp {
-    position: absolute;
-    top: -30px;
-    left: -10px;
-    width: 130px; height: 130px;
-    background: var(--yellow);
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-weight: 700;
-    color: #1b1b1b;
-    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
-    transform: rotate(-12deg);
-    animation: wobble 8s ease-in-out infinite;
-    z-index: 2;
-}
-@keyframes wobble {
-    0%,100% { transform: rotate(-12deg); }
-    50%     { transform: rotate(-6deg); }
-}
-.stamp-top { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; }
-.stamp-mid { font-family: 'Fraunces', serif; font-size: 16px; line-height: 1.1; margin: 6px 0; font-style: italic; }
-.stamp-bot { color: var(--teal); font-size: 12px; letter-spacing: 0.25em; }
 
 /* ===========================================================
    STORY
@@ -692,7 +658,7 @@ body.bio-modal-locked { overflow: hidden; }
    =========================================================== */
 
 .ab-partners-peek {
-    padding: 0 6vw 24px;
+    padding: 0 6vw 60px;
 }
 .peek-inner {
     max-width: 1240px;
@@ -742,7 +708,7 @@ body.bio-modal-locked { overflow: hidden; }
    =========================================================== */
 
 .ab-cta {
-    padding: 24px 6vw 120px;
+    padding: 0 6vw 120px;
 }
 .ab-cta-inner {
     max-width: 1240px;

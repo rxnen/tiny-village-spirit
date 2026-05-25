@@ -39,7 +39,7 @@ main { padding-top: 94px; }
 
 .vol-hero {
     padding: 80px 6vw 100px;
-    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%);
+    background: #fff;
     position: relative;
     overflow: hidden;
 }
@@ -91,20 +91,10 @@ main { padding-top: 94px; }
     color: var(--ink);
     text-wrap: balance;
 }
-.vol-hero-headline .vol-accent {
-    position: relative;
-    display: inline-block;
+.vol-hero-headline em {
+    font-style: normal;
+    font-weight: 700;
     color: var(--teal);
-    font-style: italic;
-    font-weight: 400;
-}
-.vol-swoop {
-    position: absolute;
-    left: 0; right: 0;
-    bottom: -8px;
-    width: 100%;
-    height: 14px;
-    display: block;
 }
 
 .vol-hero-sub {
@@ -166,17 +156,14 @@ main { padding-top: 94px; }
 /* Hero photo collage */
 .vol-hero-media {
     position: relative;
-    aspect-ratio: 5 / 4;
-    max-width: 560px;
-    margin-left: auto;
+    padding-bottom: 80px;
 }
 .vol-photo-main {
-    width: 85%;
+    width: 100%;
     aspect-ratio: 4/3;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(4,116,124,0.22);
-    margin-left: auto;
+    box-shadow: 0 24px 56px rgba(4,116,124,0.18);
 }
 .vol-photo-main img {
     width: 100%; height: 100%;
@@ -184,45 +171,19 @@ main { padding-top: 94px; }
 }
 .vol-photo-stack {
     position: absolute;
-    bottom: -8%;
-    left: 0;
-    width: 52%;
-    aspect-ratio: 4/3;
-    border: 8px solid var(--cream);
+    bottom: 0;
+    right: -20px;
+    width: 48%;
+    aspect-ratio: 1 / 1;
+    border: 7px solid #fff;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 16px 32px rgba(0,0,0,0.18);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.16);
 }
 .vol-photo-stack img {
     width: 100%; height: 100%;
     object-fit: cover;
 }
-.vol-stamp {
-    position: absolute;
-    top: -28px;
-    left: -10px;
-    width: 124px; height: 124px;
-    background: var(--yellow);
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-weight: 700;
-    color: #1b1b1b;
-    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
-    transform: rotate(-12deg);
-    animation: vol-wobble 8s ease-in-out infinite;
-    z-index: 2;
-}
-@keyframes vol-wobble {
-    0%,100% { transform: rotate(-12deg); }
-    50%     { transform: rotate(-5deg); }
-}
-.vol-stamp-top { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; }
-.vol-stamp-mid { font-family: 'Fraunces', serif; font-size: 15px; line-height: 1.15; margin: 5px 0; font-style: italic; }
-.vol-stamp-bot { color: var(--teal); font-size: 11px; letter-spacing: 0.2em; }
 
 /* ===========================================================
    WHY VOLUNTEER STRIP
@@ -242,41 +203,32 @@ main { padding-top: 94px; }
 }
 
 .vol-why-card {
-    background: #fff;
-    border: 1px solid var(--hairline);
-    border-radius: 14px;
-    padding: 32px 28px;
+    background: var(--cream-warm);
+    border-radius: 16px;
+    padding: 36px 32px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+    border-top: 4px solid var(--teal);
     transition: transform .3s, box-shadow .3s;
 }
 .vol-why-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 24px 40px rgba(4,116,124,0.1);
-}
-
-.vol-why-icon {
-    width: 52px; height: 52px;
-    border-radius: 13px;
-    background: rgba(4,116,124,0.08);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 22px;
-    color: var(--teal);
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(4,116,124,0.08);
 }
 .vol-why-card h3 {
     font-family: 'Fraunces', serif;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 24px;
     margin: 0;
     letter-spacing: -0.01em;
     color: var(--ink);
 }
 .vol-why-card p {
-    font-size: 15px;
+    font-size: 16px;
     color: var(--muted);
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 /* ===========================================================

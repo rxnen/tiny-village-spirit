@@ -17,14 +17,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="ab-hero-grid">
             <div class="ab-hero-text">
                 <h1 class="ab-headline">
-                    We build<br>
-                    <span class="ab-accent">
-                        community<svg class="swoop" viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 70 -2, 160 -2, 298 7" fill="none" stroke="#ffcc02" stroke-width="4" stroke-linecap="round"/></svg>
-                    </span>
+                    We build <em>community</em><br>
                     by building tiny houses.
                 </h1>
                 <p class="ab-sub">
-                    We're a Bay Area 501(c)(3) building constituent‑led tiny‑home villages and organizing the residents and allies it takes to actually end homelessness.
+                    We're a Bay Area 501(c)(3) building constituent‑led tiny‑home villages and organizing the residents and allies it takes to end homelessness.
                 </p>
                 <div class="ab-meta">
                     <div class="meta-row">
@@ -47,12 +44,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                     <img src="/media/uli-image-4.jpeg" alt="Tiny Village Spirit volunteers gathered at a build day">
                 </div>
                 <div class="ab-photo-stack">
-                    <img src="/media/uli-image-3.jpeg" alt="Volunteers painting together at a build day">
-                </div>
-                <div class="ab-stamp">
-                    <div class="stamp-top">501(c)(3)</div>
-                    <div class="stamp-mid">Built<br>by<br>Neighbors</div>
-                    <div class="stamp-bot">★ ★ ★</div>
+                    <img src="/media/painted-house-2.jpg" alt="Colorfully painted tiny house at Richmond Village">
                 </div>
             </div>
         </div>
@@ -61,10 +53,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- ============ STORY ============ -->
     <section class="ab-story">
         <div class="ab-section-head">
-            <div class="ab-eyebrow center">Our Story</div>
             <h2 class="ab-section-title center">
                 A housing crisis<br>
-                meets a <em>community</em> response.
+                meets a <strong>community</strong> response.
             </h2>
         </div>
 
@@ -127,12 +118,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- ============ TEAM ============ -->
     <section class="ab-team">
         <div class="ab-section-head">
-            <div class="ab-eyebrow center">Our Team</div>
             <h2 class="ab-section-title center">The people behind the villages.</h2>
-            <p class="ab-section-sub center">A small, scrappy team of organizers, builders, and artists — most of whom you'll see on a build day.</p>
+            <p class="ab-section-sub center">A small team of organizers, builders, and artists. Most of whom you'll find on a build day.</p>
         </div>
 
         <div class="ab-team-grid">
+            <article class="member" data-id="3">
+                <div class="member-photo">
+                    <img src="/media/team-members/sally-new.jpg" alt="Sally Hindman">
+                    <div class="member-tag">Coordinator</div>
+                </div>
+                <div class="member-info">
+                    <h3 class="member-name">Sally Hindman</h3>
+                    <div class="member-role">Coordinator · Co‑founder</div>
+                    <p class="member-blurb">34 years of interfaith work for housing justice. Founder of Youth Spirit Artworks. Co‑founder of <em>Street Spirit</em>.</p>
+                    <button class="member-toggle" type="button" aria-expanded="false">
+                        <span class="toggle-label">Read full bio</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="member-bio">
+                        <p>Sally Hindman has been involved in interfaith work to create justice with and for unsheltered people for the last thirty‑four years. In 2007, Sally founded Youth Spirit Artworks, a youth‑led SF Bay Area jobs‑training organization, where she served as Executive Director for fifteen years.</p>
+                        <p>In 2016, Youth Spirit leaders initiated efforts to create the nation's first youth tiny‑house village, responding to the affordable‑housing crisis facing young people locally. Sally project‑managed creation of the Oakland Tiny House Empowerment Village from 2016 to 2021, when it opened, and ran the village its first eighteen months. She is the co‑founder of <em>Street Spirit</em>, the 28‑year‑old SF/East Bay homeless newspaper.</p>
+                        <p>Sally received her M.Div. and M.A. in Theology and Art from Pacific School of Religion, and an undergraduate degree in Natural Resources from Cornell. She has served as adjunct faculty at the GTU Center for Art, Religion, and Education and Starr King School for the Ministry, teaching "Liberation Art."</p>
+                        <p>In 1998 she received KPFA radio's Alice Hamburg Community Service Award; in 2021 the Jefferson Award for Public Service and Urban University's "Shero" Award. Sally has been a member of the Religious Society of Friends (Quakers) since 1984.</p>
+                    </div>
+                </div>
+            </article>
+
             <article class="member" data-id="2">
                 <div class="member-photo">
                     <img src="/media/team-members/team-2.jpg" alt="Inti Gonzalez">
@@ -151,28 +163,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                         <p>Inti was a leader in organizing efforts building Youth Spirit Artwork's Oakland Tiny House Empowerment Village — involved in working groups, public speaking at events and at congregations, painting murals, and designing materials for publicity. She was previously a leader for YSA's Street Spirit homeless newspaper, facilitating the expressive voices of unhoused people through newspaper covers, drawings, and graphic arts.</p>
                         <p>At Tiny Village Spirit, Inti is a key organizer engaged in training our 12‑member Youth Organizing Team in hard and soft skills, assisting with organizing volunteer build days, and carrying out project management.</p>
                         <p>You can view Inti's art on her <a href="https://intigonzalez.com" target="_blank" rel="noopener">website</a>.</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="member" data-id="3">
-                <div class="member-photo">
-                    <img src="/media/team-members/team-3.jpg" alt="Sally Hindman">
-                    <div class="member-tag">Coordinator</div>
-                </div>
-                <div class="member-info">
-                    <h3 class="member-name">Sally Hindman</h3>
-                    <div class="member-role">Coordinator · Co‑founder</div>
-                    <p class="member-blurb">34 years of interfaith work for housing justice. Founder of Youth Spirit Artworks. Co‑founder of <em>Street Spirit</em>.</p>
-                    <button class="member-toggle" type="button" aria-expanded="false">
-                        <span class="toggle-label">Read full bio</span>
-                        <span class="toggle-icon">+</span>
-                    </button>
-                    <div class="member-bio">
-                        <p>Sally Hindman has been involved in interfaith work to create justice with and for unsheltered people for the last thirty‑four years. In 2007, Sally founded Youth Spirit Artworks, a youth‑led SF Bay Area jobs‑training organization, where she served as Executive Director for fifteen years.</p>
-                        <p>In 2016, Youth Spirit leaders initiated efforts to create the nation's first youth tiny‑house village, responding to the affordable‑housing crisis facing young people locally. Sally project‑managed creation of the Oakland Tiny House Empowerment Village from 2016 to 2021, when it opened, and ran the village its first eighteen months. She is the co‑founder of <em>Street Spirit</em>, the 28‑year‑old SF/East Bay homeless newspaper.</p>
-                        <p>Sally received her M.Div. and M.A. in Theology and Art from Pacific School of Religion, and an undergraduate degree in Natural Resources from Cornell. She has served as adjunct faculty at the GTU Center for Art, Religion, and Education and Starr King School for the Ministry, teaching "Liberation Art."</p>
-                        <p>In 1998 she received KPFA radio's Alice Hamburg Community Service Award; in 2021 the Jefferson Award for Public Service and Urban University's "Shero" Award. Sally has been a member of the Religious Society of Friends (Quakers) since 1984.</p>
                     </div>
                 </div>
             </article>
@@ -225,7 +215,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <section class="ab-partners-peek">
         <div class="peek-inner">
             <div>
-                <div class="ab-eyebrow">Partners</div>
                 <h3>None of this happens alone.</h3>
                 <p>Faith communities, schools, foundations, builders, neighbors. A village takes a village.</p>
             </div>

@@ -18,17 +18,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <!-- Left: copy -->
             <div class="vol-hero-copy">
-                <div class="vol-eyebrow">Get involved</div>
                 <h1 class="vol-hero-headline">
                     Come build<br>
-                    <span class="vol-accent">with us.
-                        <svg class="vol-swoop" viewBox="0 0 200 14" fill="none" aria-hidden="true">
-                            <path d="M4 10 Q100 2 196 10" stroke="#07b1bd" stroke-width="3" stroke-linecap="round" fill="none"/>
-                        </svg>
-                    </span>
+                    <em>with us.</em>
                 </h1>
                 <p class="vol-hero-sub">
-                    No experience needed — just a willingness to show up. We build most Saturdays in Richmond, and every pair of hands makes a difference.
+                    No experience needed, just a willingness to show up. We build most Saturdays in Richmond, and every pair of hands makes a difference.
                 </p>
 
                 <div class="vol-hero-actions">
@@ -43,16 +38,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <!-- Right: photo collage -->
             <div class="vol-hero-media">
-                <div class="vol-stamp" aria-hidden="true">
-                    <span class="vol-stamp-top">every hand</span>
-                    <span class="vol-stamp-mid">makes a<br>difference</span>
-                    <span class="vol-stamp-bot">★ join us ★</span>
-                </div>
                 <div class="vol-photo-main">
                     <img src="/media/uli-image-2.jpeg" alt="Volunteers building at a Tiny Village Spirit build day" loading="eager">
                 </div>
                 <div class="vol-photo-stack">
-                    <img src="/media/uli-image-4.jpeg" alt="Community members working together on a tiny home" loading="lazy">
+                    <img src="/media/uli-image-1.jpeg" alt="Community members working together on a tiny home" loading="lazy">
                 </div>
             </div>
 
@@ -63,17 +53,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <section class="vol-why">
         <div class="vol-why-grid">
             <div class="vol-why-card reveal">
-                <div class="vol-why-icon"><i class="fa fa-wrench"></i></div>
                 <h3>No skills required</h3>
-                <p>We'll teach you everything on-site. From framing walls to painting murals — there's always a job for every kind of person.</p>
+                <p>We'll teach you everything on-site. From framing walls to painting murals, there's always a job for every kind of person.</p>
             </div>
             <div class="vol-why-card reveal">
-                <div class="vol-why-icon"><i class="fa fa-users"></i></div>
                 <h3>Build real community</h3>
-                <p>Every Saturday is a mix of neighbors, students, faith groups, and first-timers — all working toward the same thing.</p>
+                <p>Every Saturday is a mix of neighbors, students, faith groups, and first-timers, all working toward the same thing.</p>
             </div>
             <div class="vol-why-card reveal">
-                <div class="vol-why-icon"><i class="fa fa-home"></i></div>
                 <h3>See the impact directly</h3>
                 <p>You'll watch a house go up board by board. When move-in day comes, you'll know you helped make it happen.</p>
             </div>
@@ -86,7 +73,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <!-- Left info sidebar -->
             <div class="vol-form-info reveal">
-                <div class="vol-info-eyebrow">Sign up</div>
                 <h2>Ready to show up?</h2>
                 <p>Fill out the form and we'll reach out with upcoming build days, advocacy events, and other ways to plug in.</p>
 
@@ -257,6 +243,43 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <script is:inline>
+// Filter out past build dates
+(function() {
+    const dateField = document.querySelector('.vol-field:has(.vol-dates-grid)');
+    if (!dateField) return;
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const labels = dateField.querySelectorAll('.vol-check-label');
+    let futureCount = 0;
+
+    labels.forEach(label => {
+        const value = label.querySelector('input').value;
+        // Extract date part before any " -- " suffix, e.g. "Sat. Apr. 18" or "Sun. June 6"
+        const datePart = value.split(' -- ')[0].trim();
+        const tokens = datePart.split(/\s+/);
+        const monthStr = tokens[1].replace('.', '');
+        const dayNum = parseInt(tokens[2]);
+        const d = new Date(`${monthStr} ${dayNum}, ${today.getFullYear()}`);
+        if (d < today) {
+            label.style.display = 'none';
+        } else {
+            futureCount++;
+        }
+    });
+
+    // Hide the entire question block if no future dates
+    if (futureCount === 0) {
+        dateField.style.display = 'none';
+        // Also hide the divider that follows it
+        const divider = dateField.nextElementSibling;
+        if (divider && divider.classList.contains('vol-form-divider')) {
+            divider.style.display = 'none';
+        }
+    }
+})();
+
 // Scroll reveal
 const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
