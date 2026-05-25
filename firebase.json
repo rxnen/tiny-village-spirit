@@ -1,7 +1,7 @@
 {
   "hosting": {
     "public": "dist",
-    "site": "tiny-village-spirit-ee381",
+    "site": "tiny-village-spirit",
     "ignore": [
       "firebase.json",
       "**/.*",

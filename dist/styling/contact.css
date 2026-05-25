@@ -16,7 +16,7 @@ body {
     justify-content: space-evenly;
 
     width: 100%;
-    
+
     padding: 0 18px 0 18px;
     margin-top: 20px;
 }
@@ -98,5 +98,5 @@ body {
     .contact-address {
         text-align: center;
     }
-    
+
 }

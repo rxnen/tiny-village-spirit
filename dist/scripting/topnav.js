@@ -1,26 +1,26 @@
 function responsiveNav() {
     var topnav = document.getElementById("topnav");
+    var menu = document.getElementById("menu");
     var topNavItems = document.getElementsByClassName("topnav-item");
     if (topnav.classList.contains("responsive")) {
-        topnav.classList.add("topnav");
         topnav.classList.remove("responsive");
-        document.body.style.overflow = "visible";
-        document.body.style.height = "auto";
+        menu.innerHTML = "☰";
+        document.body.style.overflow = "";
+        document.body.style.height = "";
         for (let i = 0; i < topNavItems.length; i++) {
             topNavItems[i].style.display = "none";
         }
     } else {
-        topnav.className += " responsive";
+        topnav.classList.add("responsive");
+        menu.innerHTML = "✕";
         window.scrollTo({ top: 0, behavior: 'smooth' });
-
         document.body.style.overflow = "hidden";
         document.body.style.height = "100%";
-        topnav.classList.remove("topnav");
         for (let i = 0; i < topNavItems.length; i++) {
             topNavItems[i].style.display = "block";
         }
-        }
-  }
+    }
+}
 
 let navbar = document.getElementById("topnav");
 
@@ -59,17 +59,18 @@ window.addEventListener("scroll", function() {
 
 
 window.addEventListener('resize', function(event) {
+    var topnav = document.getElementById("topnav");
+    var menu = document.getElementById("menu");
+    var topNavItems = document.getElementsByClassName("topnav-item");
     if (this.window.innerWidth > 995) {
-        var topnav = document.getElementById("topnav");
-        var topNavItems = document.getElementsByClassName("topnav-item");
-        topnav.classList.add("topnav");
         topnav.classList.remove("responsive");
+        menu.innerHTML = "☰";
+        document.body.style.overflow = "";
+        document.body.style.height = "";
         for (let i = 0; i < topNavItems.length; i++) {
-            topNavItems[i].style.display = "block";
+            topNavItems[i].style.display = "";
         }
     } else {
-        var topnav = document.getElementById("topnav");
-        var topNavItems = document.getElementsByClassName("topnav-item");
         for (let i = 0; i < topNavItems.length; i++) {
             topNavItems[i].style.display = "none";
         }
