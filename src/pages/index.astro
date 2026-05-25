@@ -12,7 +12,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- ============ HERO ============ -->
     <section class="hero">
         <div class="hero-media">
-            <video src="/media/drone-splash-3.MP4" class="hero-image" autoplay loop muted playsinline></video>
+            <video class="hero-image" autoplay loop muted playsinline poster="/media/painted-house-1.jpg">
+                <source src="/media/drone-splash-4.mp4" type="video/mp4">
+            </video>
             <div class="hero-overlay"></div> 
 
         </div>
@@ -20,7 +22,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="hero-inner">
             <h1 class="hero-headline">
                 Organizing<br>
-                <span class="headline-accent">communities</span> to end<br>
+                <span class="headline-accent">communities</span> <span style="white-space: nowrap">to end</span><br>
                 homelessness.
             </h1>
 
@@ -65,7 +67,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- ============ HERO SUB ============ -->
     <div class="hero-sub-band">
         <p class="hero-sub">
-            We partner with communities to build <strong>dignified, beautiful tiny‑home villages</strong> for our unhoused neighbors — and organize for the <strong>systemic change</strong> it takes to <strong>end homelessness</strong>.
+            We partner with communities to build <strong>dignified, beautiful tiny‑home villages</strong> for our unhoused neighbors, and organize for the <strong>systemic change</strong> it takes to <strong>end homelessness</strong>.
         </p>
     </div>
 
