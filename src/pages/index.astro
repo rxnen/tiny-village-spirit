@@ -12,7 +12,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- ============ HERO ============ -->
     <section class="hero">
         <div class="hero-media">
-            <video class="hero-image" autoplay loop muted playsinline poster="/media/painted-house-1.jpg">
+            <video class="hero-image" autoplay loop muted playsinline>
                 <source src="/media/drone-splash-4.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div> 
@@ -289,6 +289,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <script is:inline>
+// Fade in video once it starts playing (prevents poster flash)
+const heroVideo = document.querySelector('.hero-image');
+if (heroVideo) {
+    heroVideo.addEventListener('playing', () => heroVideo.classList.add('playing'), { once: true });
+    // If already playing (cached), trigger immediately
+    if (!heroVideo.paused) heroVideo.classList.add('playing');
+}
+
 // Scroll-reveal on intersection
 const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {

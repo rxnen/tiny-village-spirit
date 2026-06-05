@@ -17,15 +17,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <section class="r-hero">
         <div class="r-hero-grid">
             <div class="r-hero-text">
-                <div class="r-crumbs">
-                    <a href="/">Home</a><span class="sep">/</span><a href="/projects">Projects</a><span class="sep">/</span>Richmond
-                </div>
                 <h1 class="r-title">
                     Richmond Tiny Village,<br>
                     <em>Farm &amp; Garden.</em>
                 </h1>
                 <p class="r-lede">
-                    A seven‑agency collaboration to <strong style="color:#fff">double the emergency housing</strong> serving young people aged 18–24 in Richmond, CA — and pave the way for more tiny‑house villages across Contra Costa County.
+                    A seven‑agency collaboration to <strong style="color:#fff">double the emergency housing</strong> serving young people aged 18–24 in Richmond, CA, and pave the way for more tiny‑house villages across Contra Costa County.
                 </p>
 
                 <div class="r-hero-ctas">
@@ -91,19 +88,18 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <section class="r-about">
         <div class="r-about-grid">
             <div class="r-about-photo">
-                <img src="/media/project-image-4.png" alt="Volunteers framing a tiny house">
+                <img src="/media/uli-image-2.jpeg" alt="Volunteers building at the Richmond site">
             </div>
             <div class="r-about-text">
-                <div class="section-eyebrow">About the project</div>
                 <h2 class="section-headline" style="margin-bottom:24px;">Doubling emergency housing<br>for Richmond's youth.</h2>
 
-                <p>Tiny Village Spirit is currently engaged in leading the creation of the <strong>Richmond Tiny House Village, Farm and Garden</strong> — a seven‑agency collaboration doubling the number of dedicated emergency housing units serving young people, ages 18 to 24, in Richmond, CA.</p>
+                <p>Tiny Village Spirit is currently engaged in leading the creation of the <strong>Richmond Tiny House Village, Farm and Garden</strong>, a seven‑agency collaboration doubling the number of dedicated emergency housing units serving young people, ages 18 to 24, in Richmond, CA.</p>
 
                 <p>We are increasing the number of emergency housing units serving Richmond youth from <strong>twelve to twenty‑four</strong>, and in doing so paving the way for more tiny house villages serving unsheltered people in Richmond and Contra Costa County.</p>
 
                 <p>Volunteers are actively building on site every week.</p>
 
-                <a href="/volunteer" class="btn btn-yellow" style="margin-top:8px;">
+                <a href="/volunteer" class="btn btn-teal" style="margin-top:8px;">
                     Learn more about how you can get involved <i class="fa fa-arrow-right"></i>
                 </a>
             </div>
@@ -113,7 +109,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <!-- ============ TIMELINE ============ -->
     <section class="r-timeline">
         <div class="section-head">
-            <div class="section-eyebrow center">Project timeline</div>
             <h2 class="section-headline center">From breaking ground to<br>opening the front door.</h2>
         </div>
 
@@ -155,7 +150,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <!-- ============ GALLERY ============ -->
     <section class="r-gallery">
         <div class="section-head">
-            <div class="section-eyebrow center">From the build site</div>
             <h2 class="section-headline center">A village raised<br>by many hands.</h2>
         </div>
 
@@ -172,7 +166,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <!-- ============ INVOLVE ============ -->
     <section class="r-involve">
         <div class="section-head">
-            <div class="section-eyebrow center on-dark">Plug into Richmond</div>
             <h2 class="section-headline center" style="color:#fff;">Three ways to be part<br>of opening day.</h2>
         </div>
 
@@ -180,7 +173,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" target="_blank" class="r-iv-card primary">
                 <div class="r-iv-icon"><i class="fa fa-heart"></i></div>
                 <h3>Donate to Richmond</h3>
-                <p>$75 funds a wall panel. $500 funds a door. 100% goes into the village — no overhead.</p>
+                <p>$75 funds a wall panel. $500 funds a door. 100% goes into the village, no overhead.</p>
                 <span class="r-iv-go">Give now →</span>
             </a>
             <a href="/volunteer" class="r-iv-card">
@@ -192,7 +185,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <a href="https://www.facebook.com/groups/640023048324112/" target="_blank" rel="noopener" class="r-iv-card">
                 <div class="r-iv-icon"><i class="fa fa-facebook"></i></div>
                 <h3>Join the community</h3>
-                <p>Build days, photo updates, and the occasional mural — straight from the Richmond Project Facebook group.</p>
+                <p>Build days, photo updates, and the occasional mural, straight from the Richmond Project Facebook group.</p>
                 <span class="r-iv-go">Open Facebook →</span>
             </a>
         </div>
@@ -202,7 +195,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <section class="r-visit">
         <div class="r-visit-card">
             <div>
-                <div class="section-eyebrow">Visit the village</div>
                 <h2>Come see it being built.</h2>
                 <address>
                     175 23rd Street<br>
@@ -211,7 +203,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                 </address>
             </div>
             <a href="https://maps.app.goo.gl/unMLnHvKZ5AGGk6U7" target="_blank" class="r-visit-map">
-                <div class="r-visit-pin"><i class="fa fa-map-marker"></i></div>
+                <iframe
+                    src="https://www.google.com/maps?q=175+23rd+Street,+Richmond,+CA+94804&output=embed"
+                    width="100%" height="100%"
+                    style="border:0; display:block;"
+                    allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Richmond Tiny Village location">
+                </iframe>
+                <div class="r-visit-map-overlay"></div>
             </a>
         </div>
     </section>

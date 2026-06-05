@@ -38,7 +38,7 @@ main { padding-top: 94px; }
 
 .proj-hero {
     padding: 72px 6vw 0;
-    background: #fff;
+    background: var(--cream);
     overflow: hidden;
 }
 

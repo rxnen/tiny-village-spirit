@@ -3,49 +3,56 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout
   title="Contact | Tiny Village Spirit"
-  description="Reach out to Tiny Village Spirit"
-  ogTitle="Tiny Village Spirit"
+  description="Reach out to Tiny Village Spirit with questions, partnership ideas, or just to say hello."
+  ogTitle="Contact | Tiny Village Spirit"
   ogUrl="https://tinyvillagespirit.org/contact"
-  ogDescription="Reach out to Tiny Village Spirit"
-  keywords="Tiny Village Spirit, Contact, Tiny Village Spirit Contact, Tiny Village Spirit Contact Information, Tiny Village Spirit Contact Email, Tiny Village Spirit Contact Phone, Tiny Village Spirit Contact Address, Tiny Village Spirit Contact Form"
+  ogDescription="Reach out to Tiny Village Spirit with questions, partnership ideas, or just to say hello."
   css={['/styling/contact.css']}
-  preloadImage="/media/about-splash-image.jpeg"
 >
-    <main>
+<main>
 
-        <div class="contact">
-            <div class="contact-text">
-                <h1>Contact Us</h1>
-                <p>
-                    We would love to hear from you! Please reach out to us with any questions, comments, or concerns.
-                </p>
-                <div class="contact-options">
-                    <div class="contact-option">
-                        <h2>Email:</h2>
-                        <p>
-                            <a href="mailto:tinyvillagespirit@gmail.com" class="contact-link">tinyvillagespirit@gmail.com</a>
-                        </p>
-                    </div>
+    <!-- ============ HERO ============ -->
+    <section class="con-hero">
+        <div class="con-hero-inner">
+            <h1 class="con-hero-title">
+                We'd love to<br>
+                <strong>hear from you.</strong>
+            </h1>
+            <p class="con-hero-sub">
+                Questions, partnership ideas, media requests, or just want to say hello. We read every message.
+            </p>
+        </div>
+    </section>
 
-                    <div class="contact-option">
-                        <h2>Phone:</h2>
-                        <p>
-                            <a href="tel:510-282-0396" class="contact-link">510-282-0396</a>
-                        </p>
-                    </div>
+    <!-- ============ CONTACT DETAILS ============ -->
+    <section class="con-details">
+        <div class="con-details-inner">
 
-                    <div class="contact-option">
-                        <h2>Mailing:</h2>
-                        <span class="contact-address">
-                            Attn. Sally Hindman<br>
-                            Tiny Village Spirit<br>
-                            3129 Ellis Street<br>
-                            Berkeley, CA 94703
-                        </span>
-                    </div>
+            <a href="mailto:tinyvillagespirit@gmail.com" class="con-card">
+                <div class="con-card-icon"><i class="fa fa-envelope-o"></i></div>
+                <div class="con-card-label">Email</div>
+                <div class="con-card-value">tinyvillagespirit@gmail.com</div>
+            </a>
+
+            <a href="tel:5102820396" class="con-card">
+                <div class="con-card-icon"><i class="fa fa-phone"></i></div>
+                <div class="con-card-label">Phone</div>
+                <div class="con-card-value">(510) 282-0396</div>
+            </a>
+
+            <div class="con-card">
+                <div class="con-card-icon"><i class="fa fa-map-marker"></i></div>
+                <div class="con-card-label">Mailing address</div>
+                <div class="con-card-value">
+                    Attn. Sally Hindman<br>
+                    Tiny Village Spirit<br>
+                    3129 Ellis Street<br>
+                    Berkeley, CA 94703
                 </div>
             </div>
-        </div>
 
-    </main>
+        </div>
+    </section>
+
+</main>
 </BaseLayout>

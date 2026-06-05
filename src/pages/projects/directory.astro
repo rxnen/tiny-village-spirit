@@ -37,7 +37,7 @@ const directoryGoals = [
             <div class="dir-hero-copy reveal">
                 <h1 class="dir-hero-title">
                     A living directory of
-                    <span class="dir-accent">tiny-home villages</span>
+                    <strong class="dir-accent">tiny-home villages</strong>
                     across the country.
                 </h1>
                 <p class="dir-hero-sub">
@@ -49,32 +49,11 @@ const directoryGoals = [
                     <a href="/projects" class="dir-btn-secondary">See our projects</a>
                 </div>
 
-                <div class="dir-hero-stats">
-                    <div class="dir-stat">
-                        <div class="dir-stat-num">50</div>
-                        <div class="dir-stat-label">States worth organizing across</div>
-                    </div>
-                    <div class="dir-stat">
-                        <div class="dir-stat-num">1</div>
-                        <div class="dir-stat-label">Shared map for villages and organizers</div>
-                    </div>
-                    <div class="dir-stat">
-                        <div class="dir-stat-num">3</div>
-                        <div class="dir-stat-label">Core goals driving the network</div>
-                    </div>
-                </div>
             </div>
 
             <div class="dir-hero-media reveal">
                 <div class="dir-photo-main">
-                    <img src="/media/directory-splash.jpg" alt="Tiny house village with painted structures and community space">
-                </div>
-                <div class="dir-photo-stack">
-                    <img src="/media/painted-house-2.jpg" alt="Colorful tiny homes being built by volunteers">
-                </div>
-                <div class="dir-badge">
-                    <span class="dir-badge-mid">Map<br>Connect</span>
-                    <span class="dir-badge-bot">★ Organize ★</span>
+                    <img src="/media/directory-hero.jpg" alt="Tiny house village with painted structures and community space">
                 </div>
             </div>
         </div>
@@ -84,23 +63,16 @@ const directoryGoals = [
         <div class="dir-map-grid">
             <div class="dir-map-card reveal">
                 <div class="dir-map-head">
-                    <div class="dir-eyebrow">Interactive map</div>
                     <h2>National Directory of Tiny House Villages for the Unhoused</h2>
                     <p>Browse the growing network and explore how villages are taking shape in different communities.</p>
                 </div>
                 <div class="dir-map-shell">
-                    <iframe
-                      src="https://www.google.com/maps/d/u/0/embed?mid=1eP08FGd9XY0JPib8UT2vZ41rRAF9xSY&ehbc=2E312F"
-                      class="dir-map"
-                      title="National tiny house village directory map"
-                      loading="lazy"
-                    ></iframe>
+                    <div id="village-map"></div>
                 </div>
             </div>
 
             <aside class="dir-side reveal">
                 <div class="dir-side-card">
-                    <div class="dir-eyebrow">Directory goals</div>
                     <h3>What this network is for.</h3>
                     <div class="dir-goals">
                         {directoryGoals.map((goal) => (
@@ -116,7 +88,6 @@ const directoryGoals = [
                 </div>
 
                 <div class="dir-side-card dir-side-card-accent">
-                    <div class="dir-eyebrow on-dark">Use the network</div>
                     <h3>Building a village in your own community?</h3>
                     <p>Start with the directory, learn from existing sites, and then explore our project pages for examples from Richmond and beyond.</p>
                     <a href="/projects/blueprint" class="dir-btn-light">See the blueprint <i class="fa fa-arrow-right"></i></a>
@@ -128,15 +99,67 @@ const directoryGoals = [
 </main>
 </BaseLayout>
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 <script is:inline>
+// Scroll reveal
 const io = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
-            io.unobserve(entry.target);
-        }
+        if (entry.isIntersecting) { entry.target.classList.add('in-view'); io.unobserve(entry.target); }
     });
 }, { threshold: 0.12 });
-
 document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+// Leaflet map
+async function initMap() {
+    const res = await fetch('/data/villages.json');
+    const villages = await res.json();
+
+    const map = L.map('village-map', {
+        center: [42, -105],
+        zoom: 3,
+        scrollWheelZoom: false,
+        zoomControl: true,
+    });
+
+    // Clean OpenStreetMap tiles — CartoDB Positron (light, minimal)
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+        maxZoom: 19,
+    }).addTo(map);
+
+    // Custom teal marker
+    const icon = L.divIcon({
+        className: '',
+        html: `<div style="
+            width:14px;height:14px;
+            background:#04747c;
+            border:2.5px solid #fff;
+            border-radius:50%;
+            box-shadow:0 2px 6px rgba(4,116,124,0.45);
+        "></div>`,
+        iconSize: [14, 14],
+        iconAnchor: [7, 7],
+    });
+
+    villages.forEach(v => {
+        if (!v.lat || !v.lng) return;
+        const marker = L.marker([v.lat, v.lng], { icon }).addTo(map);
+
+        const websiteLink = v.website
+            ? `<a href="${v.website}" target="_blank" rel="noopener" style="color:#04747c;font-weight:600;text-decoration:none;">Visit website →</a>`
+            : '';
+
+        marker.bindPopup(`
+            <div style="font-family:'Poppins',sans-serif;min-width:200px;padding:4px 2px;">
+                <div style="font-family:'Fraunces',serif;font-size:16px;font-weight:500;color:#1b2426;margin-bottom:4px;line-height:1.3;">${v.name}</div>
+                <div style="font-size:12px;color:#5b6769;margin-bottom:10px;">${v.location}</div>
+                ${websiteLink}
+            </div>
+        `, { maxWidth: 260 });
+    });
+}
+
+initMap();
 </script>

@@ -108,19 +108,6 @@ const pressItems = [
       logo: true,
     },
   },
-  {
-    source: 'Community call',
-    type: 'Arts organizing',
-    title: 'Muralists needed for the Richmond Tiny House Village',
-    href: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:50416347-181e-473e-af02-71c0a3d5f965?viewer%21megaVerb=group-discover',
-    cta: 'Learn more',
-    media: {
-      kind: 'image',
-      src: '/media/richmond-art-news.jpg',
-      alt: 'Artwork for muralists needed at the Richmond Tiny House Village',
-      poster: true,
-    },
-  },
 ];
 ---
 <BaseLayout
@@ -135,30 +122,11 @@ const pressItems = [
 <main>
 
     <section class="news-hero">
-        <div class="news-hero-marquee" aria-hidden="true">
-            <div class="news-marquee-track">
-                <span>In the news</span>
-                <span>Audio reports</span>
-                <span>Community storytelling</span>
-                <span>Richmond build updates</span>
-                <span>Housing justice</span>
-                <span>In the news</span>
-                <span>Audio reports</span>
-                <span>Community storytelling</span>
-                <span>Richmond build updates</span>
-                <span>Housing justice</span>
-            </div>
-        </div>
         <div class="news-hero-grid">
             <div class="news-hero-copy reveal">
-                <div class="news-eyebrow">Press &amp; updates</div>
                 <h1 class="news-hero-title">
                     The story is spreading
-                    <span class="news-accent">beyond the <span class="news-accent-underline">build site.
-                        <svg class="news-swoop" viewBox="0 0 220 14" fill="none" aria-hidden="true">
-                            <path d="M4 10 Q110 0 216 10" stroke="#ffcc02" stroke-width="4" stroke-linecap="round" fill="none"/>
-                        </svg>
-                    </span></span>
+                    <span class="news-accent">beyond the build site.</span>
                 </h1>
                 <p class="news-hero-sub">
                     From neighborhood reporting to regional media, this coverage tracks how tiny-home villages, community art, and grassroots organizing are reshaping what housing justice can look like in the Bay Area.
@@ -173,20 +141,6 @@ const pressItems = [
                     </a>
                 </div>
 
-                <div class="news-hero-stats">
-                    <div class="news-stat">
-                        <div class="news-stat-num">8</div>
-                        <div class="news-stat-label">Stories and video features</div>
-                    </div>
-                    <div class="news-stat">
-                        <div class="news-stat-num">3</div>
-                        <div class="news-stat-label">Formats: print, audio, and film</div>
-                    </div>
-                    <div class="news-stat">
-                        <div class="news-stat-num">1</div>
-                        <div class="news-stat-label">Growing movement for housing justice</div>
-                    </div>
-                </div>
             </div>
 
             <div class="news-hero-media reveal">
@@ -205,29 +159,12 @@ const pressItems = [
                 <div class="news-hero-photo-stack">
                     <img src="/media/painted-house-2.jpg" alt="Community art at the Richmond Tiny House Village project">
                 </div>
-                <div class="news-badge">
-                    <span class="news-badge-top">In the press</span>
-                    <span class="news-badge-bot">★ Bay Area ★</span>
-                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="news-intro">
-        <div class="news-intro-card reveal">
-            <div>
-                <div class="news-eyebrow">Why this matters</div>
-                <h2>Coverage helps neighbors picture a different housing response.</h2>
-            </div>
-            <p>
-                Each story helps more people see that tiny-home villages can be dignified, beautiful, resident-centered, and built through real community partnership.
-            </p>
         </div>
     </section>
 
     <section class="news-featured" id="featured-coverage">
         <div class="news-section-head">
-            <div class="news-eyebrow center">Featured coverage</div>
             <h2 class="news-section-title center">A closer look at the Richmond build<br>and the movement around it.</h2>
         </div>
 
@@ -260,7 +197,6 @@ const pressItems = [
 
     <section class="news-grid-section">
         <div class="news-section-head">
-            <div class="news-eyebrow center">More coverage</div>
             <h2 class="news-section-title center">Stories, profiles, and community updates<br>from across the project.</h2>
         </div>
 
@@ -294,10 +230,20 @@ const pressItems = [
         </div>
     </section>
 
+    <section class="news-intro">
+        <div class="news-intro-card reveal">
+            <div>
+                <h2>Coverage helps neighbors picture a different housing response.</h2>
+            </div>
+            <p>
+                Each story helps more people see that tiny-home villages can be dignified, beautiful, resident-centered, and built through real community partnership.
+            </p>
+        </div>
+    </section>
+
     <section class="news-cta">
         <div class="news-cta-inner reveal">
             <div>
-                <div class="news-eyebrow on-dark">Be part of the next story</div>
                 <h2>Help build what people are talking about.</h2>
                 <p>Join a volunteer day, support the Richmond village, or help carry this work into more neighborhoods.</p>
             </div>

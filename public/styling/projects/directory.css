@@ -91,8 +91,8 @@ main { padding-top: 94px; }
 
 .dir-accent {
     color: var(--teal);
-    font-style: italic;
-    font-weight: 400;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .dir-hero-sub {
@@ -177,18 +177,16 @@ main { padding-top: 94px; }
 
 .dir-hero-media {
     position: relative;
-    aspect-ratio: 5 / 4;
     max-width: 560px;
     margin-left: auto;
 }
 
 .dir-photo-main {
-    width: 84%;
+    width: 100%;
     aspect-ratio: 4 / 3;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(4, 116, 124, 0.22);
-    margin-left: auto;
+    box-shadow: 0 24px 56px rgba(4, 116, 124, 0.18);
 }
 
 .dir-photo-main img,
@@ -341,9 +339,13 @@ main { padding-top: 94px; }
     overflow: hidden;
     border: 1px solid rgba(4, 116, 124, 0.12);
     box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
+    isolation: isolate;
+    position: relative;
+    z-index: 1;
 }
 
-.dir-map {
+.dir-map,
+#village-map {
     width: 100%;
     height: 680px;
     background: #e7f0f1;
