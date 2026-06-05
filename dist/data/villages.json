@@ -1,0 +1,2284 @@
+[
+  {
+    "name": "Tiny House Project",
+    "location": "Los Angeles, CA",
+    "website": "https://www.thetinyhouse.org/",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "A Tiny Home for Good",
+    "location": "Syracuse, New York",
+    "website": "https://www.atinyhomeforgood.org/",
+    "lat": 43.0481221,
+    "lng": -76.1474244
+  },
+  {
+    "name": "Infinity Village",
+    "location": "Nashville, Tennessee",
+    "website": "https://www.gofundme.com/f/homelessvillage",
+    "lat": 36.1622767,
+    "lng": -86.7742984
+  },
+  {
+    "name": "Othello Village",
+    "location": "Seattle, Washington",
+    "website": "https://lihihousing.org",
+    "lat": 47.6038321,
+    "lng": -122.330062
+  },
+  {
+    "name": "Second Wind Cottages",
+    "location": "Newfield, New York",
+    "website": "https://www.secondwindcottages.org/",
+    "lat": 42.357703,
+    "lng": -76.5912377
+  },
+  {
+    "name": "The Cottages at Hickory Crossing",
+    "location": "Dallas, Texas",
+    "website": "https://www.citysquare.org/",
+    "lat": 32.7762719,
+    "lng": -96.7968559
+  },
+  {
+    "name": "Community First! Village",
+    "location": "Austin, Texas",
+    "website": "https://mlf.org/community-first/",
+    "lat": 30.2711286,
+    "lng": -97.7436995
+  },
+  {
+    "name": "Quixote Communities",
+    "location": "Olympia, Washington",
+    "website": "https://www.quixotecommunities.org/",
+    "lat": 47.0451022,
+    "lng": -122.8950075
+  },
+  {
+    "name": "Dignity Village",
+    "location": "Portland, Oregon",
+    "website": "https://dignityvillage.org/",
+    "lat": 45.5202471,
+    "lng": -122.674194
+  },
+  {
+    "name": "Hope the Mission",
+    "location": "Pacoima, CA",
+    "website": "https://www.hopeofthevalley.org/",
+    "lat": 34.2625025,
+    "lng": -118.427027
+  },
+  {
+    "name": "Eden Village USA",
+    "location": "Springfield, MO",
+    "website": "https://edenvillageusa.org/",
+    "lat": 37.2081729,
+    "lng": -93.2922715
+  },
+  {
+    "name": "Colorado Village Collaborative",
+    "location": "Denver, CO",
+    "website": "https://www.coloradovillagecollaborative.org/",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "Avivo Village",
+    "location": "Minneapolis, MN",
+    "website": "https://avivomn.org/",
+    "lat": 44.9772995,
+    "lng": -93.2654692
+  },
+  {
+    "name": "Occupy Madison Village",
+    "location": "Madison, Wisconsin",
+    "website": "https://occupymadisoninc.com/",
+    "lat": 43.07469,
+    "lng": -89.3841663
+  },
+  {
+    "name": "Tiny Home Detroit",
+    "location": "Detroit, MI",
+    "website": "https://casscommunity.org/",
+    "lat": 42.3315509,
+    "lng": -83.0466403
+  },
+  {
+    "name": "Our Calling",
+    "location": "Dallas, TX",
+    "website": "https://www.ourcalling.org/home/",
+    "lat": 32.7762719,
+    "lng": -96.7968559
+  },
+  {
+    "name": "The Other Side Village",
+    "location": "Salt Lake City, UT",
+    "website": "https://theothersidevillage.com/",
+    "lat": 40.7596198,
+    "lng": -111.886797
+  },
+  {
+    "name": "Plum Street Village",
+    "location": "Olympia, WA",
+    "website": "https://www.olympiawa.gov/",
+    "lat": 47.0451022,
+    "lng": -122.8950075
+  },
+  {
+    "name": "Operation Tiny House",
+    "location": "Dallas, TX",
+    "website": "https://www.operationtinyhouse.org/",
+    "lat": 32.7762719,
+    "lng": -96.7968559
+  },
+  {
+    "name": "Sound Foundation NW",
+    "location": "Seattle, WA",
+    "website": "https://www.soundfoundationsnw.org/",
+    "lat": 47.6038321,
+    "lng": -122.330062
+  },
+  {
+    "name": "Hope's Village of SLO",
+    "location": "Templeton, CA",
+    "website": "https://hopesvillageofslo.com/",
+    "lat": 35.549,
+    "lng": -120.7
+  },
+  {
+    "name": "Cove at Dundee--Tiny House Project",
+    "location": "Savannah, GA",
+    "website": "https://www.homelessauthority.org/",
+    "lat": 32.0790074,
+    "lng": -81.0921335
+  },
+  {
+    "name": "TOJ Tiny Home Homeless Project",
+    "location": "Dallas, TX",
+    "website": "https://www.cmoretinyhomevillages.org/",
+    "lat": 32.7762719,
+    "lng": -96.7968559
+  },
+  {
+    "name": "The Block Project",
+    "location": "Seattle, WA",
+    "website": "https://www.the-block-project.org/",
+    "lat": 47.6038321,
+    "lng": -122.330062
+  },
+  {
+    "name": "San Gabriel Valley Regional Housing Trust",
+    "location": "Monrovia, CA",
+    "website": "https://www.sgvrht.org/tinyhomes",
+    "lat": 34.1483499,
+    "lng": -118.0014517
+  },
+  {
+    "name": "Square One Village",
+    "location": "Eugene, OR",
+    "website": "https://www.squareonevillages.org/",
+    "lat": 44.0505054,
+    "lng": -123.0950506
+  },
+  {
+    "name": "Goodness Village",
+    "location": "Livermore, CA",
+    "website": "https://gvlivermore.org/",
+    "lat": 37.6820583,
+    "lng": -121.768053
+  },
+  {
+    "name": "Pallet Shelter",
+    "location": "Everett, WA",
+    "website": "https://palletshelter.com/",
+    "lat": 47.9793437,
+    "lng": -122.2127011
+  },
+  {
+    "name": "Community Roots",
+    "location": "Vancouver, WA",
+    "website": "https://www.c-roots.org/",
+    "lat": 45.6306954,
+    "lng": -122.6744557
+  },
+  {
+    "name": "Edmonds Unitarian Universalist Congregation",
+    "location": "Edmonds, WA",
+    "website": "https://euuc.org/tiny-houses/",
+    "lat": 47.8105738,
+    "lng": -122.3774952
+  },
+  {
+    "name": "House of Hope of the Pee Dee",
+    "location": "Florence, SC",
+    "website": "https://hofh.org/",
+    "lat": 34.1984435,
+    "lng": -79.7671658
+  },
+  {
+    "name": "The Tiny Village",
+    "location": "Knoxville, TN",
+    "website": "https://tinyvillageknox.com/",
+    "lat": 35.9603948,
+    "lng": -83.9210261
+  },
+  {
+    "name": "Tiny House Ministries",
+    "location": "Anabel, MO",
+    "website": "https://www.tinyhouseministries.org/",
+    "lat": 39.7458688,
+    "lng": -92.3332389
+  },
+  {
+    "name": "Dignity Moves",
+    "location": "San Francisco, CA",
+    "website": "https://dignitymoves.org/",
+    "lat": 37.7879363,
+    "lng": -122.4075201
+  },
+  {
+    "name": "Everhart Village",
+    "location": "Chico, CA",
+    "website": "https://www.chicohousingactionteam.net/",
+    "lat": 39.7284945,
+    "lng": -121.8374777
+  },
+  {
+    "name": "The Villages at Cabrillo",
+    "location": "Long Beach, CA",
+    "website": "https://centuryvillages.org/",
+    "lat": 33.7690164,
+    "lng": -118.191604
+  },
+  {
+    "name": "Beloved Community Village",
+    "location": "Denver, CO",
+    "website": "https://www.coloradovillagecollaborative.org/",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "Low Income Housing Institute",
+    "location": "Seattle, WA",
+    "website": "https://lihi.org/tiny-houses/",
+    "lat": 47.6038321,
+    "lng": -122.330062
+  },
+  {
+    "name": "James A Pearson Veterans Village",
+    "location": "Racine, WI",
+    "website": "https://vetsoutreachwi.us/vets-village/",
+    "lat": 42.7313756,
+    "lng": -87.7834769
+  },
+  {
+    "name": "Community Supported Shelters",
+    "location": "Eugene, OR",
+    "website": "https://communitysupportedshelters.org/",
+    "lat": 44.0505054,
+    "lng": -123.0950506
+  },
+  {
+    "name": "Homeless 2 Home",
+    "location": "Daytona Beach, FL",
+    "website": "https://homeless2home.org/",
+    "lat": 29.2108147,
+    "lng": -81.0228331
+  },
+  {
+    "name": "Veterans Village",
+    "location": "St. Louis, MO",
+    "website": "https://www.veteranscommunityproject.org/",
+    "lat": 38.6254063,
+    "lng": -90.190009
+  },
+  {
+    "name": "Esperanza Villa",
+    "location": "Baldwin Park, CA",
+    "website": "https://www.sgvrht.org/esperanzavilla",
+    "lat": 34.0854739,
+    "lng": -117.9611761
+  },
+  {
+    "name": "Serenity Home Family Site",
+    "location": "Baldwin Park, CA",
+    "website": "https://www.sgvrht.org/familysite",
+    "lat": 34.0854739,
+    "lng": -117.9611761
+  },
+  {
+    "name": "Operation Stay Safe",
+    "location": "Montebello, CA",
+    "website": "https://www.sgvrht.org/operationstaysafe",
+    "lat": 34.0159398,
+    "lng": -118.111975
+  },
+  {
+    "name": "Dome Village",
+    "location": "Los Angeles, CA",
+    "website": "http://domevillage.tedhayes.us/",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "Branford Village Tiny Homes",
+    "location": "Sun Valley, Los Angeles, CA",
+    "website": "",
+    "lat": 34.2204227,
+    "lng": -118.3878945
+  },
+  {
+    "name": "Turning Point",
+    "location": "Ventura, CA",
+    "website": "https://turningpointfoundation.org/",
+    "lat": 34.4458248,
+    "lng": -119.0779359
+  },
+  {
+    "name": "Petaluma People's Village",
+    "location": "Petaluma, CA",
+    "website": "https://cityofpetaluma.org/peoplesvillage/",
+    "lat": 38.2325829,
+    "lng": -122.636465
+  },
+  {
+    "name": "Genesis Joy House Homeless Shelter",
+    "location": "Warner Robins, GA",
+    "website": "https://genesisjoyhouse.com/",
+    "lat": 32.6200973,
+    "lng": -83.606568
+  },
+  {
+    "name": "5Cities Homeless Coalition",
+    "location": "Grover Beach, CA",
+    "website": "https://www.5chc.org/",
+    "lat": 35.1209452,
+    "lng": -120.621837
+  },
+  {
+    "name": "Affordable Homeless Housing Alternative",
+    "location": "Eureka, CA",
+    "website": "https://www.ahha-humco.org/",
+    "lat": 40.8018746,
+    "lng": -124.1707558
+  },
+  {
+    "name": "Alpha Project for the Homeless",
+    "location": "San Diego, CA",
+    "website": "https://www.alphaproject.org/",
+    "lat": 32.7174202,
+    "lng": -117.162772
+  },
+  {
+    "name": "Bakersfield-Kern Regional Homeless Collaborative",
+    "location": "Bakersfield, CA",
+    "website": "https://bkrhc.org/",
+    "lat": 35.3738712,
+    "lng": -119.019463
+  },
+  {
+    "name": "BD Wise Ministry to the Homeless",
+    "location": "Downey, CA",
+    "website": "https://www.bdwise4u.org/",
+    "lat": 33.9404441,
+    "lng": -118.1292846
+  },
+  {
+    "name": "Betty Fund Homes for the Homeless",
+    "location": "Laguna Niguel, CA",
+    "website": "https://bettyfund.org/",
+    "lat": 33.5225261,
+    "lng": -117.7075526
+  },
+  {
+    "name": "The Betty Kwan Chinn Homeless Foundation",
+    "location": "Eureka, CA",
+    "website": "https://www.bettychinn.org/",
+    "lat": 40.8018746,
+    "lng": -124.1707558
+  },
+  {
+    "name": "Carmichael Hart Homeless Assistant Resource Team",
+    "location": "Carmichael, CA",
+    "website": "https://carmichaelhart.org/",
+    "lat": 38.622,
+    "lng": -121.329
+  },
+  {
+    "name": "CCAM New Beginnings Homeless Center",
+    "location": "Fayetteville, AR",
+    "website": "https://newbeginningsnwa.org/",
+    "lat": 36.0625843,
+    "lng": -94.1574328
+  },
+  {
+    "name": "Coalition of Tracy Citizens to Assist the Homeless",
+    "location": "Tracy, CA",
+    "website": "https://tracyhomeless.com/",
+    "lat": 37.739,
+    "lng": -121.425
+  },
+  {
+    "name": "Community Homeless Solutions",
+    "location": "Marina, CA",
+    "website": "https://www.communityhomelesssolutions.org/",
+    "lat": 36.6844029,
+    "lng": -121.802173
+  },
+  {
+    "name": "Eco Villages for the Homeless",
+    "location": "Laguna Beach, CA",
+    "website": "https://ecovillagesforthehomeless.org/",
+    "lat": 33.5426975,
+    "lng": -117.785366
+  },
+  {
+    "name": "Homeless Action Coalition",
+    "location": "Martinez, CA",
+    "website": "https://homelessactioncoalition.org/",
+    "lat": 38.0138934,
+    "lng": -122.1338674
+  },
+  {
+    "name": "Homeless Action Brentwood",
+    "location": "Los Angeles, CA",
+    "website": "https://homelessactionofbrentwood.org/",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "Coalition for the Homeless",
+    "location": "New York, NY",
+    "website": "https://www.coalitionforthehomeless.org/",
+    "lat": 40.7127281,
+    "lng": -74.0060152
+  },
+  {
+    "name": "Homeless First Inc",
+    "location": "Orinda, CA",
+    "website": "https://hfal.org/",
+    "lat": 37.8771476,
+    "lng": -122.1796888
+  },
+  {
+    "name": "Homeless No More Inc",
+    "location": "Los Angeles, CA",
+    "website": "https://www.homelessnomoresc.org/",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "Homeless Solution Foundation",
+    "location": "San Bernardino, CA",
+    "website": "https://homelesssolutions.org/",
+    "lat": 34.8253019,
+    "lng": -116.0833144
+  },
+  {
+    "name": "Oak Park Homeless Project",
+    "location": "Sacramento, CA",
+    "website": "https://www.endhomelessnessoakpark.com/",
+    "lat": 38.5810606,
+    "lng": -121.493895
+  },
+  {
+    "name": "Open Source Homelessness Initiative",
+    "location": "Los Angeles, CA",
+    "website": "https://oshi-la.org/",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "Tiny Home Objective",
+    "location": "Agate, CO",
+    "website": "https://tinyhomeobjective.com/",
+    "lat": 39.4619667,
+    "lng": -103.9429786
+  },
+  {
+    "name": "Tiny Houses in the Name of Christ",
+    "location": "Langley, WA",
+    "website": "https://thincwhidbey.com/",
+    "lat": 48.0399806,
+    "lng": -122.4094051
+  },
+  {
+    "name": "Tiny House Hand Up Inc",
+    "location": "Calhoun, GA",
+    "website": "",
+    "lat": 34.503,
+    "lng": -84.951
+  },
+  {
+    "name": "Idaho Tiny House Association",
+    "location": "Boise, ID",
+    "website": "https://www.mightycause.com/",
+    "lat": 43.6166163,
+    "lng": -116.200886
+  },
+  {
+    "name": "Tiny House Community Development",
+    "location": "Greensboro, NC",
+    "website": "https://www.tinyhousesgreensboro.com/",
+    "lat": 36.0726355,
+    "lng": -79.7919754
+  },
+  {
+    "name": "Tiny Home Village at Bernalillo",
+    "location": "Bernalillo, NM",
+    "website": "https://www.bernco.gov/",
+    "lat": 35.0349239,
+    "lng": -106.6870693
+  },
+  {
+    "name": "Tiny Cottage Concept",
+    "location": "Mississippi",
+    "website": "https://www.tinycottageconcept.com/",
+    "lat": 32.9715285,
+    "lng": -89.7348497
+  },
+  {
+    "name": "Tiny House Alliance USA",
+    "location": "Marlin, WA",
+    "website": "https://www.tinyhouseallianceusa.org/",
+    "lat": 47.409684,
+    "lng": -118.989414
+  },
+  {
+    "name": "Hand in Hand",
+    "location": "Brunswick, GA",
+    "website": "https://handinhandofglynn.org/",
+    "lat": 31.1499528,
+    "lng": -81.4914894
+  },
+  {
+    "name": "City Lights Foundation of Oklahoma",
+    "location": "Tulsa, OK",
+    "website": "https://www.citylightsok.org/",
+    "lat": 36.1563122,
+    "lng": -95.9927516
+  },
+  {
+    "name": "CJK Community Homes",
+    "location": "Tacoma, WA",
+    "website": "https://cjkcommunityhomes.org/",
+    "lat": 47.2455013,
+    "lng": -122.438329
+  },
+  {
+    "name": "YSA Tiny House Empowerment Village",
+    "location": "Oakland, CA",
+    "website": "https://youthspiritartworks.org/",
+    "lat": 37.8044557,
+    "lng": -122.271356
+  },
+  {
+    "name": "Small House Society",
+    "location": "Iowa City, IA",
+    "website": "https://smallhousesociety.net/",
+    "lat": 41.6612561,
+    "lng": -91.5299106
+  },
+  {
+    "name": "Tiny Home Village at the Farm at Penny Lane",
+    "location": "Pittsboro, NC",
+    "website": "https://tinyhomes.web.unc.edu/",
+    "lat": 35.7201229,
+    "lng": -79.1771539
+  },
+  {
+    "name": "Tiny Pine Foundation",
+    "location": "Oroville, CA",
+    "website": "https://www.tinypinefoundation.org/",
+    "lat": 39.5137752,
+    "lng": -121.556359
+  },
+  {
+    "name": "Homes on Wheels Alliance",
+    "location": "Pahrump, NV",
+    "website": "https://homesonwheelsalliance.org/",
+    "lat": 36.204178,
+    "lng": -116.0260261
+  },
+  {
+    "name": "Street Life Project",
+    "location": "Coachella Valley, CA",
+    "website": "https://www.streetlifeproject.com/",
+    "lat": 33.7672351,
+    "lng": -116.3560439
+  },
+  {
+    "name": "Big Skills Tiny Homes",
+    "location": "Marin County, CA",
+    "website": "https://bigskillstinyhomes.org/",
+    "lat": 38.0409144,
+    "lng": -122.6199638
+  },
+  {
+    "name": "Working Fusion",
+    "location": "Colorado",
+    "website": "https://workingfusion.com/",
+    "lat": 38.7251776,
+    "lng": -105.607716
+  },
+  {
+    "name": "Richmond Tiny House Village, Farm & Garden",
+    "location": "Richmond, CA",
+    "website": "https://tinyvillagespirit.org/projects/richmond",
+    "lat": 37.936,
+    "lng": -122.347
+  },
+  {
+    "name": "Idaho Veterans Chambers of Commerce",
+    "location": "Boise, Idaho",
+    "website": "https://www.idahoveterans.org/",
+    "lat": 43.6166163,
+    "lng": -116.200886
+  },
+  {
+    "name": "tiny home villages/communities for the homeless in the US",
+    "location": "Springfield, MO",
+    "website": "https://edenvillageusa.org/",
+    "lat": 37.2081729,
+    "lng": -93.2922715
+  },
+  {
+    "name": "Collorado Villaage Collaborative",
+    "location": "Denver, CO",
+    "website": "https://www.coloradovillagecollaborative.org/",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "Sound Foundation NW",
+    "location": "Nevada St., Seattle",
+    "website": "https://www.soundfoundationsnw.org/",
+    "lat": 47.6642736,
+    "lng": -122.4058108
+  },
+  {
+    "name": "Hope's Village of SLO",
+    "location": "Templeton, CA",
+    "website": "https://hopesvillageofslo.com/",
+    "lat": 35.549,
+    "lng": -120.7
+  },
+  {
+    "name": "The Block Project",
+    "location": "Seattle | WA",
+    "website": "https://www.the-block-project.org/",
+    "lat": 47.6038321,
+    "lng": -122.330062
+  },
+  {
+    "name": "The Villages at Cabrillo",
+    "location": "Long Beach,CA",
+    "website": "https://centuryvillages.org/",
+    "lat": 33.7690164,
+    "lng": -118.191604
+  },
+  {
+    "name": "A Tiny Home for Good",
+    "location": "Syracuse,NY",
+    "website": "https://www.atinyhomeforgood.org",
+    "lat": 43.0481221,
+    "lng": -76.1474244
+  },
+  {
+    "name": "Beloved Community Village",
+    "location": "Denver,CO",
+    "website": "https://www.coloradovillagecollaborative.org/beloved-community-village",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "The Tiny House Project",
+    "location": "Los Angeles, CA",
+    "website": "https://www.thetinyhouse.org/",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "Low Income Housing Institute",
+    "location": "Seattle,WA",
+    "website": "https://lihi.org/tiny-houses/",
+    "lat": 47.6038321,
+    "lng": -122.330062
+  },
+  {
+    "name": "Community Supported Shelters",
+    "location": "Eugene OR",
+    "website": "https://communitysupportedshelters.org/",
+    "lat": 44.0505054,
+    "lng": -123.0950506
+  },
+  {
+    "name": "Esperanza Villa",
+    "location": "BALDWIN PARK, Calif",
+    "website": "https://www.sgvrht.org/esperanzavilla",
+    "lat": 34.0854739,
+    "lng": -117.9611761
+  },
+  {
+    "name": "Serenity Home Family Site",
+    "location": "BALDWIN PARK, Calif",
+    "website": "https://www.sgvrht.org/familysite",
+    "lat": 34.0854739,
+    "lng": -117.9611761
+  },
+  {
+    "name": "Operation Stay Safe",
+    "location": "Montebello, Calif",
+    "website": "https://www.sgvrht.org/operationstaysafe",
+    "lat": 34.0159398,
+    "lng": -118.111975
+  },
+  {
+    "name": "dome village",
+    "location": "Los Angeles",
+    "website": "http://domevillage.tedhayes.us/",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "Branford Village Tiny Homes",
+    "location": "Sun Valley, Los Angeles",
+    "website": "",
+    "lat": 34.2204227,
+    "lng": -118.3878945
+  },
+  {
+    "name": "Turning point",
+    "location": "Ventura, CA",
+    "website": "https://turningpointfoundation.org/river-haven-housing/",
+    "lat": 34.4458248,
+    "lng": -119.0779359
+  },
+  {
+    "name": "Petaluma People's Village",
+    "location": "Petaluma, CA",
+    "website": "<![CDATA[https://cityofpetaluma.org/peoplesvillage/#:~:text=People's%20Village%20is%20a%20City,people%20currently%20living%20in%20encampments.]]>",
+    "lat": 38.2325829,
+    "lng": -122.636465
+  },
+  {
+    "name": "Genesis Joy House Homeless Shelter Inc.",
+    "location": "Warner Robins, GA",
+    "website": "https://genesisjoyhouse.com/",
+    "lat": 32.6200973,
+    "lng": -83.606568
+  },
+  {
+    "name": "5CITIES HOMELESS COALITION",
+    "location": "Grover Beach, CA",
+    "website": "https://www.5chc.org/",
+    "lat": 35.1209452,
+    "lng": -120.621837
+  },
+  {
+    "name": "Affordable Homeless Housing alternative Inc",
+    "location": "Ereker, CA",
+    "website": "https://www.ahha-humco.org/",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "Bakersfield-Kern Regional Homeless Collaborative",
+    "location": "BakersfieLd, CA",
+    "website": "https://bkrhc.org/",
+    "lat": 35.3738712,
+    "lng": -119.019463
+  },
+  {
+    "name": "Betty-Fund Homes for the Homeless",
+    "location": "Laguna Niguel, CA",
+    "website": "https://bettyfund.org/",
+    "lat": 33.5225261,
+    "lng": -117.7075526
+  },
+  {
+    "name": "THE BETTY KWAN CHINN HOMELESS FOUNDATION",
+    "location": "Ereker, CA",
+    "website": "https://www.bettychinn.org/",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "CCAM the New Beginnings Homeless Center",
+    "location": "Fayetteville, AR",
+    "website": "https://newbeginningsnwa.org/",
+    "lat": 36.0625843,
+    "lng": -94.1574328
+  },
+  {
+    "name": "Eco Villages",
+    "location": "Laguna Beach, CA",
+    "website": "https://ecovillagesforthehomeless.org/",
+    "lat": 33.5426975,
+    "lng": -117.785366
+  },
+  {
+    "name": "Homeless Action Brentford",
+    "location": "Los Angeles, CA",
+    "website": "https://homelessactionofbrentwood.org/",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "Homeless Solution Foudation",
+    "location": "San Bernardino, CA",
+    "website": "https://homelesssolutions.org/",
+    "lat": 34.8253019,
+    "lng": -116.0833144
+  },
+  {
+    "name": "Idaho tiny house association",
+    "location": "Boise, ID",
+    "website": "https://www.mightycause.com/",
+    "lat": 43.6166163,
+    "lng": -116.200886
+  },
+  {
+    "name": "Tiny home village",
+    "location": "Bernalillo, New Mexico",
+    "website": "https://www.bernco.gov/county-manager/behavioral-health-initiative/housing-supports/tiny-home-village/",
+    "lat": 35.0349239,
+    "lng": -106.6870693
+  },
+  {
+    "name": "Tiny cottage concept",
+    "location": "Mississippi",
+    "website": "https://www.tinycottageconcept.com/",
+    "lat": 32.9715285,
+    "lng": -89.7348497
+  },
+  {
+    "name": "The block project",
+    "location": "Seattle, WA",
+    "website": "https://www.the-block-project.org/",
+    "lat": 47.6038321,
+    "lng": -122.330062
+  },
+  {
+    "name": "Tiny house alliance USA",
+    "location": "Marlin, WA",
+    "website": "https://www.tinyhouseallianceusa.org/",
+    "lat": 47.409684,
+    "lng": -118.989414
+  },
+  {
+    "name": "Tiny house movement",
+    "location": "Los Angeles, CA",
+    "website": "",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "Hand in hand",
+    "location": "Brunswick, GA",
+    "website": "https://handinhandofglynn.org/",
+    "lat": 31.1499528,
+    "lng": -81.4914894
+  },
+  {
+    "name": "City lights foundation of Oklahoma",
+    "location": "Tulsa, OK",
+    "website": "https://www.citylightsok.org/",
+    "lat": 36.1563122,
+    "lng": -95.9927516
+  },
+  {
+    "name": "CJK community homes",
+    "location": "Tacoma, WA",
+    "website": "https://cjkcommunityhomes.org/",
+    "lat": 47.2455013,
+    "lng": -122.438329
+  },
+  {
+    "name": "Small house society",
+    "location": "Iowa City, IA",
+    "website": "https://smallhousesociety.net/",
+    "lat": 41.6612561,
+    "lng": -91.5299106
+  },
+  {
+    "name": "Tiny home village at the farm at Penny Lane",
+    "location": "Pittsboro, NC",
+    "website": "https://tinyhomes.web.unc.edu/",
+    "lat": 35.7201229,
+    "lng": -79.1771539
+  },
+  {
+    "name": "Homes of wheels alliance",
+    "location": "Pahrump, NV",
+    "website": "https://homesonwheelsalliance.org/",
+    "lat": 36.204178,
+    "lng": -116.0260261
+  },
+  {
+    "name": "Street life project",
+    "location": "Coachella Valley, CA",
+    "website": "https://www.streetlifeproject.com/",
+    "lat": 33.7672351,
+    "lng": -116.3560439
+  },
+  {
+    "name": "Big skills tiny homes",
+    "location": "Marine County, CA",
+    "website": "https://bigskillstinyhomes.org/",
+    "lat": 38.7304696,
+    "lng": -120.7899857
+  },
+  {
+    "name": "Working fusion",
+    "location": "Colorado",
+    "website": "https://workingfusion.com/",
+    "lat": 38.7251776,
+    "lng": -105.607716
+  },
+  {
+    "name": "Golden isles veteran village",
+    "location": "Brunswick, GA",
+    "website": "https://goldenislesveteransvillage.org/",
+    "lat": 31.1499528,
+    "lng": -81.4914894
+  },
+  {
+    "name": "Nine line foundation",
+    "location": "Savannah, GA",
+    "website": "https://www.ninelinefoundation.org/",
+    "lat": 32.0790074,
+    "lng": -81.0921335
+  },
+  {
+    "name": "Catholic Charities Diocese of St. Petersburg, Inc",
+    "location": "Tampa, FL",
+    "website": "https://www.ccdosp.org/tampa-hope/",
+    "lat": 27.9449854,
+    "lng": -82.4583107
+  },
+  {
+    "name": "chico housing action team",
+    "location": "Chico, CA",
+    "website": "https://www.chicohousingactionteam.net/",
+    "lat": 39.7284945,
+    "lng": -121.8374777
+  },
+  {
+    "name": "Anne street village",
+    "location": "Salisbury, MD",
+    "website": "https://salisbury.md/annestreetvillage",
+    "lat": 38.366027,
+    "lng": -75.6009964
+  },
+  {
+    "name": "Towne twine vilage",
+    "location": "Antonio, TX",
+    "website": "https://housingfirstsa.org/",
+    "lat": 29.4152607,
+    "lng": -98.5895417
+  },
+  {
+    "name": "Hope farm",
+    "location": "Twinsburg, OH",
+    "website": "https://www.hopefarmakron.org/",
+    "lat": 41.3125552,
+    "lng": -81.4401129
+  },
+  {
+    "name": "Giving Grace",
+    "location": "Denton, TX",
+    "website": "https://www.givinggrace.org/",
+    "lat": 33.1838787,
+    "lng": -97.1413417
+  },
+  {
+    "name": "Desoto cares homeless services Inc",
+    "location": "Arcadia, FL",
+    "website": "https://www.desotocareshomeless.com/",
+    "lat": 27.2158826,
+    "lng": -81.8584164
+  },
+  {
+    "name": "Noah's community village",
+    "location": "California",
+    "website": "",
+    "lat": 36.7014631,
+    "lng": -118.755997
+  },
+  {
+    "name": "Triad foam recycling coalition",
+    "location": "High point, NC",
+    "website": "https://www.recyclingfoam.com/",
+    "lat": 35.9556924,
+    "lng": -80.0053176
+  },
+  {
+    "name": "Weshine parkrose community village",
+    "location": "Portland, OR",
+    "website": "https://weshinepdx.org/parkrose-community-village-updates/",
+    "lat": 45.5202471,
+    "lng": -122.674194
+  },
+  {
+    "name": "The North Texas Veteran's Relief Fund",
+    "location": "Wichita Falls, TX",
+    "website": "https://ntvrf.com/",
+    "lat": 33.9004572,
+    "lng": -98.5020777
+  },
+  {
+    "name": "Charity's home homeless shelter Inc",
+    "location": "Baltimore, MD",
+    "website": "https://www.charityshome.org/",
+    "lat": 39.2908816,
+    "lng": -76.610759
+  },
+  {
+    "name": "Shelterinc",
+    "location": "Concord, CA",
+    "website": "https://www.charityshome.org/",
+    "lat": 37.9768525,
+    "lng": -122.0335624
+  },
+  {
+    "name": "Rossie's tiny house village",
+    "location": "Seattle, WA",
+    "website": "https://www.lihihousing.org/villages/rosiesvillage",
+    "lat": 47.6038321,
+    "lng": -122.330062
+  },
+  {
+    "name": "Whittier Heights Village",
+    "location": "Seattle, WA",
+    "website": "https://www.lihihousing.org/villages/whittierheights",
+    "lat": 47.6038321,
+    "lng": -122.330062
+  },
+  {
+    "name": "The Eagle Rock Tiny Home Village",
+    "location": "Los Angeles, CA",
+    "website": "https://spectrumnews1.com/ca/la-west/housing/2022/03/23/la-s-10th-tiny-home-village-set-to-open-in-eagle-rock",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "The Oshkosh Kids Foundation",
+    "location": "Oshkosh, WI",
+    "website": "https://oshkoshkids.org/",
+    "lat": 44.0206919,
+    "lng": -88.5408574
+  },
+  {
+    "name": "Magdala foundation",
+    "location": "St. Louis, MO",
+    "website": "https://www.magdala-house.org/",
+    "lat": 38.6254063,
+    "lng": -90.190009
+  },
+  {
+    "name": "Southend village",
+    "location": "Seattle, WA",
+    "website": "https://www.lihihousing.org/villages/southendvillage",
+    "lat": 47.6038321,
+    "lng": -122.330062
+  },
+  {
+    "name": "Sanctuary village",
+    "location": "Philadelelphia, PA",
+    "website": "https://www.tinyhousecommunity.org/",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "Multicultural child and family hope center",
+    "location": "Tacoma, WA",
+    "website": "https://mcfhc.org/tiny-home-village-for-families/",
+    "lat": 47.2455013,
+    "lng": -122.438329
+  },
+  {
+    "name": "Open Sky Community Services",
+    "location": "Worcester, MA",
+    "website": "https://www.openskycs.org/news-events/news/a-village-of-tiny-homes-will-offer-permanent-housing-for-worcesters-homeless-population/",
+    "lat": 42.2625621,
+    "lng": -71.8018877
+  },
+  {
+    "name": "First step shelter",
+    "location": "Daytona Beach, FL",
+    "website": "https://firststepshelter.org/",
+    "lat": 29.2108147,
+    "lng": -81.0228331
+  },
+  {
+    "name": "Victor Valley rescue mission",
+    "location": "Victorville, CA",
+    "website": "https://vvrescuemission.org/",
+    "lat": 34.5361067,
+    "lng": -117.2911565
+  },
+  {
+    "name": "Tiny hope village",
+    "location": "Marlin, WA",
+    "website": "https://www.tinyhouseallianceusa.org/",
+    "lat": 47.409684,
+    "lng": -118.989414
+  },
+  {
+    "name": "The field's edge",
+    "location": "Midland, TX",
+    "website": "http://www.thefieldsedge.org/",
+    "lat": 31.83688,
+    "lng": -102.0103767
+  },
+  {
+    "name": "Oakland community cabins",
+    "location": "Oakland, CA",
+    "website": "https://www.allhomeca.org/",
+    "lat": 37.8044557,
+    "lng": -122.271356
+  },
+  {
+    "name": "Operation dignity",
+    "location": "Oakland, CA",
+    "website": "https://operationdignity.org/",
+    "lat": 37.8044557,
+    "lng": -122.271356
+  },
+  {
+    "name": "Home first",
+    "location": "Milpitas, CA",
+    "website": "https://www.homefirstscc.org/",
+    "lat": 37.4332273,
+    "lng": -121.8989248
+  },
+  {
+    "name": "Homeless heroes",
+    "location": "Amaril, TX",
+    "website": "https://www.homelessheroesofamarillo.org/",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "Promise Pointe",
+    "location": "Victoria, TX",
+    "website": "https://promisepointe.org/",
+    "lat": 28.8026443,
+    "lng": -96.9766308
+  },
+  {
+    "name": "Oklahoma nonprofit Pivot",
+    "location": "Oaklahoma City, OK",
+    "website": "https://www.pivotok.org/",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "Tiny hope village",
+    "location": "Bryan, TX",
+    "website": "https://tinyhopevillage.org/",
+    "lat": 30.6743643,
+    "lng": -96.3699632
+  },
+  {
+    "name": "Grace campus",
+    "location": "Lubbock, TX",
+    "website": "https://www.gracecampus.org/",
+    "lat": 33.5855677,
+    "lng": -101.8470215
+  },
+  {
+    "name": "Mobile loaves and fishes",
+    "location": "Austine, TX",
+    "website": "https://mlf.org/",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "Beacon village",
+    "location": "Portland, OR",
+    "website": "https://beaconvillagepdx.org/",
+    "lat": 45.5202471,
+    "lng": -122.674194
+  },
+  {
+    "name": "Agape village",
+    "location": "Portland, OR",
+    "website": "https://www.agapevillagepdx.org/",
+    "lat": 45.5202471,
+    "lng": -122.674194
+  },
+  {
+    "name": "Creating housing solution",
+    "location": "Albany, OR",
+    "website": "https://creatinghousing.org/",
+    "lat": 44.6365071,
+    "lng": -123.1059324
+  },
+  {
+    "name": "St. Johns village",
+    "location": "Portland, OR",
+    "website": "https://dogoodmultnomah.org/st-johns-village",
+    "lat": 45.5202471,
+    "lng": -122.674194
+  },
+  {
+    "name": "Thrivela",
+    "location": "Los Angeles,,CA",
+    "website": "https://www.thrivela.org/",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "The village at unsheltered",
+    "location": "Cullman, AL",
+    "website": "https://www.unsheltered.org/the-village",
+    "lat": 34.1335332,
+    "lng": -86.8779268
+  },
+  {
+    "name": "Driftwood housing",
+    "location": "Mobile, AL",
+    "website": "https://driftwoodhousing.com/",
+    "lat": 30.6913462,
+    "lng": -88.0437509
+  },
+  {
+    "name": "Huntsville community of hope",
+    "location": "Huntsville, AL",
+    "website": "https://hsvcommunityofhope.org/",
+    "lat": 34.729847,
+    "lng": -86.5859011
+  },
+  {
+    "name": "Village at Glencliff",
+    "location": "Nashville, TN",
+    "website": "https://www.villageatglencliff.org/",
+    "lat": 36.1622767,
+    "lng": -86.7742984
+  },
+  {
+    "name": "Homes now",
+    "location": "Bellingham, WA",
+    "website": "https://homesnow.org/safe-haven/",
+    "lat": 48.7544012,
+    "lng": -122.478836
+  },
+  {
+    "name": "Sitka homeless coalition",
+    "location": "Anchorage, AL",
+    "website": "https://sheltersitka.org/",
+    "lat": 57.053,
+    "lng": -135.33
+  },
+  {
+    "name": "Joshua community project",
+    "location": "Oklahoma City, OK",
+    "website": "https://www.fairbanksrescuemission.org/",
+    "lat": 35.4729886,
+    "lng": -97.5170536
+  },
+  {
+    "name": "Jewels Helping Hands",
+    "location": "Spokane, WA",
+    "website": "https://www.jewelshelpinghands.org/",
+    "lat": 47.6571934,
+    "lng": -117.42351
+  },
+  {
+    "name": "The homing project",
+    "location": "Tuscon, AZ",
+    "website": "https://www.thehomingproject.org/",
+    "lat": 32.1975767,
+    "lng": -111.0808306
+  },
+  {
+    "name": "I AM You 360",
+    "location": "Tuscon, AZ",
+    "website": "https://iamyou360.org/small-home-experience/",
+    "lat": 32.1975767,
+    "lng": -111.0808306
+  },
+  {
+    "name": "Village for vets",
+    "location": "Los Angeles,,CA",
+    "website": "https://www.villageforvets.org/",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "Primavera foundation",
+    "location": "Tuscon, AZ",
+    "website": "https://www.primavera.org/",
+    "lat": 32.1975767,
+    "lng": -111.0808306
+  },
+  {
+    "name": "Firm foundation",
+    "location": "Hayward, CA",
+    "website": "https://www.ffchousing.org/",
+    "lat": 37.6688205,
+    "lng": -122.080796
+  },
+  {
+    "name": "Genesis house",
+    "location": "Siloam Springs, AR",
+    "website": "https://www.genesishousesiloam.com/",
+    "lat": 36.1866289,
+    "lng": -94.5413695
+  },
+  {
+    "name": "Pee Wee Homes",
+    "location": "Chapel Hill, NC",
+    "website": "https://peeweehomes.org/",
+    "lat": 35.9131542,
+    "lng": -79.05578
+  },
+  {
+    "name": "Colorado village collaborative",
+    "location": "Denver, CO",
+    "website": "https://www.coloradovillagecollaborative.org/",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "Mile high ministries",
+    "location": "Denver, CO",
+    "website": "https://milehighmin.org/",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "Bartone Institute",
+    "location": "Denver, CO",
+    "website": "https://www.bartoninstitute.org/",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "Metro Denver Homeless Iniative",
+    "location": "Denver, CO",
+    "website": "https://www.mdhi.org/",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "Beloved Community Menonite Church",
+    "location": "Denver, CO",
+    "website": "http://belovedcommunitymc.org/",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "Springs rescue mission",
+    "location": "Colorado Springs, CO",
+    "website": "https://www.springsrescuemission.org/",
+    "lat": 38.8339578,
+    "lng": -104.825348
+  },
+  {
+    "name": "Bridge of hope",
+    "location": "Denver, CO",
+    "website": "https://greaterdenver.bridgeofhopeinc.org/",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "The Interface Alliance of Colorado",
+    "location": "Denver, CO",
+    "website": "https://interfaithallianceco.org/",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "The second chance tiny house project",
+    "location": "New London, CT",
+    "website": "https://www.secondchancetinyhouseproject.com/",
+    "lat": 41.3556187,
+    "lng": -72.0997804
+  },
+  {
+    "name": "Community Shelter Services",
+    "location": "Erie, PA",
+    "website": "https://communityshelter.org/",
+    "lat": 42.1294712,
+    "lng": -80.0852695
+  },
+  {
+    "name": "Haven for Hope",
+    "location": "San Antonio, TX",
+    "website": "https://www.havenforhope.org/",
+    "lat": 29.4246002,
+    "lng": -98.4951405
+  },
+  {
+    "name": "Victory Christian Fellowship",
+    "location": "New Castle, DE",
+    "website": "https://victoryexperience.com/victory-dover/",
+    "lat": 39.6159851,
+    "lng": -75.662956
+  },
+  {
+    "name": "Mosaic Development Partners",
+    "location": "PHILADELPHIA, PA",
+    "website": "https://www.mosaicdp.com/tiny-homes",
+    "lat": 39.9527237,
+    "lng": -75.1635262
+  },
+  {
+    "name": "Transitions Homeless Center",
+    "location": "Columbia, SC",
+    "website": "https://transitionssc.org/",
+    "lat": 34.000754,
+    "lng": -81.0352313
+  },
+  {
+    "name": "Celebrate Outreach",
+    "location": "St. Petersburg, FL",
+    "website": "https://celebrateoutreach.org/",
+    "lat": 27.7712264,
+    "lng": -82.6340259
+  },
+  {
+    "name": "Clara White Mission",
+    "location": "Jacksonville, FL",
+    "website": "https://www.clarawhitemission.org/",
+    "lat": 30.3262247,
+    "lng": -81.6579179
+  },
+  {
+    "name": "Hope Haven Transitional Housing",
+    "location": "Sebring, FL.",
+    "website": "https://hopehavenhighlands.wixsite.com/hope",
+    "lat": 27.4957453,
+    "lng": -81.4410425
+  },
+  {
+    "name": "Settled",
+    "location": "Minnesota",
+    "website": "https://settled.org/",
+    "lat": 45.9896587,
+    "lng": -94.6113288
+  },
+  {
+    "name": "The Driftwood Housing Project",
+    "location": "Mobile County, AL",
+    "website": "https://driftwoodhousing.com/",
+    "lat": 30.6488242,
+    "lng": -88.194642
+  },
+  {
+    "name": "DC Coalition for the homeless",
+    "location": "DC, Washington",
+    "website": "https://dccfh.org/",
+    "lat": 38.8950982,
+    "lng": -77.0363849
+  },
+  {
+    "name": "Boneyard Studios",
+    "location": "DC, Washington",
+    "website": "https://boneyardstudios.org/",
+    "lat": 38.8950982,
+    "lng": -77.0363849
+  },
+  {
+    "name": "Hand in Hand of Glynn Inc.",
+    "location": "Brunswick, GA",
+    "website": "https://handinhandofglynn.org/",
+    "lat": 31.1499528,
+    "lng": -81.4914894
+  },
+  {
+    "name": "Nine-Line Foundation",
+    "location": "Savannah, GA",
+    "website": "https://www.ninelinefoundation.org/",
+    "lat": 32.0790074,
+    "lng": -81.0921335
+  },
+  {
+    "name": "Golden Isles Veterans Village",
+    "location": "Brunswick, GA",
+    "website": "https://goldenislesveteransvillage.org/",
+    "lat": 31.1499528,
+    "lng": -81.4914894
+  },
+  {
+    "name": "Home Aid Hawaii",
+    "location": "EWA BEACH, Hawaii",
+    "website": "https://www.homeaidhawaii.org/",
+    "lat": 21.315603,
+    "lng": -158.008804
+  },
+  {
+    "name": "Boise Homeless Commission",
+    "location": "BOISE, ID",
+    "website": "https://www.homelesscoalitionboise.com/tiny-houses/",
+    "lat": 43.6166163,
+    "lng": -116.200886
+  },
+  {
+    "name": "Circle City Village",
+    "location": "INDIANAPOLIS",
+    "website": "https://circlecityvillage.org/",
+    "lat": 39.7683331,
+    "lng": -86.1583502
+  },
+  {
+    "name": "Faith Misiion of Michiana",
+    "location": "Elkhart, IN",
+    "website": "https://thefaithmission.org/",
+    "lat": 41.6012796,
+    "lng": -85.8590603
+  },
+  {
+    "name": "DE-Serves",
+    "location": "Brownsburg, IN",
+    "website": "https://ataok.org/",
+    "lat": 39.8444409,
+    "lng": -86.3968962
+  },
+  {
+    "name": "Mental Health America of West Central Indiana",
+    "location": "Terre Haute, IN",
+    "website": "https://mhawci.org/",
+    "lat": 39.4667025,
+    "lng": -87.4139119
+  },
+  {
+    "name": "Mishawaka Troop Town",
+    "location": "Mishawaka, IN",
+    "website": "https://www.mishawakatrooptown.org/",
+    "lat": 41.6611642,
+    "lng": -86.1807031
+  },
+  {
+    "name": "Center for homeless",
+    "location": "South Bend, IN",
+    "website": "https://www.cfh.net/mvc",
+    "lat": 41.6833813,
+    "lng": -86.2500066
+  },
+  {
+    "name": "Southern Indiana Veterans Living and Rehabilitation Facility",
+    "location": "LEAVENWORTH, Ind",
+    "website": "https://www.gofundme.com/f/southen-indiana-veteran-living-and-rehab-facility",
+    "lat": 38.1997869,
+    "lng": -86.3441439
+  },
+  {
+    "name": "The Other Side Academy",
+    "location": "Salt Lake City, UT",
+    "website": "https://www.theothersideacademy.com/",
+    "lat": 40.7596198,
+    "lng": -111.886797
+  },
+  {
+    "name": "Joppa",
+    "location": "Des Moines, IA",
+    "website": "https://www.joppa.org/",
+    "lat": 41.5868654,
+    "lng": -93.6249494
+  },
+  {
+    "name": "Merging KC",
+    "location": "KANSAS CITY, Mo",
+    "website": "https://mergingkc.org/",
+    "lat": 39.100105,
+    "lng": -94.5781416
+  },
+  {
+    "name": "McPherson Housing Coalition",
+    "location": "McPherson, KS",
+    "website": "https://mcphersonhousingcoalition.org/",
+    "lat": 38.3659015,
+    "lng": -97.6575171
+  },
+  {
+    "name": "Studio 804",
+    "location": "Lawrence, KS",
+    "website": "https://studio804.com/",
+    "lat": 38.9719137,
+    "lng": -95.2359403
+  },
+  {
+    "name": "National Coalition for Homeless Veterans",
+    "location": "Washington, DC",
+    "website": "https://nchv.org/",
+    "lat": 38.8950982,
+    "lng": -77.0363849
+  },
+  {
+    "name": "Harlan County Community Action",
+    "location": "Harlan, KY",
+    "website": "https://harlancountycaa.com/all-project-list/tiny-homes-homeless-transitional-housing-project/",
+    "lat": 36.8411336,
+    "lng": -83.22678
+  },
+  {
+    "name": "Veteran's Club Inc",
+    "location": "Louisville, KY",
+    "website": "https://veteransclubinc.org/",
+    "lat": 38.2542376,
+    "lng": -85.759407
+  },
+  {
+    "name": "Veteran's Rural Outreach",
+    "location": "Shelbyville, KY",
+    "website": "https://vroky.org/",
+    "lat": 38.2110702,
+    "lng": -85.217294
+  },
+  {
+    "name": "Kentucky Baptist Convention",
+    "location": "Louisveille, KY",
+    "website": "https://www.kybaptist.org/",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "Tiny House Ministries",
+    "location": "Pensacola, FL",
+    "website": "https://www.tinyhouseministries.org/",
+    "lat": 30.421309,
+    "lng": -87.2169149
+  },
+  {
+    "name": "EightCAP, Inc.",
+    "location": "Orleans, MI",
+    "website": "https://8cap.org/",
+    "lat": 43.0686431,
+    "lng": -85.1350121
+  },
+  {
+    "name": "The Murray Calloway County Homeless Coalition",
+    "location": "Murray, KY",
+    "website": "http://hopecalloway.org/",
+    "lat": 36.6106122,
+    "lng": -88.3021092
+  },
+  {
+    "name": "Isabella County Restoration House",
+    "location": "Mt. Pleasant, MI",
+    "website": "https://www.icrhouse.org/wordpress/",
+    "lat": 43.597646,
+    "lng": -84.7668495
+  },
+  {
+    "name": "RISE",
+    "location": "Spring Lake Park, MN",
+    "website": "https://rise.org/",
+    "lat": 45.1154274,
+    "lng": -93.2492872
+  },
+  {
+    "name": "Settled Inn Village",
+    "location": "Shreveport, LA",
+    "website": "https://www.settledinnvillage.org/",
+    "lat": 32.5135356,
+    "lng": -93.7477839
+  },
+  {
+    "name": "Heartstone Foundation",
+    "location": "LAKE CHARLES, LA",
+    "website": "",
+    "lat": 30.2305095,
+    "lng": -93.2169807
+  },
+  {
+    "name": "Downeast Community Partners",
+    "location": "Ellsworth, ME",
+    "website": "https://www.downeastmainetinyhouseproject.com/",
+    "lat": 44.5414596,
+    "lng": -68.4243599
+  },
+  {
+    "name": "Small More homes",
+    "location": "Batimore, Maryland",
+    "website": "https://www.smalltimorehomes.org/",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "Portland Central Nazarene Church",
+    "location": "Portland, OR",
+    "website": "https://www.agapevillagepdx.org/services-1",
+    "lat": 45.5202471,
+    "lng": -122.674194
+  },
+  {
+    "name": "Kenton Women Village",
+    "location": "Portland, OR",
+    "website": "https://www.catholiccharitiesoregon.org/services/homeless-services/kenton-womens-village/",
+    "lat": 45.5202471,
+    "lng": -122.674194
+  },
+  {
+    "name": "Veterans Outreach of Pennsylvania",
+    "location": "Harrisburg, PA",
+    "website": "https://www.veteransoutreachofpa.org/home",
+    "lat": 40.2663107,
+    "lng": -76.8861122
+  },
+  {
+    "name": "New Path Villages Detroit",
+    "location": "Detroit, MI",
+    "website": "https://www.newpathvillages.org/",
+    "lat": 42.3315509,
+    "lng": -83.0466403
+  },
+  {
+    "name": "Shelter Kalamazoo",
+    "location": "Kalamazoo, MI",
+    "website": "https://www.gofundme.com/f/shelterkzoo",
+    "lat": 42.291707,
+    "lng": -85.5872286
+  },
+  {
+    "name": "Lennox Island First Nation",
+    "location": "Lennox Island, PE",
+    "website": "https://www.saltwire.com/atlantic-canada/news/lennox-island-tiny-home-project-well-underway-with-3-homes-and-counting-100680961/",
+    "lat": 46.6148383,
+    "lng": -63.8467197
+  },
+  {
+    "name": "Walking With a Purpose",
+    "location": "St. Paul, MN",
+    "website": "http://walkingwithapurpose.org/",
+    "lat": 44.9497487,
+    "lng": -93.0931028
+  },
+  {
+    "name": "The Gathering Tree",
+    "location": "Springfield, MO",
+    "website": "https://gatheringtree.org/",
+    "lat": 37.2081729,
+    "lng": -93.2922715
+  },
+  {
+    "name": "Siena Fransis House",
+    "location": "Omaha, Nebraska",
+    "website": "https://sienafrancis.org/",
+    "lat": 41.2587459,
+    "lng": -95.9383758
+  },
+  {
+    "name": "My Tiny House Project LA",
+    "location": "Los Angeles,CA",
+    "website": "https://www.mythpla.org/",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "Rochesterians Engaging in Action for the Chronically Homeless",
+    "location": "Rochester, NY",
+    "website": "https://reachadvocacy.org/",
+    "lat": 43.157285,
+    "lng": -77.615214
+  },
+  {
+    "name": "Vista Village",
+    "location": "Columbus, OH",
+    "website": "https://vistavillage.org/",
+    "lat": 39.9622601,
+    "lng": -83.0007065
+  },
+  {
+    "name": "Rumshock Veterans Foundation",
+    "location": "Highland Mills, NY",
+    "website": "https://rumshockvf.org/",
+    "lat": 41.3464285,
+    "lng": -74.1266817
+  },
+  {
+    "name": "Central Oregon Villages",
+    "location": "Central Oregon",
+    "website": "https://covillages.org/",
+    "lat": 44.1,
+    "lng": -120.7
+  },
+  {
+    "name": "Eden Village of Wilmington",
+    "location": "Wilmington, NC",
+    "website": "https://edenvillagewilmington.org/",
+    "lat": 34.2352853,
+    "lng": -77.9487284
+  },
+  {
+    "name": "Tiny House Community Development, Inc",
+    "location": "Goldsboro, NC",
+    "website": "https://www.tinyhousesgreensboro.com/",
+    "lat": 35.3848841,
+    "lng": -77.9927651
+  },
+  {
+    "name": "Pivot Point Transitional Housing",
+    "location": "Charlotte, NC",
+    "website": "https://pivotpointtransitional.org/",
+    "lat": 35.2272086,
+    "lng": -80.8430827
+  },
+  {
+    "name": "The Dream Center",
+    "location": "Easley, SC",
+    "website": "https://www.dreamcenterpc.org/the-opportunity-village",
+    "lat": 34.8269276,
+    "lng": -82.5817053
+  },
+  {
+    "name": "Veterans Welcome Home Resource Center out of Little River",
+    "location": "Little River, SC",
+    "website": "https://vwhrc.org/",
+    "lat": 33.878817,
+    "lng": -78.6327192
+  },
+  {
+    "name": "Pivot Inc",
+    "location": "Oklahoma City, OK",
+    "website": "https://www.pivotok.org/",
+    "lat": 35.4729886,
+    "lng": -97.5170536
+  },
+  {
+    "name": "Peterborough Action for Tiny Homes",
+    "location": "Peterborough, Ontario",
+    "website": "https://pathptbo.org/",
+    "lat": 44.3048009,
+    "lng": -78.3199496
+  },
+  {
+    "name": "12 Neighbours Community Inc",
+    "location": "Fredericton, New Brunswick",
+    "website": "https://www.12neighbours.com/",
+    "lat": 45.9488278,
+    "lng": -66.6291827
+  },
+  {
+    "name": "Veterans Welcome Home and Resource Center",
+    "location": "Little River, SC",
+    "website": "https://vwhrc.org/",
+    "lat": 33.878817,
+    "lng": -78.6327192
+  },
+  {
+    "name": "Bridgeway Village at Green Street",
+    "location": "Spartanburg, SC",
+    "website": "https://www.fbs.org/BRIDGEWAY/",
+    "lat": 34.9498007,
+    "lng": -81.9320157
+  },
+  {
+    "name": "Daily Bread Ministries",
+    "location": "Greer, S.C",
+    "website": "https://www.greersoupkitchen.com/",
+    "lat": 34.9381361,
+    "lng": -82.2272119
+  },
+  {
+    "name": "Greenwood Pathway House",
+    "location": "Greenwood, SC",
+    "website": "https://www.gwdpathway.org/",
+    "lat": 34.1489805,
+    "lng": -82.112882
+  },
+  {
+    "name": "Tiny Village Knox",
+    "location": "Knoxville, TN",
+    "website": "https://tinyvillageknox.com/",
+    "lat": 35.9603948,
+    "lng": -83.9210261
+  },
+  {
+    "name": "Home of Hearts",
+    "location": "Memphis, TN",
+    "website": "https://homesforhearts.org/",
+    "lat": 35.146026,
+    "lng": -90.0517786
+  },
+  {
+    "name": "Judy's Hope",
+    "location": "Clarksville, TN",
+    "website": "https://www.judyshope.org/",
+    "lat": 36.5277607,
+    "lng": -87.3588703
+  },
+  {
+    "name": "Dalton and Tomich",
+    "location": "Detroit, Michigan",
+    "website": "https://daltontomich.com/tiny-houses-and-religious-land-use/",
+    "lat": 42.3315509,
+    "lng": -83.0466403
+  },
+  {
+    "name": "My Sister's House",
+    "location": "Memphis, TN",
+    "website": "https://mshmemphis.org/",
+    "lat": 35.146026,
+    "lng": -90.0517786
+  },
+  {
+    "name": "Jeremiah Community",
+    "location": "Fredericksburg, VA",
+    "website": "https://jeremiahcommunity.org/",
+    "lat": 38.3031837,
+    "lng": -77.4605399
+  },
+  {
+    "name": "Micah Ministries",
+    "location": "Fredericksburg, VA",
+    "website": "https://micahfredericksburg.org/",
+    "lat": 38.3031837,
+    "lng": -77.4605399
+  },
+  {
+    "name": "National Center for Healthy Veterans",
+    "location": "Altavista, VA",
+    "website": "https://www.healthyveterans.org/",
+    "lat": 37.1118094,
+    "lng": -79.285579
+  },
+  {
+    "name": "Tacoma Rescue Mission",
+    "location": "Tacoma, WA",
+    "website": "https://www.trm.org/",
+    "lat": 47.2455013,
+    "lng": -122.438329
+  },
+  {
+    "name": "Steppin Stone",
+    "location": "Fairmont, WV",
+    "website": "https://www.herald-dispatch.com/news/stepping-stones-celebrates-tiny-home-village/article_c65f5991-70f9-50ba-9144-1346893e8b91.html#:~:text=Stepping%20Stones%20broke%20ground%20on,School%20built%20the%20first%20home.",
+    "lat": 39.484898,
+    "lng": -80.1426539
+  },
+  {
+    "name": "Matthew's House Ministry",
+    "location": "Grand Rapids, Michigan",
+    "website": "https://matthewshouseministry.org/",
+    "lat": 42.9632425,
+    "lng": -85.6678639
+  },
+  {
+    "name": "Oshkosh Kids Foundation",
+    "location": "Oshkosh, WI",
+    "website": "https://oshkoshkids.org/",
+    "lat": 44.0206919,
+    "lng": -88.5408574
+  },
+  {
+    "name": "Veterans 1st of NEW",
+    "location": "Northeastern Wisconsin",
+    "website": "https://veterans1stnew.com/",
+    "lat": 43.0320457,
+    "lng": -87.8983162
+  },
+  {
+    "name": "Jake's Network of Hope",
+    "location": "Neenah, WI",
+    "website": "https://jakesnoh.org/tiny-village-to-help-the-homeless-close-to-opening-doors/",
+    "lat": 44.1858193,
+    "lng": -88.462609
+  },
+  {
+    "name": "Northwoods Veterans Homestead",
+    "location": "Rhinelander, WI",
+    "website": "https://northwoodsveteranshomestead.org/",
+    "lat": 45.636623,
+    "lng": -89.412075
+  },
+  {
+    "name": "Marketplace",
+    "location": "Minnesota",
+    "website": "https://www.marketplace.org/",
+    "lat": 45.9896587,
+    "lng": -94.6113288
+  },
+  {
+    "name": "Freedom Farm Crossroads",
+    "location": "Phenic City, AL",
+    "website": "https://freedomfarmcrossroad.com/",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "Forever and Always Patriots",
+    "location": "Sumiton, Alabama",
+    "website": "https://foreverandalwayspatriots.com/",
+    "lat": 33.7554224,
+    "lng": -87.0504172
+  },
+  {
+    "name": "Alabama Rural Coalition for the Homeless, Inc",
+    "location": "Montgomery, AL",
+    "website": "https://www.archconnection.org/",
+    "lat": 32.3777111,
+    "lng": -86.3090775
+  },
+  {
+    "name": "Presbyterian Home for Children",
+    "location": "Talladega, AL",
+    "website": "https://phfc.org/",
+    "lat": 33.3967079,
+    "lng": -86.1597137
+  },
+  {
+    "name": "The Sitka Homeless Coalition",
+    "location": "Sitka, AK",
+    "website": "https://sheltersitka.org/",
+    "lat": 57.4086082,
+    "lng": -135.4596206
+  },
+  {
+    "name": "Fairbanks Rescue Mission",
+    "location": "FAIRBANKS, AK",
+    "website": "https://www.fairbanksrescuemission.org/",
+    "lat": 64.837845,
+    "lng": -147.716675
+  },
+  {
+    "name": "Smith-Barbieri Foundation",
+    "location": "Spokane, WA",
+    "website": "https://www.smith-barbieri.com/",
+    "lat": 47.6571934,
+    "lng": -117.42351
+  },
+  {
+    "name": "Phoenix Ashes Inc",
+    "location": "Phoenix, Arizona",
+    "website": "https://phoenixashes.org/",
+    "lat": 33.4484367,
+    "lng": -112.074141
+  },
+  {
+    "name": "Operation Safe Haven",
+    "location": "Franklinville, New Jersey",
+    "website": "https://opsafehaven.com/",
+    "lat": 39.617641,
+    "lng": -75.072458
+  },
+  {
+    "name": "Arkansas Veteran Village",
+    "location": "Rogers, AR",
+    "website": "https://arveteransvillage.org/",
+    "lat": 36.334857,
+    "lng": -94.1193816
+  },
+  {
+    "name": "New Beginning Bridge Housing Community",
+    "location": "St Fayetteville AR",
+    "website": "https://newbeginningsnwa.org/",
+    "lat": 35.3385593,
+    "lng": -94.1708554
+  },
+  {
+    "name": "Facing Homelessness",
+    "location": "Seattle, WA",
+    "website": "https://facinghomelessness.org/",
+    "lat": 47.6038321,
+    "lng": -122.330062
+  },
+  {
+    "name": "Celebrate Outreach",
+    "location": "St. Petersburg, FL",
+    "website": "https://celebrateoutreach.org/",
+    "lat": 27.7712264,
+    "lng": -82.6340259
+  },
+  {
+    "name": "Faith Tiny Homes",
+    "location": "Olympia, WA,",
+    "website": "https://faithtinyhomes.org/",
+    "lat": 47.0451022,
+    "lng": -122.8950075
+  },
+  {
+    "name": "House of Hope",
+    "location": "Warwick, RI",
+    "website": "https://thehouseofhopecdc.org/",
+    "lat": 41.6992717,
+    "lng": -71.4586114
+  },
+  {
+    "name": "HOUSING FIRST INSTITUTE",
+    "location": "Santa Monica, CA",
+    "website": "https://www.pathwayshousingfirst.org/",
+    "lat": 34.0194704,
+    "lng": -118.491227
+  },
+  {
+    "name": "Aurora",
+    "location": "Evansville, IN",
+    "website": "https://auroraevansville.org/",
+    "lat": 37.970495,
+    "lng": -87.5715641
+  },
+  {
+    "name": "Beloved Community Mennonite Church",
+    "location": "LITTLETON, CO",
+    "website": "http://belovedcommunitymc.org/",
+    "lat": 39.613321,
+    "lng": -105.016649
+  },
+  {
+    "name": "Shawyer Sheds",
+    "location": "Plainfield, CT",
+    "website": "https://sawyersheds.com/",
+    "lat": 41.6799374,
+    "lng": -71.9147282
+  },
+  {
+    "name": "Community Shelter Services",
+    "location": "Erie, PA",
+    "website": "https://communityshelter.org/",
+    "lat": 42.1294712,
+    "lng": -80.0852695
+  },
+  {
+    "name": "Homes for Hearts",
+    "location": "Connecticut",
+    "website": "https://communityshelter.org/",
+    "lat": 41.6500201,
+    "lng": -72.7342163
+  },
+  {
+    "name": "RescueSF",
+    "location": "San Francisco, CA",
+    "website": "https://communityshelter.org/",
+    "lat": 37.7879363,
+    "lng": -122.4075201
+  },
+  {
+    "name": "Connecticut Coalition to End Homelessness",
+    "location": "Hartford, CT",
+    "website": "https://communityshelter.org/",
+    "lat": 41.764582,
+    "lng": -72.6908547
+  },
+  {
+    "name": "The Springboard Collaborative",
+    "location": "Philadelphia, PA",
+    "website": "https://communityshelter.org/",
+    "lat": 39.9527237,
+    "lng": -75.1635262
+  },
+  {
+    "name": "Catholic Charities of Oregon.",
+    "location": "PORTLAND, OR",
+    "website": "https://communityshelter.org/",
+    "lat": 45.5202471,
+    "lng": -122.674194
+  },
+  {
+    "name": "New Leaf",
+    "location": "Mesa, AZ",
+    "website": "https://communityshelter.org/",
+    "lat": 33.4151005,
+    "lng": -111.831455
+  },
+  {
+    "name": "Brave Heart Properties",
+    "location": "Sandpiper Dr. Cocoa, Florida",
+    "website": "https://communityshelter.org/",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "Tiny Acres Village",
+    "location": "Ormond Beach, FL",
+    "website": "https://tinyacresvillage.com/",
+    "lat": 29.2854132,
+    "lng": -81.0557921
+  },
+  {
+    "name": "BuddyWatch, Inc",
+    "location": "Dr. Midway, GA",
+    "website": "https://buddywatchinc.org/",
+    "lat": 27.4509146,
+    "lng": -81.3595461
+  },
+  {
+    "name": "NATIONAL FOSTER YOUTH INSTITUTE",
+    "location": "Los Angeles, CA",
+    "website": "https://nfyi.org/",
+    "lat": 34.0536909,
+    "lng": -118.242766
+  },
+  {
+    "name": "Don't Count Me Out",
+    "location": "BROOKHAVEN, Ga",
+    "website": "https://dontcountmeoutusa.org/",
+    "lat": 33.8584368,
+    "lng": -84.340203
+  },
+  {
+    "name": "River Edge Behavioral Health",
+    "location": "Macon, Georgia",
+    "website": "https://www.river-edge.org/",
+    "lat": 32.8406946,
+    "lng": -83.6324022
+  },
+  {
+    "name": "Cross Disability Services",
+    "location": "Carborro, NC",
+    "website": "https://www.xdsinc.org/",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "name": "Mercy Housing",
+    "location": "Denver, Colorado",
+    "website": "https://www.mercyhousing.org/",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "Project Vision Hawaii",
+    "location": "Honolulu, HI",
+    "website": "https://www.projectvisionhawaii.org/",
+    "lat": 21.304547,
+    "lng": -157.855676
+  },
+  {
+    "name": "Hope Services Hawaii",
+    "location": "Hilo, HI",
+    "website": "https://hopeserviceshawaii.org/",
+    "lat": 19.7073734,
+    "lng": -155.08158
+  },
+  {
+    "name": "Topeka Rescue Mission",
+    "location": "Topeka, KS",
+    "website": "http://www.trmonline.org/",
+    "lat": 39.049011,
+    "lng": -95.677556
+  },
+  {
+    "name": "Lawrence Homeless Shelter",
+    "location": "Lawrence, KS",
+    "website": "https://www.lawrenceshelter.org/",
+    "lat": 38.9719137,
+    "lng": -95.2359403
+  },
+  {
+    "name": "Metro Denver Homeless Initiative",
+    "location": "Denver, CO",
+    "website": "https://www.mdhi.org/",
+    "lat": 39.7392364,
+    "lng": -104.984862
+  },
+  {
+    "name": "Western Mass Housing Initiative",
+    "location": "Hampden, MA",
+    "website": "https://www.westernmasshousingfirst.org/",
+    "lat": 42.1285315,
+    "lng": -72.6063441
+  },
+  {
+    "name": "Richmond Tiny House Village, Farm & Garden",
+    "location": "Richmond, CA",
+    "website": "https://www.rtebn.org",
+    "lat": 37.936,
+    "lng": -122.347
+  }
+]

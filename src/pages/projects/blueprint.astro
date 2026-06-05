@@ -2,30 +2,59 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 <BaseLayout
-  title="Tiny Village Blueprint | Tiny Village Spirit"
-  description="Use our blueprint for organizing your own tiny house village made in collaboration with Latitude High School."
+  title="Village Blueprint | Tiny Village Spirit"
+  description="Use our blueprint for organizing your own tiny house village, developed in collaboration with Latitude High School."
+  ogTitle="Village Blueprint | Tiny Village Spirit"
   ogUrl="https://tinyvillagespirit.org/projects/blueprint"
+  ogDescription="Use our blueprint for organizing your own tiny house village, developed in collaboration with Latitude High School."
   css={['/styling/projects/project-template.css']}
-  preloadImage="/media/projects-splash-image.jpeg"
 >
 <main>
 
-    <div class="splash">
-        <img src="/media/project-splash-4.jpg" alt="About Image" class="splash-image" />
-        <div class="splash-text">
-            <h1>Tiny Village Blueprint</h1>
-        </div>
-    </div>
-
-    <div class="project">
-        <div class="project-text">
-            <img src="/media/project-image-4.png" alt="Project Image 2" class="project-image" />
-            <p class="project-description">We have partnered with Latitude High School to develop materials that will encourage schools NGO's and other grassroots groups to build tiny house villages with and for unhoused people.<br><br>
-                The site contains resources for village planning in the classroom, navigating district and county policy, building momentum through the media, community outreach, and more.
+    <!-- ============ HERO ============ -->
+    <section class="bp-hero">
+        <div class="bp-hero-inner">
+            <h1 class="bp-title">
+                Build your own<br>
+                <strong>tiny village.</strong>
+            </h1>
+            <p class="bp-sub">
+                A step-by-step resource for schools, NGOs, and grassroots groups who want to build tiny house villages with and for unhoused people in their own community.
             </p>
+            <a href="https://sustainablesolutionswithtinyhomes.weebly.com/" target="_blank" rel="noopener" class="bp-btn">
+                Open the blueprint <i class="fa fa-arrow-right"></i>
+            </a>
         </div>
-        <a target="_blank" href="https://sustainablesolutionswithtinyhomes.weebly.com/" class="project-link">Learn More</a>
-    </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="bp-about">
+        <div class="bp-about-inner">
+            <div class="bp-about-grid">
+                <div class="bp-col">
+                    <h2>What's in it</h2>
+                    <ul class="bp-list">
+                        <li>Village planning in the classroom</li>
+                        <li>Navigating district and county policy</li>
+                        <li>Building momentum through media</li>
+                        <li>Community outreach strategies</li>
+                        <li>Templates and practical guides</li>
+                    </ul>
+                </div>
+                <div class="bp-col">
+                    <h2>Who it's for</h2>
+                    <p>Developed in partnership with <strong>Latitude High School</strong>, this blueprint is designed for anyone who wants to move from inspiration to action — whether you're a teacher, a community organizer, a faith group, or just someone who wants to do something.</p>
+                </div>
+            </div>
+
+            <div class="bp-cta">
+                <a href="https://sustainablesolutionswithtinyhomes.weebly.com/" target="_blank" rel="noopener" class="bp-btn">
+                    Open the blueprint <i class="fa fa-arrow-right"></i>
+                </a>
+                <a href="/contact" class="bp-btn-secondary">Get in touch with us</a>
+            </div>
+        </div>
+    </section>
 
 </main>
 </BaseLayout>

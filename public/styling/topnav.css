@@ -5,7 +5,7 @@ html { overflow-x: hidden; }
     --nav-teal-dark: #035c62;
     --nav-accent: #07b1bd;
     --nav-yellow: #ffcc02;
-    --nav-cream: rgba(250, 247, 242, 0.92);
+    --nav-cream: rgba(255, 255, 255, 0.95);
     --nav-ink: #1b2426;
     --nav-muted: #667375;
     --nav-hairline: rgba(4, 116, 124, 0.12);
