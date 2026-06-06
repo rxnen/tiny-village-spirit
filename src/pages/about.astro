@@ -211,6 +211,83 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
     </section>
 
+    <!-- ============ BOARD ============ -->
+    <section class="ab-board">
+        <div class="ab-section-head">
+            <h2 class="ab-section-title center">Board of Directors.</h2>
+            <p class="ab-section-sub center">The advisors, advocates, and professionals who help guide our mission.</p>
+        </div>
+
+        <div class="ab-board-grid">
+            <div class="ab-board-member reveal">
+                <div class="ab-board-name">Maheesh Jain</div>
+                <div class="ab-board-post">President</div>
+                <div class="ab-board-role">Founder, CafePress.com &amp; Entrepreneur</div>
+                <div class="ab-board-committees">
+                    <span class="ab-board-tag">Events/Outreach</span>
+                </div>
+            </div>
+            <div class="ab-board-member reveal">
+                <div class="ab-board-name">Jim Acock</div>
+                <div class="ab-board-post">Secretary</div>
+                <div class="ab-board-role">Retired Contractor; Social Justice Committee, UU Church of Berkeley</div>
+                <div class="ab-board-committees">
+                    <span class="ab-board-tag">Events/Outreach</span>
+                </div>
+            </div>
+            <div class="ab-board-member reveal">
+                <div class="ab-board-name">Vince L. Brown, Jr.</div>
+                <div class="ab-board-post">Officer</div>
+                <div class="ab-board-role">Asst. City Attorney, City of San Francisco</div>
+                <div class="ab-board-committees">
+                    <span class="ab-board-tag">Events/Outreach</span>
+                </div>
+            </div>
+            <div class="ab-board-member reveal">
+                <div class="ab-board-name">Tracy L. Davis</div>
+                <div class="ab-board-post">Board Member</div>
+                <div class="ab-board-role">V.P./Assoc. General Counsel, Securities, Mechanics Bank</div>
+                <div class="ab-board-committees">
+                    <span class="ab-board-tag">Legal/Risk</span>
+                </div>
+            </div>
+            <div class="ab-board-member reveal">
+                <div class="ab-board-name">Michael Gliksohn</div>
+                <div class="ab-board-post">Officer</div>
+                <div class="ab-board-role">Retired, Asst. Controller, RCD</div>
+                <div class="ab-board-committees">
+                    <span class="ab-board-tag">Finance</span>
+                </div>
+            </div>
+            <div class="ab-board-member reveal">
+                <div class="ab-board-name">Sally Hindman</div>
+                <div class="ab-board-post">Officer</div>
+                <div class="ab-board-role">Executive Director</div>
+                <div class="ab-board-committees">
+                    <span class="ab-board-tag">Legal/Risk</span>
+                    <span class="ab-board-tag">Finance</span>
+                    <span class="ab-board-tag">Events/Outreach</span>
+                </div>
+            </div>
+            <div class="ab-board-member reveal">
+                <div class="ab-board-name">Bob Kane</div>
+                <div class="ab-board-post">Officer</div>
+                <div class="ab-board-role">Attorney, Private Practice</div>
+                <div class="ab-board-committees">
+                    <span class="ab-board-tag">Legal/Risk</span>
+                </div>
+            </div>
+            <div class="ab-board-member reveal">
+                <div class="ab-board-name">Margo Parisi</div>
+                <div class="ab-board-post">Officer</div>
+                <div class="ab-board-role">Deputy Director, Habeas Corpus Resource Center</div>
+                <div class="ab-board-committees">
+                    <span class="ab-board-tag">Legal/Risk</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ============ PARTNERS PEEK ============ -->
     <section class="ab-partners-peek">
         <div class="peek-inner">
@@ -264,7 +341,7 @@ const io = new IntersectionObserver((entries) => {
         }
     });
 }, { threshold: 0.12 });
-document.querySelectorAll('.pill, .member, .ab-story-text, .ab-story-media, .ab-hero-text, .ab-hero-media').forEach(el => {
+document.querySelectorAll('.pill, .member, .ab-board-member, .ab-story-text, .ab-story-media, .ab-hero-text, .ab-hero-media').forEach(el => {
     el.classList.add('reveal');
     io.observe(el);
 });
