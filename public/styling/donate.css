@@ -48,7 +48,7 @@ main { padding-top: 94px; }
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    align-items: center;
+    align-items: stretch;
 }
 
 .don-title {
@@ -93,7 +93,7 @@ main { padding-top: 94px; }
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 24px 56px rgba(4,116,124,0.18);
-    aspect-ratio: 4 / 5;
+    min-height: 280px;
 }
 
 .don-hero-media img {
