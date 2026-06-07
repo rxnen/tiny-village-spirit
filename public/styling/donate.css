@@ -1,0 +1,442 @@
+/* =====================================================================
+   Tiny Village Spirit — Donate page
+   ===================================================================== */
+
+:root {
+    --teal:        #04747c;
+    --teal-dark:   #035c62;
+    --teal-accent: #07b1bd;
+    --yellow:      #ffcc02;
+    --cream:       #faf7f2;
+    --cream-warm:  #f4ede0;
+    --ink:         #1b2426;
+    --muted:       #5b6769;
+    --hairline:    rgba(4, 116, 124, 0.14);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--ink);
+    background: #fff;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+main { padding-top: 94px; }
+
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1); }
+.reveal.in-view { opacity: 1; transform: none; }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.don-hero {
+    background: var(--cream);
+    padding: 80px 6vw 100px;
+}
+
+.don-hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.don-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(42px, 5.5vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0 0 24px;
+    color: var(--ink);
+    text-wrap: balance;
+}
+
+.don-title strong {
+    font-weight: 700;
+    color: var(--teal);
+}
+
+.don-sub {
+    font-size: 19px;
+    color: var(--muted);
+    max-width: 600px;
+    margin: 0 auto 36px;
+    line-height: 1.65;
+}
+
+.don-ein {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-size: 14px;
+}
+
+.don-ein-label {
+    color: var(--muted);
+    font-weight: 500;
+}
+
+.don-ein-num {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    color: var(--teal);
+    font-size: 15px;
+    letter-spacing: 0.04em;
+}
+
+/* ============================================================
+   METHODS GRID
+   ============================================================ */
+
+.don-methods {
+    background: #fff;
+    padding: 100px 6vw;
+}
+
+.don-methods-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Last two cards — span a centred 2-col sub-row */
+.don-card:nth-child(4),
+.don-card:nth-child(5) {
+    grid-column: auto;
+}
+
+/* Create a centred pair for the last row */
+.don-methods-inner::after {
+    content: none;
+}
+
+@supports (grid-template-rows: subgrid) {
+    .don-methods-inner {
+        grid-template-rows: auto auto;
+    }
+}
+
+/* Push cards 4 & 5 to start in the middle column area */
+.don-card:nth-child(4) { grid-column: 1; }
+.don-card:nth-child(5) { grid-column: 2; }
+
+/* Actually just do it as a flat wrap: 3 then 2 centred */
+.don-methods-inner {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.don-card:nth-child(1) { grid-column: 1 / 3; }
+.don-card:nth-child(2) { grid-column: 3 / 5; }
+.don-card:nth-child(3) { grid-column: 5 / 7; }
+.don-card:nth-child(4) { grid-column: 1 / 4; }
+.don-card:nth-child(5) { grid-column: 4 / 7; }
+
+.don-card {
+    background: var(--cream);
+    border: 1px solid var(--hairline);
+    border-radius: 18px;
+    padding: 40px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    overflow: hidden;
+    transition: transform .3s cubic-bezier(.2,.7,.2,1), box-shadow .3s;
+}
+
+.don-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(4,116,124,0.12);
+}
+
+.don-card-num {
+    font-family: 'Fraunces', serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--teal);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    opacity: 0.7;
+}
+
+.don-card-icon {
+    font-size: 22px;
+    color: var(--teal);
+    margin-bottom: 16px;
+}
+
+.don-card-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 26px;
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    line-height: 1.15;
+}
+
+.don-card-desc {
+    font-size: 15px;
+    color: var(--muted);
+    margin: 0 0 20px;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.don-card-desc strong {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+/* Address */
+.don-address {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.7;
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px 20px;
+    border: 1px solid var(--hairline);
+}
+
+/* Venmo handle */
+.don-handle {
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--teal);
+    text-decoration: none;
+    background: #fff;
+    border-radius: 10px;
+    padding: 14px 20px;
+    border: 1px solid var(--hairline);
+    transition: background .2s, border-color .2s;
+    letter-spacing: -0.01em;
+}
+
+.don-handle:hover {
+    background: var(--cream-warm);
+    border-color: var(--teal);
+}
+
+/* ACH rows */
+.don-ach {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--hairline);
+    overflow: hidden;
+}
+
+.don-ach-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    gap: 16px;
+}
+
+.don-ach-row + .don-ach-row {
+    border-top: 1px solid var(--hairline);
+}
+
+.don-ach-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--teal);
+}
+
+.don-ach-val {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: 0.04em;
+}
+
+/* GoFundMe button */
+.don-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--teal);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 14px 22px;
+    border-radius: 999px;
+    transition: background .2s, transform .2s;
+    align-self: flex-start;
+}
+
+.don-btn:hover {
+    background: var(--teal-dark);
+    transform: translateY(-1px);
+}
+
+/* Benevity */
+.don-benevity-name {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--ink);
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px 20px;
+    border: 1px solid var(--hairline);
+    letter-spacing: -0.01em;
+}
+
+/* ============================================================
+   TAX INFO BANNER
+   ============================================================ */
+
+.don-tax {
+    background: var(--cream-warm);
+    padding: 0 6vw 80px;
+}
+
+.don-tax-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: #fff;
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 36px 44px;
+}
+
+.don-tax-icon {
+    font-size: 36px;
+    color: var(--teal);
+    flex-shrink: 0;
+}
+
+.don-tax-inner h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 0 0 6px;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+}
+
+.don-tax-inner p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.don-tax-inner p strong {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+/* ============================================================
+   BOTTOM CTA
+   ============================================================ */
+
+.don-cta {
+    background: var(--cream-warm);
+    padding: 0 6vw 120px;
+}
+
+.don-cta-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    background: var(--teal);
+    color: #fff;
+    border-radius: 22px;
+    padding: 80px 50px;
+    text-align: center;
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(255,204,2,0.18), transparent 50%),
+        radial-gradient(circle at 85% 80%, rgba(7,177,189,0.4), transparent 50%);
+}
+
+.don-cta-inner h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(30px, 3.8vw, 48px);
+    margin: 0 0 14px;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+}
+
+.don-cta-inner p {
+    margin: 0 auto 36px;
+    color: rgba(255,255,255,0.85);
+    font-size: 18px;
+    max-width: 520px;
+}
+
+.don-btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 28px;
+    border-radius: 999px;
+    border: 2px solid rgba(255,255,255,0.55);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background .2s, border-color .2s, transform .2s;
+}
+
+.don-btn-outline:hover {
+    background: rgba(255,255,255,0.12);
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1000px) {
+    .don-methods-inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .don-card:nth-child(1),
+    .don-card:nth-child(2),
+    .don-card:nth-child(3),
+    .don-card:nth-child(4),
+    .don-card:nth-child(5) {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .don-hero { padding: 60px 5vw 80px; }
+    .don-methods { padding: 70px 5vw; }
+    .don-methods-inner { grid-template-columns: 1fr; }
+    .don-card:nth-child(n) { grid-column: auto; }
+    .don-card { padding: 32px 26px; }
+    .don-tax { padding: 0 5vw 60px; }
+    .don-tax-inner { flex-direction: column; padding: 28px 24px; text-align: center; }
+    .don-cta { padding: 0 5vw 80px; }
+    .don-cta-inner { padding: 50px 28px; }
+}
