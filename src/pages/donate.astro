@@ -1,0 +1,123 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Donate | Tiny Village Spirit"
+  description="Support Tiny Village Spirit's work building tiny home communities for unhoused neighbors in the Bay Area. Five ways to give."
+  ogTitle="Donate | Tiny Village Spirit"
+  ogUrl="https://tinyvillagespirit.org/donate"
+  ogDescription="Support Tiny Village Spirit's work building tiny home communities for unhoused neighbors in the Bay Area."
+  css={['/styling/donate.css']}
+  preloadImage="/media/donate-hero.jpg"
+>
+<main>
+
+    <!-- ============ HERO ============ -->
+    <section class="don-hero">
+        <div class="don-hero-grid">
+            <div class="don-hero-copy">
+                <h1 class="don-title">
+                    Give directly<br>
+                    <strong>to the build.</strong>
+                </h1>
+                <p class="don-sub">
+                    Tiny Village Spirit is a Bay Area 501(c)(3) non-profit. Every dollar goes directly toward building tiny home villages for unhoused neighbors in Richmond and beyond.
+                </p>
+                <p class="don-ein">
+                    Tax-deductible · 501(c)(3) · EIN <span class="don-ein-num">99-2684195</span>
+                </p>
+            </div>
+            <div class="don-hero-media">
+                <img src="/media/donate-hero.jpg" alt="Volunteer smiling in the doorway of a finished tiny home at Richmond Village">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ METHODS ============ -->
+    <section class="don-methods">
+        <div class="don-methods-inner">
+
+            <div class="don-card reveal">
+                <div class="don-card-num">01</div>
+                <h2 class="don-card-title">Mail a check</h2>
+                <p class="don-card-desc">Make checks payable to <strong>Tiny Village Spirit</strong> and mail to:</p>
+                <address class="don-address">
+                    Tiny Village Spirit<br>
+                    3129 Ellis Street<br>
+                    Berkeley, CA 94703
+                </address>
+            </div>
+
+            <div class="don-card reveal">
+                <div class="don-card-num">02</div>
+                <h2 class="don-card-title">Venmo</h2>
+                <p class="don-card-desc">Send a gift through our official Tiny Village Spirit charity account:</p>
+                <a href="https://venmo.com/tinyvillagespiritCA" target="_blank" rel="noopener" class="don-handle">@tinyvillagespiritCA</a>
+            </div>
+
+            <div class="don-card reveal">
+                <div class="don-card-num">03</div>
+                <h2 class="don-card-title">ACH transfer</h2>
+                <p class="don-card-desc">Wire directly to our bank account:</p>
+                <div class="don-ach">
+                    <div class="don-ach-row">
+                        <span class="don-ach-label">Routing</span>
+                        <span class="don-ach-val">121102036</span>
+                    </div>
+                    <div class="don-ach-row">
+                        <span class="don-ach-label">Account</span>
+                        <span class="don-ach-val">3505601370</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="don-card reveal">
+                <div class="don-card-num">04</div>
+                <h2 class="don-card-title">GoFundMe</h2>
+                <p class="don-card-desc">Donate to the Richmond Tiny House Village, Farm &amp; Garden campaign:</p>
+                <a href="https://www.gofundme.com/f/richmond-tiny-house-village-farm-and-garden" target="_blank" rel="noopener" class="don-btn">
+                    Open GoFundMe <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="don-card reveal">
+                <div class="don-card-num">05</div>
+                <h2 class="don-card-title">Benevity</h2>
+                <p class="don-card-desc">Donate through your employer's Benevity workplace giving portal. Search for:</p>
+                <div class="don-benevity-name">"Tiny Village Spirit"</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ TAX INFO ============ -->
+    <section class="don-tax">
+        <div class="don-tax-inner reveal">
+            <div class="don-tax-icon"><i class="fa fa-check-circle"></i></div>
+            <div>
+                <h3>All gifts are tax-deductible.</h3>
+                <p>Tiny Village Spirit is a registered 501(c)(3) non-profit organization. Our EIN is <strong>99-2684195</strong>. Please retain your receipt for tax records.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="don-cta">
+        <div class="don-cta-inner">
+            <h2>Want to give your time instead?</h2>
+            <p>Volunteers are building every week in Richmond. No experience needed — just show up.</p>
+            <a href="/volunteer" class="don-btn-outline">Sign up to volunteer <i class="fa fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+</main>
+</BaseLayout>
+
+<script is:inline>
+const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
