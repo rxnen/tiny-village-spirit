@@ -8,22 +8,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   ogUrl="https://tinyvillagespirit.org/donate"
   ogDescription="Support Tiny Village Spirit's work building tiny home communities for unhoused neighbors in the Bay Area."
   css={['/styling/donate.css']}
+  preloadImage="/media/donate-hero.jpg"
 >
 <main>
 
     <!-- ============ HERO ============ -->
     <section class="don-hero">
-        <div class="don-hero-inner">
-            <h1 class="don-title">
-                Every gift builds<br>
-                <strong>something real.</strong>
-            </h1>
-            <p class="don-sub">
-                Tiny Village Spirit is a Bay Area 501(c)(3) non-profit. Your donation goes directly toward building tiny home villages for unhoused neighbors in Richmond and beyond.
-            </p>
-            <div class="don-ein">
-                <span class="don-ein-label">Tax-deductible · EIN</span>
-                <span class="don-ein-num">99-2684195</span>
+        <div class="don-hero-grid">
+            <div class="don-hero-copy">
+                <h1 class="don-title">
+                    Help put a neighbor<br>
+                    <strong>through this door.</strong>
+                </h1>
+                <p class="don-sub">
+                    Tiny Village Spirit is a Bay Area 501(c)(3) non-profit. Every dollar goes directly toward building tiny home villages for unhoused neighbors in Richmond and beyond.
+                </p>
+                <div class="don-ein">
+                    <span class="don-ein-label">Tax-deductible · EIN</span>
+                    <span class="don-ein-num">99-2684195</span>
+                </div>
+            </div>
+            <div class="don-hero-media">
+                <img src="/media/donate-hero.jpg" alt="Volunteer smiling in the doorway of a finished tiny home at Richmond Village">
             </div>
         </div>
     </section>
