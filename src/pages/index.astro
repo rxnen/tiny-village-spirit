@@ -277,10 +277,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <h2>Stay close to the build.</h2>
                 <p>Build days, village updates, and the occasional mural. No spam. Unsubscribe whenever.</p>
             </div>
-            <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('.success').style.display='inline-flex';">
+            <form class="newsletter-form" onsubmit="event.preventDefault(); window.open('http://eepurl.com/i0dbeM', '_blank');">
                 <input type="email" placeholder="your@email.com" required>
                 <button type="submit">Subscribe <i class="fa fa-arrow-right"></i></button>
-                <span class="success"><i class="fa fa-check"></i> You're in.</span>
             </form>
         </div>
     </section>
