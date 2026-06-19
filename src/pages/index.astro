@@ -277,10 +277,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <h2>Stay close to the build.</h2>
                 <p>Build days, village updates, and the occasional mural. No spam. Unsubscribe whenever.</p>
             </div>
-            <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('.success').style.display='inline-flex';">
-                <input type="email" placeholder="your@email.com" required>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" name="EMAIL" placeholder="your@email.com" required>
                 <button type="submit">Subscribe <i class="fa fa-arrow-right"></i></button>
-                <span class="success"><i class="fa fa-check"></i> You're in.</span>
+                <span class="success" id="newsletter-success"><i class="fa fa-check"></i> You're in.</span>
             </form>
         </div>
     </section>
@@ -289,6 +289,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <script is:inline>
+// Newsletter signup → Mailchimp (no-cors, optimistic success)
+document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    const data = new FormData(form);
+    try {
+        await fetch(
+            'https://tinyvillagespirit.us8.list-manage.com/subscribe/post?u=826fae09d6e0a57487a5a7490&id=712a7e0d14&f_id=007769e1f0',
+            { method: 'POST', body: data, mode: 'no-cors' }
+        );
+    } catch (_) {}
+    form.querySelector('input').style.display = 'none';
+    btn.style.display = 'none';
+    document.getElementById('newsletter-success').style.display = 'inline-flex';
+});
+
 // Fade in video once it starts playing (prevents poster flash)
 const heroVideo = document.querySelector('.hero-image');
 if (heroVideo) {
