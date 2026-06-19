@@ -289,23 +289,32 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <script is:inline>
-// Newsletter signup → Mailchimp (no-cors, optimistic success)
-document.getElementById('newsletter-form').addEventListener('submit', async function(e) {
+// Newsletter signup → Mailchimp via JSONP (readable response)
+document.getElementById('newsletter-form').addEventListener('submit', function(e) {
     e.preventDefault();
     const form = e.target;
     const btn = form.querySelector('button[type="submit"]');
+    const input = form.querySelector('input[name="EMAIL"]');
     btn.disabled = true;
     btn.textContent = 'Sending…';
-    const data = new FormData(form);
-    try {
-        await fetch(
-            'https://tinyvillagespirit.us8.list-manage.com/subscribe/post?u=826fae09d6e0a57487a5a7490&id=712a7e0d14&f_id=007769e1f0',
-            { method: 'POST', body: data, mode: 'no-cors' }
-        );
-    } catch (_) {}
-    form.querySelector('input').style.display = 'none';
-    btn.style.display = 'none';
-    document.getElementById('newsletter-success').style.display = 'inline-flex';
+
+    const cbName = 'mc_cb_' + Date.now();
+    const script = document.createElement('script');
+    window[cbName] = function(data) {
+        delete window[cbName];
+        script.remove();
+        if (data.result === 'success') {
+            input.style.display = 'none';
+            btn.style.display = 'none';
+            document.getElementById('newsletter-success').style.display = 'inline-flex';
+        } else {
+            btn.disabled = false;
+            btn.innerHTML = 'Subscribe <i class="fa fa-arrow-right"></i>';
+            alert(data.msg || 'Something went wrong. Please try again.');
+        }
+    };
+    script.src = 'https://tinyvillagespirit.us8.list-manage.com/subscribe/post-json?u=826fae09d6e0a57487a5a7490&id=712a7e0d14&EMAIL=' + encodeURIComponent(input.value) + '&c=' + cbName;
+    document.head.appendChild(script);
 });
 
 // Fade in video once it starts playing (prevents poster flash)
