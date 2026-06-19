@@ -303,15 +303,17 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
     window[cbName] = function(data) {
         delete window[cbName];
         script.remove();
-        if (data.result === 'success') {
-            input.style.display = 'none';
-            btn.style.display = 'none';
-            document.getElementById('newsletter-success').style.display = 'inline-flex';
+        const successEl = document.getElementById('newsletter-success');
+        input.style.display = 'none';
+        btn.style.display = 'none';
+        if (data.result === 'success' && data.msg && data.msg.toLowerCase().indexOf('already subscribed') !== -1) {
+            successEl.innerHTML = '<i class="fa fa-check"></i> Already subscribed!';
+        } else if (data.result === 'success') {
+            successEl.innerHTML = '<i class="fa fa-check"></i> You\'re in.';
         } else {
-            btn.disabled = false;
-            btn.innerHTML = 'Subscribe <i class="fa fa-arrow-right"></i>';
-            alert(data.msg || 'Something went wrong. Please try again.');
+            successEl.innerHTML = '<i class="fa fa-times"></i> ' + (data.msg ? data.msg.replace(/<[^>]*>/g, '') : 'Something went wrong.');
         }
+        successEl.style.display = 'inline-flex';
     };
     script.src = 'https://tinyvillagespirit.us8.list-manage.com/subscribe/post-json?u=826fae09d6e0a57487a5a7490&id=712a7e0d14&EMAIL=' + encodeURIComponent(input.value) + '&c=' + cbName;
     document.head.appendChild(script);
