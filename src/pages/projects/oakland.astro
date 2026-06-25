@@ -3,31 +3,142 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 <BaseLayout
   title="Oakland Tiny House Empowerment Village | Tiny Village Spirit"
-  description="Learn more about Tiny Village Spirit's Tiny House Empowerment Village in Oakland, CA."
+  description="The team behind Tiny Village Spirit led the development of Youth Spirit Artworks' 22-unit Tiny House Empowerment Village in Oakland, CA — built by over 4,000 volunteers."
+  ogTitle="Oakland Tiny House Empowerment Village | Tiny Village Spirit"
   ogUrl="https://tinyvillagespirit.org/projects/oakland"
-  css={['/styling/projects/project-template.css']}
-  preloadImage="/media/projects-splash-image.jpeg"
+  ogDescription="The team behind Tiny Village Spirit led the development of Youth Spirit Artworks' 22-unit Tiny House Empowerment Village in Oakland, CA."
+  keywords="Tiny Village Spirit, Tiny House Village, Oakland, CA, Tiny House Village Oakland, Youth Spirit Artworks"
+  css={['/styling/projects/oakland.css']}
+  preloadImage="/media/project-splash-4.jpg"
 >
 <main>
 
-    <div class="splash">
-        <img src="/media/project-splash-4.jpg" alt="About Image" class="splash-image" />
-        <div class="splash-text">
-            <h1>Oakland Tiny House Village</h1>
+    <!-- ============ HERO ============ -->
+    <section class="oak-hero">
+        <div class="oak-hero-grid">
+            <div class="oak-hero-text">
+                <h1 class="oak-title">
+                    Oakland Tiny House<br>
+                    <em>Empowerment Village.</em>
+                </h1>
+                <p class="oak-lede">
+                    A 22-unit community built by over 4,000 volunteers, 14 schools, and 28 businesses — and the project that set the model for everything Tiny Village Spirit does today.
+                </p>
+                <div class="oak-hero-meta">
+                    <div class="oak-meta-row">
+                        <span class="oak-meta-key">Status</span>
+                        <span class="oak-meta-val">Completed &amp; operating</span>
+                    </div>
+                    <div class="oak-meta-row">
+                        <span class="oak-meta-key">Location</span>
+                        <span class="oak-meta-val">
+                            <a href="https://maps.app.goo.gl/rYE4gkXh4NdQyHpi6" target="_blank">633C Hegenberger Rd, Oakland, CA</a>
+                        </span>
+                    </div>
+                    <div class="oak-meta-row">
+                        <span class="oak-meta-key">Operated by</span>
+                        <span class="oak-meta-val">
+                            <a href="https://youthspiritartworks.org/" target="_blank" rel="noopener">Youth Spirit Artworks</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="oak-hero-media">
+                <img src="/media/project-splash-4.jpg" alt="Colorfully painted community planks at the Oakland Tiny House Village">
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="project">
-        <div class="project-text">
-            <img src="/media/project-image-2.jpeg" alt="Project Image 2" class="project-image" />
-            <p class="project-description">The team behind Tiny Village Spirit led the development of Youth Spirit Artwork's 22-unit Tiny House Empowerment Village, a project which engaged over 4,000 volunteers, fourteen schools, and twenty-eight businesses. <br><br>
-                Our model focuses on villages being deeply led by the constituents being served and village construction by community volunteers, bringing congregations, schools, businesses, and other partners together to find innovative solutions to the emergency shelter crisis. <br><br>
-                Harnessing art and creativity is fundamental to our efforts, as is constructing high quality, aesthetically beautiful spaces, beloved by residents. <br><br>
-                Address: <a href="https://maps.app.goo.gl/rYE4gkXh4NdQyHpi6" target="_blank">633C Hegenberger Rd, Oakland, CA 94621</a>
-            </p>
+    <!-- ============ STATS ============ -->
+    <section class="oak-stats">
+        <div class="oak-stats-inner">
+            <div class="oak-stat">
+                <div class="oak-stat-num">22</div>
+                <div class="oak-stat-label">Housing units</div>
+            </div>
+            <div class="oak-stat-divider"></div>
+            <div class="oak-stat">
+                <div class="oak-stat-num">4,000<span>+</span></div>
+                <div class="oak-stat-label">Volunteers who built it</div>
+            </div>
+            <div class="oak-stat-divider"></div>
+            <div class="oak-stat">
+                <div class="oak-stat-num">14</div>
+                <div class="oak-stat-label">Schools involved</div>
+            </div>
+            <div class="oak-stat-divider"></div>
+            <div class="oak-stat">
+                <div class="oak-stat-num">28</div>
+                <div class="oak-stat-label">Business partners</div>
+            </div>
         </div>
-        <a target="_blank" href="https://youthspiritartworks.org/" class="project-link">The Tiny House Empowerment Village is run by Youth Spirit Artworks.</a>
-    </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="oak-about">
+        <div class="oak-about-grid">
+            <div class="oak-about-photo">
+                <img src="/media/project-image-2.jpeg" alt="Volunteer working at the Oakland Tiny House Village build">
+            </div>
+            <div class="oak-about-text">
+                <h2 class="oak-section-title">The village that<br>set the model.</h2>
+                <p>The team behind Tiny Village Spirit led the creation of Youth Spirit Artworks' Tiny House Empowerment Village — a constituent-led community for youth experiencing homelessness in Oakland, California.</p>
+                <p>The project brought together congregations, schools, businesses, and neighbors in a model of community-driven construction that is now the foundation of everything we do. Every board was placed by a volunteer. Every home was designed with residents at the center.</p>
+                <p>Harnessing art and creativity was fundamental to the effort, from the signature painted planks that ring the site to the murals that give the village its identity. The result is a space that residents are proud to call home.</p>
+                <a href="https://youthspiritartworks.org/" target="_blank" rel="noopener" class="oak-link">
+                    The village is now run by Youth Spirit Artworks <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="oak-visit">
+        <div class="oak-visit-card">
+            <div>
+                <h2>Visit the village.</h2>
+                <address>
+                    633C Hegenberger Road<br>
+                    Oakland, CA 94621<br><br>
+                    <a href="https://maps.app.goo.gl/rYE4gkXh4NdQyHpi6" target="_blank">Open in Google Maps →</a>
+                </address>
+            </div>
+            <a href="https://maps.app.goo.gl/rYE4gkXh4NdQyHpi6" target="_blank" class="oak-visit-map">
+                <iframe
+                    src="https://www.google.com/maps?q=633C+Hegenberger+Rd,+Oakland,+CA+94621&output=embed"
+                    width="100%" height="100%"
+                    style="border:0; display:block;"
+                    allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Oakland Tiny House Village location">
+                </iframe>
+                <div class="oak-visit-map-overlay"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="oak-cta">
+        <div class="oak-cta-inner">
+            <div>
+                <h2>We're building the next one now.</h2>
+                <p>The Richmond Tiny House Village, Farm &amp; Garden is actively under construction. Volunteers are welcome every week.</p>
+            </div>
+            <div class="oak-cta-actions">
+                <a href="/projects/richmond" class="oak-btn-light">See the Richmond village <i class="fa fa-arrow-right"></i></a>
+                <a href="/volunteer" class="oak-btn-outline">Volunteer with us</a>
+            </div>
+        </div>
+    </section>
 
 </main>
 </BaseLayout>
+
+<script is:inline>
+const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+    });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
