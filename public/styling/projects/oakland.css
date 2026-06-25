@@ -1,0 +1,391 @@
+/* =====================================================================
+   Tiny Village Spirit — Oakland project page
+   ===================================================================== */
+
+:root {
+    --teal:        #04747c;
+    --teal-dark:   #035c62;
+    --teal-accent: #07b1bd;
+    --yellow:      #ffcc02;
+    --cream:       #faf7f2;
+    --cream-warm:  #f4ede0;
+    --ink:         #1b2426;
+    --muted:       #5b6769;
+    --hairline:    rgba(4, 116, 124, 0.14);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--ink);
+    background: #fff;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+main { padding-top: 94px; }
+
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1); }
+.reveal.in-view { opacity: 1; transform: none; }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.oak-hero {
+    background: var(--cream);
+    padding: 80px 6vw 100px;
+}
+
+.oak-hero-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.oak-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(36px, 4.5vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin: 0 0 24px;
+    color: var(--ink);
+    text-wrap: balance;
+}
+
+.oak-title em {
+    font-style: normal;
+    font-weight: 700;
+    color: var(--teal);
+}
+
+.oak-lede {
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 520px;
+    margin: 0 0 32px;
+    line-height: 1.65;
+}
+
+.oak-hero-meta {
+    border-top: 1px solid var(--hairline);
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.oak-meta-row {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 16px;
+    font-size: 14px;
+    align-items: baseline;
+}
+
+.oak-meta-key {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--teal);
+}
+
+.oak-meta-val { color: var(--ink); font-weight: 500; }
+.oak-meta-val a { color: var(--teal); text-decoration: none; font-weight: 600; }
+.oak-meta-val a:hover { text-decoration: underline; }
+
+.oak-hero-media {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 24px 56px rgba(4,116,124,0.16);
+    aspect-ratio: 16 / 9;
+}
+
+.oak-hero-media img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ============================================================
+   STATS
+   ============================================================ */
+
+.oak-stats {
+    background: #fff;
+    padding: 70px 6vw;
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+}
+
+.oak-stats-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.oak-stat {
+    text-align: center;
+    flex: 1;
+}
+
+.oak-stat-num {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(40px, 4.5vw, 60px);
+    font-weight: 500;
+    color: var(--teal);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+}
+
+.oak-stat-num span {
+    font-size: 0.65em;
+    opacity: 0.7;
+}
+
+.oak-stat-label {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.oak-stat-divider {
+    width: 1px;
+    height: 60px;
+    background: var(--hairline);
+    flex-shrink: 0;
+}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+
+.oak-about {
+    background: #fff;
+    padding: 100px 6vw;
+}
+
+.oak-about-grid {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.oak-about-photo {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(4,116,124,0.14);
+    aspect-ratio: 4 / 3;
+}
+
+.oak-about-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.oak-section-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 24px;
+    color: var(--ink);
+    text-wrap: balance;
+}
+
+.oak-about-text p {
+    font-size: 16px;
+    color: var(--muted);
+    margin: 0 0 18px;
+    line-height: 1.75;
+}
+
+.oak-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--teal);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 8px;
+    transition: gap .2s;
+}
+.oak-link:hover { gap: 10px; }
+
+/* ============================================================
+   VISIT
+   ============================================================ */
+
+.oak-visit {
+    background: var(--cream);
+    padding: 80px 6vw;
+}
+
+.oak-visit-card {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.oak-visit-card h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0 0 20px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+}
+
+.oak-visit-card address {
+    font-style: normal;
+    font-size: 16px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.oak-visit-card address a {
+    color: var(--teal);
+    font-weight: 600;
+    text-decoration: none;
+}
+.oak-visit-card address a:hover { text-decoration: underline; }
+
+.oak-visit-map {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 320px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.oak-visit-map iframe {
+    width: 100%; height: 100%;
+    border: 0; display: block;
+}
+
+.oak-visit-map-overlay {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+}
+
+/* ============================================================
+   CTA
+   ============================================================ */
+
+.oak-cta {
+    background: #fff;
+    padding: 0 6vw 120px;
+}
+
+.oak-cta-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    background: var(--teal);
+    color: #fff;
+    border-radius: 22px;
+    padding: 70px 60px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 40px;
+    align-items: center;
+    background-image:
+        radial-gradient(circle at 10% 50%, rgba(255,204,2,0.14), transparent 50%),
+        radial-gradient(circle at 90% 50%, rgba(7,177,189,0.35), transparent 50%);
+}
+
+.oak-cta-inner h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(26px, 3vw, 38px);
+    margin: 0 0 10px;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+}
+
+.oak-cta-inner p {
+    margin: 0;
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+    max-width: 480px;
+}
+
+.oak-cta-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.oak-btn-light, .oak-btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: transform .2s, background .2s, border-color .2s;
+    white-space: nowrap;
+}
+.oak-btn-light:hover, .oak-btn-outline:hover { transform: translateY(-2px); }
+
+.oak-btn-light {
+    background: #fff;
+    color: var(--teal);
+}
+.oak-btn-light:hover { background: var(--cream); }
+
+.oak-btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid rgba(255,255,255,0.5);
+}
+.oak-btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 980px) {
+    .oak-hero-grid { grid-template-columns: 1fr; gap: 48px; }
+    .oak-about-grid { grid-template-columns: 1fr; gap: 48px; }
+    .oak-cta-inner { grid-template-columns: 1fr; }
+    .oak-cta-actions { flex-direction: row; flex-wrap: wrap; }
+}
+
+@media (max-width: 720px) {
+    .oak-hero { padding: 60px 5vw 80px; }
+    .oak-about { padding: 70px 5vw; }
+    .oak-visit { padding: 60px 5vw; }
+    .oak-visit-card { grid-template-columns: 1fr; gap: 32px; }
+    .oak-cta { padding: 0 5vw 80px; }
+    .oak-cta-inner { padding: 48px 32px; }
+    .oak-stats-inner { flex-wrap: wrap; justify-content: center; gap: 40px; }
+    .oak-stat-divider { display: none; }
+    .oak-stat { min-width: 120px; }
+}
