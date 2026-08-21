@@ -60,7 +60,7 @@ const {
     <slot />
     {showFooter && <Footer />}
 
-    <!-- ===== Donation Drive Popup ===== -->
+    <!-- ===== Grand Opening Popup ===== -->
     <div id="dd-backdrop" style="
         display:none;
         position:fixed;inset:0;z-index:999;
@@ -75,10 +75,20 @@ const {
             border-radius:16px;overflow:hidden;
             box-shadow:0 40px 80px rgba(0,0,0,0.45);
             animation:ddPop .35s cubic-bezier(.2,.7,.2,1);
+            background:#fff;
         ">
-            <a href="http://Target.com/gift-registry/gift/tiny-village-spirit-drive" target="_blank" rel="noopener">
-                <img src="/media/donation-drive.png" alt="Donation Drive June 5–30 — items for tiny homes in Richmond" style="width:100%;display:block;">
-            </a>
+            <img src="/media/grand-opening.jpg" alt="Grand Opening — Richmond Tiny House Village" style="width:100%;display:block;">
+            <div style="padding:20px 24px 24px;text-align:center;">
+                <a href="https://forms.gle/Vz4HfBiFMMWo2vXK7" target="_blank" rel="noopener" style="
+                    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+                    background:#04747c;color:#fff;
+                    font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;
+                    padding:13px 28px;border-radius:999px;text-decoration:none;
+                    transition:background .2s;
+                " onmouseover="this.style.background='#035c62'" onmouseout="this.style.background='#04747c'">
+                    RSVP for the Grand Opening
+                </a>
+            </div>
             <button id="dd-close" aria-label="Close" style="
                 position:absolute;top:12px;right:12px;
                 width:36px;height:36px;border-radius:50%;border:none;
@@ -98,7 +108,7 @@ const {
     </style>
     <script is:inline>
     (function() {
-        var KEY = 'dd_donation_drive_seen';
+        var KEY = 'dd_grand_opening_seen';
         if (localStorage.getItem(KEY)) return;
         var backdrop = document.getElementById('dd-backdrop');
         var close = document.getElementById('dd-close');
