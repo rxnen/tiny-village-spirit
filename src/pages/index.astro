@@ -9,6 +9,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
 <main>
 
+    <!-- ============ PROP 1 BANNER ============ -->
+    <div id="prop1-banner" class="prop1-banner">
+        <div class="prop1-banner-inner">
+            <span class="prop1-banner-tag">Nov. 2026 Ballot</span>
+            <span class="prop1-banner-text">We support <strong>Yes on Prop 1</strong> — 40,000 affordable homes for California, no new taxes.</span>
+            <a href="/prop-1" class="prop1-banner-link">Learn more →</a>
+        </div>
+        <button id="prop1-banner-close" class="prop1-banner-close" aria-label="Dismiss">×</button>
+    </div>
+
     <!-- ============ HERO ============ -->
     <section class="hero">
         <div class="hero-media">
@@ -340,4 +350,16 @@ document.querySelectorAll('.impact-stat, .pillar-card, .involve-card, .project-c
     el.classList.add('reveal');
     io.observe(el);
 });
+
+// Prop 1 banner dismiss
+(function() {
+    var banner = document.getElementById('prop1-banner');
+    var btn    = document.getElementById('prop1-banner-close');
+    if (!banner || !btn) return;
+    if (localStorage.getItem('prop1_banner_dismissed')) { banner.classList.add('hidden'); return; }
+    btn.addEventListener('click', function() {
+        banner.classList.add('hidden');
+        localStorage.setItem('prop1_banner_dismissed', '1');
+    });
+})();
 </script>

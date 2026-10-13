@@ -1116,3 +1116,64 @@ blockquote {
     .mission-sticker { width: 100px; height: 100px; top: -20px; left: -10px; }
     .sticker-middle { font-size: 14px; }
 }
+
+/* ── Prop 1 Banner ── */
+.prop1-banner {
+    position: relative;
+    background: #ffcc02;
+    color: #1b2426;
+    padding: 12px 48px 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prop1-banner.hidden { display: none; }
+
+.prop1-banner-inner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.prop1-banner-tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.12);
+    padding: 3px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.prop1-banner-text { color: #1b2426; }
+
+.prop1-banner-link {
+    font-weight: 700;
+    color: #1b2426;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    white-space: nowrap;
+}
+.prop1-banner-link:hover { opacity: .72; }
+
+.prop1-banner-close {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    color: #1b2426;
+    opacity: 0.5;
+    padding: 4px 6px;
+}
+.prop1-banner-close:hover { opacity: 1; }
