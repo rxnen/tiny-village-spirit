@@ -94,12 +94,12 @@ main { padding-top: 94px; }
 }
 
 .p1-stats-inner {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
+    gap: 40px;
+    flex-wrap: nowrap;
     text-align: center;
 }
 
@@ -181,9 +181,6 @@ main { padding-top: 94px; }
 }
 
 .p1-who-item {
-    background: var(--cream);
-    border: 1px solid var(--hairline);
-    border-radius: 12px;
     padding: 20px 22px;
     font-size: 15px;
     font-weight: 500;
@@ -293,6 +290,6 @@ main { padding-top: 94px; }
 
 /* ── Responsive ── */
 @media (max-width: 640px) {
-    .p1-stats-inner { gap: 32px; }
+    .p1-stats-inner { gap: 28px; flex-wrap: wrap; }
     .p1-who-grid { grid-template-columns: 1fr 1fr; }
 }

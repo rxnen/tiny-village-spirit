@@ -1140,17 +1140,6 @@ blockquote {
     line-height: 1.4;
 }
 
-.prop1-banner-tag {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    background: rgba(0,0,0,0.12);
-    padding: 3px 8px;
-    border-radius: 999px;
-    white-space: nowrap;
-}
-
 .prop1-banner-text { color: #1b2426; }
 
 .prop1-banner-link {
